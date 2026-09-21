@@ -1,0 +1,2 @@
+# Optional only: core models, result files, and tests use the standard library.
+matplotlib>=3.6

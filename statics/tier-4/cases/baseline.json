@@ -1,0 +1,7 @@
+{
+  "horizontal_length_m": 0.16,
+  "vertical_length_m": 0.12,
+  "leg_width_m": 0.02,
+  "thickness_m": 0.006,
+  "density_kg_per_m3": 2700
+}

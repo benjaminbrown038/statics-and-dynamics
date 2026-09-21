@@ -1,0 +1,5 @@
+{
+  "mass_kg": 20,
+  "initial_speed_m_per_s": 2,
+  "stop_duration_s": 0.1
+}

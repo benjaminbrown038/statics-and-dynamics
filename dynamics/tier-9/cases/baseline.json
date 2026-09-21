@@ -1,0 +1,9 @@
+{
+  "mass_kg": 10,
+  "stiffness_N_per_m": 4000,
+  "damping_ratio": 0.05,
+  "initial_displacement_m": 0.01,
+  "initial_velocity_m_per_s": 0,
+  "duration_s": 2,
+  "time_step_s": 0.002
+}

@@ -1,0 +1,9 @@
+{
+  "mass_kg": 10,
+  "incline_deg": 20,
+  "mu_static": 0.3,
+  "mu_kinetic": 0.25,
+  "applied_downslope_N": 0,
+  "gravity_m_per_s2": 9.81,
+  "duration_s": 2
+}

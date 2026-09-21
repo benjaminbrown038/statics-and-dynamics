@@ -1,0 +1,6 @@
+{
+  "mass_kg": 10,
+  "lift_m": 0.5,
+  "duration_s": 1,
+  "gravity_m_per_s2": 9.81
+}

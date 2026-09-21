@@ -1,0 +1,12 @@
+{
+  "rod_mass_kg": 2,
+  "payload_mass_kg": 0.5,
+  "rod_length_m": 0.3,
+  "attachment_radius_m": 0.06,
+  "anchor_x_m": -0.1,
+  "anchor_y_m": 0.08,
+  "start_angle_deg": 10,
+  "end_angle_deg": 80,
+  "duration_s": 1.2,
+  "gravity_m_per_s2": 9.81
+}

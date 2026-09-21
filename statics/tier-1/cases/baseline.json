@@ -1,0 +1,6 @@
+{
+  "length_m": 1,
+  "point_load_N": 1000,
+  "point_position_m": 0.4,
+  "uniform_load_N_per_m": 200
+}
