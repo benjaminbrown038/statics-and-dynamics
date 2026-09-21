@@ -1,0 +1,246 @@
+{
+  "inputs": {
+    "F1x_N": 300,
+    "F1y_N": -1000,
+    "x1_m": 0.12,
+    "y1_m": 0,
+    "F2x_N": 0,
+    "F2y_N": 200,
+    "x2_m": 0,
+    "y2_m": 0.1,
+    "couple_Nm": 20
+  },
+  "title": "Tier 0: forces, vectors, and moments",
+  "metrics": {
+    "resultant_x_N": 300.0,
+    "resultant_y_N": -800.0,
+    "resultant_magnitude_N": 854.4003745317531,
+    "resultant_angle_deg": -69.44395478041653,
+    "force1_moment_Nm": -120.0,
+    "force2_moment_Nm": 0.0,
+    "total_moment_about_origin_Nm": -100.0
+  },
+  "tables": [
+    {
+      "name": "moment_reference",
+      "rows": [
+        {
+          "reference_x_m": -0.2,
+          "moment_about_reference_Nm": -260.0
+        },
+        {
+          "reference_x_m": -0.192,
+          "moment_about_reference_Nm": -253.6
+        },
+        {
+          "reference_x_m": -0.184,
+          "moment_about_reference_Nm": -247.2
+        },
+        {
+          "reference_x_m": -0.17600000000000002,
+          "moment_about_reference_Nm": -240.8
+        },
+        {
+          "reference_x_m": -0.168,
+          "moment_about_reference_Nm": -234.4
+        },
+        {
+          "reference_x_m": -0.16,
+          "moment_about_reference_Nm": -228.0
+        },
+        {
+          "reference_x_m": -0.152,
+          "moment_about_reference_Nm": -221.6
+        },
+        {
+          "reference_x_m": -0.14400000000000002,
+          "moment_about_reference_Nm": -215.20000000000002
+        },
+        {
+          "reference_x_m": -0.136,
+          "moment_about_reference_Nm": -208.8
+        },
+        {
+          "reference_x_m": -0.128,
+          "moment_about_reference_Nm": -202.4
+        },
+        {
+          "reference_x_m": -0.12000000000000001,
+          "moment_about_reference_Nm": -196.0
+        },
+        {
+          "reference_x_m": -0.112,
+          "moment_about_reference_Nm": -189.60000000000002
+        },
+        {
+          "reference_x_m": -0.104,
+          "moment_about_reference_Nm": -183.2
+        },
+        {
+          "reference_x_m": -0.096,
+          "moment_about_reference_Nm": -176.8
+        },
+        {
+          "reference_x_m": -0.088,
+          "moment_about_reference_Nm": -170.39999999999998
+        },
+        {
+          "reference_x_m": -0.08000000000000002,
+          "moment_about_reference_Nm": -164.0
+        },
+        {
+          "reference_x_m": -0.07200000000000001,
+          "moment_about_reference_Nm": -157.60000000000002
+        },
+        {
+          "reference_x_m": -0.064,
+          "moment_about_reference_Nm": -151.2
+        },
+        {
+          "reference_x_m": -0.055999999999999994,
+          "moment_about_reference_Nm": -144.8
+        },
+        {
+          "reference_x_m": -0.04799999999999999,
+          "moment_about_reference_Nm": -138.39999999999998
+        },
+        {
+          "reference_x_m": -0.04000000000000001,
+          "moment_about_reference_Nm": -132.0
+        },
+        {
+          "reference_x_m": -0.032,
+          "moment_about_reference_Nm": -125.6
+        },
+        {
+          "reference_x_m": -0.023999999999999994,
+          "moment_about_reference_Nm": -119.19999999999999
+        },
+        {
+          "reference_x_m": -0.015999999999999986,
+          "moment_about_reference_Nm": -112.79999999999998
+        },
+        {
+          "reference_x_m": -0.00799999999999998,
+          "moment_about_reference_Nm": -106.39999999999998
+        },
+        {
+          "reference_x_m": 0.0,
+          "moment_about_reference_Nm": -100.0
+        },
+        {
+          "reference_x_m": 0.008000000000000007,
+          "moment_about_reference_Nm": -93.6
+        },
+        {
+          "reference_x_m": 0.016000000000000014,
+          "moment_about_reference_Nm": -87.19999999999999
+        },
+        {
+          "reference_x_m": 0.02400000000000002,
+          "moment_about_reference_Nm": -80.79999999999998
+        },
+        {
+          "reference_x_m": 0.03200000000000003,
+          "moment_about_reference_Nm": -74.39999999999998
+        },
+        {
+          "reference_x_m": 0.03999999999999998,
+          "moment_about_reference_Nm": -68.00000000000001
+        },
+        {
+          "reference_x_m": 0.04799999999999999,
+          "moment_about_reference_Nm": -61.60000000000001
+        },
+        {
+          "reference_x_m": 0.055999999999999994,
+          "moment_about_reference_Nm": -55.2
+        },
+        {
+          "reference_x_m": 0.064,
+          "moment_about_reference_Nm": -48.8
+        },
+        {
+          "reference_x_m": 0.07200000000000001,
+          "moment_about_reference_Nm": -42.39999999999999
+        },
+        {
+          "reference_x_m": 0.08000000000000002,
+          "moment_about_reference_Nm": -35.999999999999986
+        },
+        {
+          "reference_x_m": 0.08800000000000002,
+          "moment_about_reference_Nm": -29.59999999999998
+        },
+        {
+          "reference_x_m": 0.09600000000000003,
+          "moment_about_reference_Nm": -23.199999999999974
+        },
+        {
+          "reference_x_m": 0.10400000000000004,
+          "moment_about_reference_Nm": -16.79999999999997
+        },
+        {
+          "reference_x_m": 0.11200000000000004,
+          "moment_about_reference_Nm": -10.399999999999963
+        },
+        {
+          "reference_x_m": 0.12,
+          "moment_about_reference_Nm": -4.0
+        },
+        {
+          "reference_x_m": 0.12800000000000006,
+          "moment_about_reference_Nm": 2.4000000000000483
+        },
+        {
+          "reference_x_m": 0.136,
+          "moment_about_reference_Nm": 8.800000000000011
+        },
+        {
+          "reference_x_m": 0.14399999999999996,
+          "moment_about_reference_Nm": 15.199999999999974
+        },
+        {
+          "reference_x_m": 0.15200000000000002,
+          "moment_about_reference_Nm": 21.600000000000023
+        },
+        {
+          "reference_x_m": 0.15999999999999998,
+          "moment_about_reference_Nm": 27.999999999999986
+        },
+        {
+          "reference_x_m": 0.16800000000000004,
+          "moment_about_reference_Nm": 34.400000000000034
+        },
+        {
+          "reference_x_m": 0.176,
+          "moment_about_reference_Nm": 40.79999999999998
+        },
+        {
+          "reference_x_m": 0.18400000000000005,
+          "moment_about_reference_Nm": 47.200000000000045
+        },
+        {
+          "reference_x_m": 0.192,
+          "moment_about_reference_Nm": 53.599999999999994
+        },
+        {
+          "reference_x_m": 0.2,
+          "moment_about_reference_Nm": 60.0
+        }
+      ],
+      "x": "reference_x_m",
+      "ys": [
+        "moment_about_reference_Nm"
+      ],
+      "xlabel": "Reference point x, y=0 (m)",
+      "ylabel": "Counterclockwise moment (N m)",
+      "log": false
+    }
+  ],
+  "notes": [
+    "Axes: x right, y up; positive moment is counterclockwise.",
+    "An equivalent resultant must retain the correct moment; moving a force generally requires a couple.",
+    "A free couple is independent of reference point. Equal-and-opposite forces can have zero resultant and nonzero moment."
+  ]
+}

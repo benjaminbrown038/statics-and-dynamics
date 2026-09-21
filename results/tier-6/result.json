@@ -1,0 +1,3703 @@
+{
+  "inputs": {
+    "mass_kg": 10,
+    "lift_m": 0.5,
+    "duration_s": 1,
+    "gravity_m_per_s2": 9.81
+  },
+  "title": "Tier 6: particle dynamics and work-energy",
+  "metrics": {
+    "static_weight_N": 98.10000000000001,
+    "peak_cable_tension_N": 126.9675134594813,
+    "minimum_cable_tension_N": 69.23248654051872,
+    "exact_total_lifting_work_J": 49.050000000000004,
+    "integrated_power_work_J": 49.050000066192915,
+    "work_integration_residual_J": 6.6192910708196e-08,
+    "sampled_peak_power_W": 97.72815229631999
+  },
+  "tables": [
+    {
+      "name": "lift_loads",
+      "rows": [
+        {
+          "time_s": 0.0,
+          "height_m": 0.0,
+          "velocity_m_per_s": 0.0,
+          "acceleration_m_per_s2": 0.0,
+          "cable_tension_N": 98.10000000000001,
+          "power_W": 0.0,
+          "actuator_work_exact_J": 0.0
+        },
+        {
+          "time_s": 0.005,
+          "height_m": 6.203218750000002e-07,
+          "velocity_m_per_s": 0.000371259375,
+          "acceleration_m_per_s2": 0.14775749999999999,
+          "cable_tension_N": 99.577575,
+          "power_W": 0.036969108258515626,
+          "actuator_work_exact_J": 6.154274355512698e-05
+        },
+        {
+          "time_s": 0.01,
+          "height_m": 4.925300000000001e-06,
+          "velocity_m_per_s": 0.00147015,
+          "acceleration_m_per_s2": 0.29106,
+          "cable_tension_N": 101.01060000000001,
+          "power_W": 0.14850073359000002,
+          "actuator_work_exact_J": 0.0004939786351125002
+        },
+        {
+          "time_s": 0.015,
+          "height_m": 1.6497590624999996e-05,
+          "velocity_m_per_s": 0.0032745093750000003,
+          "acceleration_m_per_s2": 0.42995249999999996,
+          "cable_tension_N": 102.39952500000001,
+          "power_W": 0.33530820460804694,
+          "actuator_work_exact_J": 0.0016720256985473143
+        },
+        {
+          "time_s": 0.02,
+          "height_m": 3.880960000000001e-05,
+          "velocity_m_per_s": 0.0057624,
+          "acceleration_m_per_s2": 0.56448,
+          "cable_tension_N": 103.7448,
+          "power_W": 0.59781903552,
+          "actuator_work_exact_J": 0.003973248028800001
+        },
+        {
+          "time_s": 0.025,
+          "height_m": 7.522460937500001e-05,
+          "velocity_m_per_s": 0.008912109375000001,
+          "acceleration_m_per_s2": 0.6946875,
+          "cable_tension_N": 105.04687500000001,
+          "power_W": 0.9361892395019534,
+          "actuator_work_exact_J": 0.007776662647247317
+        },
+        {
+          "time_s": 0.03,
+          "height_m": 0.00012899789999999998,
+          "velocity_m_per_s": 0.01270215,
+          "acceleration_m_per_s2": 0.8206199999999999,
+          "cable_tension_N": 106.3062,
+          "power_W": 1.35031729833,
+          "actuator_work_exact_J": 0.013461417063112498
+        },
+        {
+          "time_s": 0.035,
+          "height_m": 0.00020327787812500004,
+          "velocity_m_per_s": 0.017111259375000003,
+          "acceleration_m_per_s2": 0.9423225000000001,
+          "cable_tension_N": 107.523225,
+          "power_W": 1.8398577918114847,
+          "actuator_work_exact_J": 0.02140553583105513
+        },
+        {
+          "time_s": 0.04,
+          "height_m": 0.0003011072000000001,
+          "velocity_m_per_s": 0.0221184,
+          "acceleration_m_per_s2": 1.0598400000000001,
+          "cable_tension_N": 108.69839999999999,
+          "power_W": 2.4042346905599996,
+          "actuator_work_exact_J": 0.03198473441280002
+        },
+        {
+          "time_s": 0.045,
+          "height_m": 0.00042542389687499996,
+          "velocity_m_per_s": 0.027702759375,
+          "acceleration_m_per_s2": 1.1732174999999998,
+          "cable_tension_N": 109.832175,
+          "power_W": 3.0426543156578907,
+          "actuator_work_exact_J": 0.045571298668383255
+        },
+        {
+          "time_s": 0.05,
+          "height_m": 0.0005790625,
+          "velocity_m_per_s": 0.03384375,
+          "acceleration_m_per_s2": 1.2825,
+          "cable_tension_N": 110.92500000000001,
+          "power_W": 3.75411796875,
+          "actuator_work_exact_J": 0.0625330283203125
+        },
+        {
+          "time_s": 0.055,
+          "height_m": 0.0007647551656249999,
+          "velocity_m_per_s": 0.04052100937499999,
+          "acceleration_m_per_s2": 1.3877324999999998,
+          "cable_tension_N": 111.97732500000001,
+          "power_W": 4.537434236112421,
+          "actuator_work_exact_J": 0.08323224275165668
+        },
+        {
+          "time_s": 0.06,
+          "height_m": 0.0009851327999999997,
+          "velocity_m_per_s": 0.0477144,
+          "acceleration_m_per_s2": 1.4889599999999998,
+          "cable_tension_N": 112.98960000000001,
+          "power_W": 5.3912309702400005,
+          "actuator_work_exact_J": 0.10802484751679997
+        },
+        {
+          "time_s": 0.065,
+          "height_m": 0.0012427261843750003,
+          "velocity_m_per_s": 0.055404009375,
+          "acceleration_m_per_s2": 1.5862275000000001,
+          "cable_tension_N": 113.962275,
+          "power_W": 6.313966952496329,
+          "actuator_work_exact_J": 0.13725945996131297
+        },
+        {
+          "time_s": 0.07,
+          "height_m": 0.0015399671000000004,
+          "velocity_m_per_s": 0.06357015,
+          "acceleration_m_per_s2": 1.67958,
+          "cable_tension_N": 114.89580000000001,
+          "power_W": 7.3039432403700015,
+          "actuator_work_exact_J": 0.17127659236511256
+        },
+        {
+          "time_s": 0.075,
+          "height_m": 0.0018791894531249998,
+          "velocity_m_per_s": 0.072193359375,
+          "acceleration_m_per_s2": 1.7690625,
+          "cable_tension_N": 115.790625,
+          "power_W": 8.35931420288086,
+          "actuator_work_exact_J": 0.21040789104080201
+        },
+        {
+          "time_s": 0.08,
+          "height_m": 0.0022626304000000004,
+          "velocity_m_per_s": 0.0812544,
+          "acceleration_m_per_s2": 1.85472,
+          "cable_tension_N": 116.64720000000001,
+          "power_W": 9.478098247680002,
+          "actuator_work_exact_J": 0.25497542983680005
+        },
+        {
+          "time_s": 0.085,
+          "height_m": 0.0026924314718750003,
+          "velocity_m_per_s": 0.09073425937500003,
+          "acceleration_m_per_s2": 1.9365975,
+          "cable_tension_N": 117.465975,
+          "power_W": 10.658188243387269,
+          "actuator_work_exact_J": 0.3052910565125864
+        },
+        {
+          "time_s": 0.09,
+          "height_m": 0.0031706397,
+          "velocity_m_per_s": 0.10061415,
+          "acceleration_m_per_s2": 2.0147399999999998,
+          "cable_tension_N": 118.2474,
+          "power_W": 11.89736164071,
+          "actuator_work_exact_J": 0.36165579047111257
+        },
+        {
+          "time_s": 0.095,
+          "height_m": 0.003699208740625001,
+          "velocity_m_per_s": 0.110875509375,
+          "acceleration_m_per_s2": 2.0891925,
+          "cable_tension_N": 118.991925,
+          "power_W": 13.193290295886797,
+          "actuator_work_exact_J": 0.4243592703511412
+        },
+        {
+          "time_s": 0.1,
+          "height_m": 0.004280000000000001,
+          "velocity_m_per_s": 0.12150000000000002,
+          "acceleration_m_per_s2": 2.1599999999999997,
+          "cable_tension_N": 119.7,
+          "power_W": 14.543550000000003,
+          "actuator_work_exact_J": 0.4936792500000002
+        },
+        {
+          "time_s": 0.105,
+          "height_m": 0.0049147837593749985,
+          "velocity_m_per_s": 0.13246950937499996,
+          "acceleration_m_per_s2": 2.2272075,
+          "cable_tension_N": 120.37207500000001,
+          "power_W": 15.9456297177007,
+          "actuator_work_exact_J": 0.5698811413649534
+        },
+        {
+          "time_s": 0.11,
+          "height_m": 0.005605240299999999,
+          "velocity_m_per_s": 0.14376615,
+          "acceleration_m_per_s2": 2.29086,
+          "cable_tension_N": 121.0086,
+          "power_W": 17.39694053889,
+          "actuator_work_exact_J": 0.6532176028591125
+        },
+        {
+          "time_s": 0.115,
+          "height_m": 0.0063529610281250004,
+          "velocity_m_per_s": 0.15537225937500002,
+          "acceleration_m_per_s2": 2.3510025000000003,
+          "cable_tension_N": 121.61002500000001,
+          "power_W": 18.894824346900236,
+          "actuator_work_exact_J": 0.743928171775524
+        },
+        {
+          "time_s": 0.12,
+          "height_m": 0.0071594495999999985,
+          "velocity_m_per_s": 0.16727039999999999,
+          "acceleration_m_per_s2": 2.407679999999999,
+          "cable_tension_N": 122.1768,
+          "power_W": 20.436562206719998,
+          "actuator_work_exact_J": 0.8422389393408
+        },
+        {
+          "time_s": 0.125,
+          "height_m": 0.008026123046875,
+          "velocity_m_per_s": 0.179443359375,
+          "acceleration_m_per_s2": 2.4609375,
+          "cable_tension_N": 122.70937500000001,
+          "power_W": 22.01938247680664,
+          "actuator_work_exact_J": 0.9483622670173646
+        },
+        {
+          "time_s": 0.13,
+          "height_m": 0.008954312900000002,
+          "velocity_m_per_s": 0.19187414999999997,
+          "acceleration_m_per_s2": 2.5108200000000003,
+          "cable_tension_N": 123.2082,
+          "power_W": 23.640468648029998,
+          "actuator_work_exact_J": 1.0624965426811128
+        },
+        {
+          "time_s": 0.135,
+          "height_m": 0.009945266315625001,
+          "velocity_m_per_s": 0.20454600937500003,
+          "acceleration_m_per_s2": 2.557372500000001,
+          "cable_tension_N": 123.67372500000002,
+          "power_W": 25.29696691329118,
+          "actuator_work_exact_J": 1.1848259753190007
+        },
+        {
+          "time_s": 0.14,
+          "height_m": 0.011000147200000003,
+          "velocity_m_per_s": 0.21744240000000004,
+          "acceleration_m_per_s2": 2.60064,
+          "cable_tension_N": 124.10640000000001,
+          "power_W": 26.985993471360008,
+          "actuator_work_exact_J": 1.3155204269088003
+        },
+        {
+          "time_s": 0.145,
+          "height_m": 0.012120037334374998,
+          "velocity_m_per_s": 0.23054700937499997,
+          "acceleration_m_per_s2": 2.6406674999999997,
+          "cable_tension_N": 124.506675,
+          "power_W": 28.704641568475076,
+          "actuator_work_exact_J": 1.454735280160969
+        },
+        {
+          "time_s": 0.15,
+          "height_m": 0.013305937499999998,
+          "velocity_m_per_s": 0.24384375,
+          "acceleration_m_per_s2": 2.6775,
+          "cable_tension_N": 124.875,
+          "power_W": 30.44998828125,
+          "actuator_work_exact_J": 1.6026113408203124
+        },
+        {
+          "time_s": 0.155,
+          "height_m": 0.014558768603125001,
+          "velocity_m_per_s": 0.25731675937500004,
+          "acceleration_m_per_s2": 2.7111825,
+          "cable_tension_N": 125.211825,
+          "power_W": 32.219101044429614,
+          "actuator_work_exact_J": 1.7592747732428209
+        },
+        {
+          "time_s": 0.16,
+          "height_m": 0.015879372800000006,
+          "velocity_m_per_s": 0.27095040000000004,
+          "acceleration_m_per_s2": 2.7417599999999998,
+          "cable_tension_N": 125.5176,
+          "power_W": 34.009043927040004,
+          "actuator_work_exact_J": 1.924837067980801
+        },
+        {
+          "time_s": 0.165,
+          "height_m": 0.017268514621875,
+          "velocity_m_per_s": 0.28472925937500004,
+          "acceleration_m_per_s2": 2.7692775000000003,
+          "cable_tension_N": 125.792775,
+          "power_W": 35.81688366047602,
+          "actuator_work_exact_J": 2.099395040127118
+        },
+        {
+          "time_s": 0.17,
+          "height_m": 0.0187268821,
+          "velocity_m_per_s": 0.2986381500000001,
+          "acceleration_m_per_s2": 2.79378,
+          "cable_tension_N": 126.0378,
+          "power_W": 37.63969542207001,
+          "actuator_work_exact_J": 2.283030857187113
+        },
+        {
+          "time_s": 0.175,
+          "height_m": 0.020255087890624995,
+          "velocity_m_per_s": 0.312662109375,
+          "acceleration_m_per_s2": 2.8153125,
+          "cable_tension_N": 126.253125,
+          "power_W": 39.47456837768554,
+          "actuator_work_exact_J": 2.4758120952644345
+        },
+        {
+          "time_s": 0.18,
+          "height_m": 0.0218536704,
+          "velocity_m_per_s": 0.3267864,
+          "acceleration_m_per_s2": 2.8339199999999996,
+          "cable_tension_N": 126.4392,
+          "power_W": 41.318610986879996,
+          "actuator_work_exact_J": 2.6777918223648003
+        },
+        {
+          "time_s": 0.185,
+          "height_m": 0.023523094909374997,
+          "velocity_m_per_s": 0.34099650937500003,
+          "acceleration_m_per_s2": 2.8496474999999997,
+          "cable_tension_N": 126.596475,
+          "power_W": 43.168956074179455,
+          "actuator_work_exact_J": 2.88900870763936
+        },
+        {
+          "time_s": 0.19,
+          "height_m": 0.025263754700000005,
+          "velocity_m_per_s": 0.35527814999999996,
+          "acceleration_m_per_s2": 2.86254,
+          "cable_tension_N": 126.72540000000001,
+          "power_W": 45.022765670009996,
+          "actuator_work_exact_J": 3.109487155407113
+        },
+        {
+          "time_s": 0.195,
+          "height_m": 0.027075972178124998,
+          "velocity_m_per_s": 0.36961725937500006,
+          "acceleration_m_per_s2": 2.8726425,
+          "cable_tension_N": 126.826425,
+          "power_W": 46.87723562482899,
+          "actuator_work_exact_J": 3.339237462813493
+        },
+        {
+          "time_s": 0.2,
+          "height_m": 0.028960000000000003,
+          "velocity_m_per_s": 0.38400000000000006,
+          "acceleration_m_per_s2": 2.8799999999999994,
+          "cable_tension_N": 126.89999999999999,
+          "power_W": 48.729600000000005,
+          "actuator_work_exact_J": 3.5782560000000005
+        },
+        {
+          "time_s": 0.205,
+          "height_m": 0.030916022196874997,
+          "velocity_m_per_s": 0.398412759375,
+          "acceleration_m_per_s2": 2.8846575,
+          "cable_tension_N": 126.946575,
+          "power_W": 50.577135238955385,
+          "actuator_work_exact_J": 3.826525411677446
+        },
+        {
+          "time_s": 0.21,
+          "height_m": 0.03294415529999999,
+          "velocity_m_per_s": 0.4128421499999999,
+          "acceleration_m_per_s2": 2.8866600000000004,
+          "cable_tension_N": 126.96660000000001,
+          "power_W": 52.417164122189995,
+          "actuator_work_exact_J": 4.084014839013112
+        },
+        {
+          "time_s": 0.21132486540518713,
+          "height_m": 0.03349364905389035,
+          "velocity_m_per_s": 0.41666666666666663,
+          "acceleration_m_per_s2": 2.88675134594813,
+          "cable_tension_N": 126.9675134594813,
+          "power_W": 52.9031306081172,
+          "actuator_work_exact_J": 4.153782527742199
+        },
+        {
+          "time_s": 0.215,
+          "height_m": 0.035044449465624995,
+          "velocity_m_per_s": 0.42727500937499996,
+          "acceleration_m_per_s2": 2.886052500000001,
+          "cable_tension_N": 126.960525,
+          "power_W": 54.24705950962992,
+          "actuator_work_exact_J": 4.350680160759844
+        },
+        {
+          "time_s": 0.22,
+          "height_m": 0.0372168896,
+          "velocity_m_per_s": 0.4416984,
+          "acceleration_m_per_s2": 2.8828799999999997,
+          "cable_tension_N": 126.92880000000001,
+          "power_W": 56.06424787392,
+          "actuator_work_exact_J": 4.6264642525728
+        },
+        {
+          "time_s": 0.225,
+          "height_m": 0.03946139648437501,
+          "velocity_m_per_s": 0.45609960937499994,
+          "acceleration_m_per_s2": 2.8771875,
+          "cable_tension_N": 126.871875,
+          "power_W": 57.86621262817382,
+          "actuator_work_exact_J": 4.911297263477326
+        },
+        {
+          "time_s": 0.23,
+          "height_m": 0.0417778279,
+          "velocity_m_per_s": 0.4704661500000001,
+          "acceleration_m_per_s2": 2.8690200000000003,
+          "cable_tension_N": 126.79020000000001,
+          "power_W": 59.650497251730016,
+          "actuator_work_exact_J": 5.205096908469113
+        },
+        {
+          "time_s": 0.235,
+          "height_m": 0.044165979753124994,
+          "velocity_m_per_s": 0.484785759375,
+          "acceleration_m_per_s2": 2.8584224999999996,
+          "cable_tension_N": 126.684225,
+          "power_W": 61.41470821745836,
+          "actuator_work_exact_J": 5.507768776245539
+        },
+        {
+          "time_s": 0.24,
+          "height_m": 0.04662558719999999,
+          "velocity_m_per_s": 0.49904640000000006,
+          "acceleration_m_per_s2": 2.845439999999999,
+          "cable_tension_N": 126.55439999999999,
+          "power_W": 63.156517724160004,
+          "actuator_work_exact_J": 5.8192066510848
+        },
+        {
+          "time_s": 0.245,
+          "height_m": 0.04915632577187499,
+          "velocity_m_per_s": 0.513236259375,
+          "acceleration_m_per_s2": 2.8301175,
+          "cable_tension_N": 126.40117500000001,
+          "power_W": 64.87366623760477,
+          "actuator_work_exact_J": 6.139292847907148
+        },
+        {
+          "time_s": 0.25,
+          "height_m": 0.0517578125,
+          "velocity_m_per_s": 0.52734375,
+          "acceleration_m_per_s2": 2.8125,
+          "cable_tension_N": 126.22500000000001,
+          "power_W": 66.56396484375,
+          "actuator_work_exact_J": 6.467898559570313
+        },
+        {
+          "time_s": 0.255,
+          "height_m": 0.05442960704062502,
+          "velocity_m_per_s": 0.5413575093749999,
+          "acceleration_m_per_s2": 2.7926325000000007,
+          "cable_tension_N": 126.02632500000001,
+          "power_W": 68.2252974176843,
+          "actuator_work_exact_J": 6.804884215468831
+        },
+        {
+          "time_s": 0.26,
+          "height_m": 0.05717121280000001,
+          "velocity_m_per_s": 0.5552663999999999,
+          "acceleration_m_per_s2": 2.7705600000000006,
+          "cable_tension_N": 125.80560000000003,
+          "power_W": 69.85562261184,
+          "actuator_work_exact_J": 7.150099850524801
+        },
+        {
+          "time_s": 0.265,
+          "height_m": 0.059982078059375,
+          "velocity_m_per_s": 0.5690595093750002,
+          "acceleration_m_per_s2": 2.7463274999999996,
+          "cable_tension_N": 125.563275,
+          "power_W": 71.45297566701822,
+          "actuator_work_exact_J": 7.503385483675268
+        },
+        {
+          "time_s": 0.27,
+          "height_m": 0.06286159710000001,
+          "velocity_m_per_s": 0.58272615,
+          "acceleration_m_per_s2": 2.7199800000000005,
+          "cable_tension_N": 125.29980000000002,
+          "power_W": 73.01547004977002,
+          "actuator_work_exact_J": 7.864571504979114
+        },
+        {
+          "time_s": 0.275,
+          "height_m": 0.06580911132812503,
+          "velocity_m_per_s": 0.5962558593749999,
+          "acceleration_m_per_s2": 2.691562499999999,
+          "cable_tension_N": 125.01562499999999,
+          "power_W": 74.54129891967771,
+          "actuator_work_exact_J": 8.233479070484165
+        },
+        {
+          "time_s": 0.28,
+          "height_m": 0.06882391040000001,
+          "velocity_m_per_s": 0.6096384,
+          "acceleration_m_per_s2": 2.6611199999999995,
+          "cable_tension_N": 124.71119999999999,
+          "power_W": 76.02873643008,
+          "actuator_work_exact_J": 8.609920504012802
+        },
+        {
+          "time_s": 0.285,
+          "height_m": 0.07190523334687499,
+          "velocity_m_per_s": 0.6228637593750002,
+          "acceleration_m_per_s2": 2.6286974999999995,
+          "cable_tension_N": 124.386975,
+          "power_W": 77.47613886578416,
+          "actuator_work_exact_J": 8.993699705042227
+        },
+        {
+          "time_s": 0.29,
+          "height_m": 0.07505226969999998,
+          "velocity_m_per_s": 0.63592215,
+          "acceleration_m_per_s2": 2.59434,
+          "cable_tension_N": 124.04340000000002,
+          "power_W": 78.88194562131001,
+          "actuator_work_exact_J": 9.38461256187311
+        },
+        {
+          "time_s": 0.295,
+          "height_m": 0.07826416061562501,
+          "velocity_m_per_s": 0.6488040093749999,
+          "acceleration_m_per_s2": 2.5580925000000003,
+          "cable_tension_N": 123.68092500000002,
+          "power_W": 80.24468002320867,
+          "actuator_work_exact_J": 9.78244736929819
+        },
+        {
+          "time_s": 0.3,
+          "height_m": 0.08153999999999997,
+          "velocity_m_per_s": 0.6615,
+          "acceleration_m_per_s2": 2.52,
+          "cable_tension_N": 123.3,
+          "power_W": 81.56295,
+          "actuator_work_exact_J": 10.18698525
+        },
+        {
+          "time_s": 0.305,
+          "height_m": 0.084878835634375,
+          "velocity_m_per_s": 0.674001009375,
+          "acceleration_m_per_s2": 2.480107500000001,
+          "cable_tension_N": 122.90107500000002,
+          "power_W": 82.83544860327258,
+          "actuator_work_exact_J": 10.598000578924783
+        },
+        {
+          "time_s": 0.31,
+          "height_m": 0.0882796703,
+          "velocity_m_per_s": 0.68629815,
+          "acceleration_m_per_s2": 2.4384599999999996,
+          "cable_tension_N": 122.4846,
+          "power_W": 84.06095438349,
+          "actuator_work_exact_J": 11.015261409897112
+        },
+        {
+          "time_s": 0.315,
+          "height_m": 0.09174146290312499,
+          "velocity_m_per_s": 0.6983827593749999,
+          "acceleration_m_per_s2": 2.3951024999999984,
+          "cable_tension_N": 122.05102499999998,
+          "power_W": 85.23833162404709,
+          "actuator_work_exact_J": 11.438529903757757
+        },
+        {
+          "time_s": 0.32,
+          "height_m": 0.09526312960000005,
+          "velocity_m_per_s": 0.7102463999999999,
+          "acceleration_m_per_s2": 2.350079999999999,
+          "cable_tension_N": 121.60079999999999,
+          "power_W": 86.36653043711999,
+          "actuator_work_exact_J": 11.867562757324805
+        },
+        {
+          "time_s": 0.325,
+          "height_m": 0.09884354492187497,
+          "velocity_m_per_s": 0.7218808593750001,
+          "acceleration_m_per_s2": 2.3034374999999985,
+          "cable_tension_N": 121.134375,
+          "power_W": 87.44458672485354,
+          "actuator_work_exact_J": 12.30211163249588
+        },
+        {
+          "time_s": 0.33,
+          "height_m": 0.1024815429,
+          "velocity_m_per_s": 0.7332781500000001,
+          "acceleration_m_per_s2": 2.2552200000000004,
+          "cable_tension_N": 120.6522,
+          "power_W": 88.47162200943,
+          "actuator_work_exact_J": 12.741923584827115
+        },
+        {
+          "time_s": 0.335,
+          "height_m": 0.10617591819062502,
+          "velocity_m_per_s": 0.7444305093750001,
+          "acceleration_m_per_s2": 2.2054724999999986,
+          "cable_tension_N": 120.154725,
+          "power_W": 89.44684313556306,
+          "actuator_work_exact_J": 13.186741490941927
+        },
+        {
+          "time_s": 0.34,
+          "height_m": 0.1099254272,
+          "velocity_m_per_s": 0.7553304000000003,
+          "acceleration_m_per_s2": 2.1542399999999997,
+          "cable_tension_N": 119.64240000000001,
+          "power_W": 90.36954184896004,
+          "actuator_work_exact_J": 13.636304474140804
+        },
+        {
+          "time_s": 0.345,
+          "height_m": 0.113728789209375,
+          "velocity_m_per_s": 0.765970509375,
+          "acceleration_m_per_s2": 2.1015675000000016,
+          "cable_tension_N": 119.11567500000002,
+          "power_W": 91.23909425429697,
+          "actuator_work_exact_J": 14.090348327600674
+        },
+        {
+          "time_s": 0.35,
+          "height_m": 0.11758468749999998,
+          "velocity_m_per_s": 0.77634375,
+          "acceleration_m_per_s2": 2.0475000000000008,
+          "cable_tension_N": 118.57500000000002,
+          "power_W": 92.05496015625002,
+          "actuator_work_exact_J": 14.548605934570313
+        },
+        {
+          "time_s": 0.355,
+          "height_m": 0.12149177047812496,
+          "velocity_m_per_s": 0.7864432593750001,
+          "acceleration_m_per_s2": 1.9920824999999982,
+          "cable_tension_N": 118.02082499999999,
+          "power_W": 92.8166822871265,
+          "actuator_work_exact_J": 15.010807684985927
+        },
+        {
+          "time_s": 0.36,
+          "height_m": 0.1254486528,
+          "velocity_m_per_s": 0.7962624,
+          "acceleration_m_per_s2": 1.9353599999999989,
+          "cable_tension_N": 117.4536,
+          "power_W": 93.52388542464,
+          "actuator_work_exact_J": 15.476681887948802
+        },
+        {
+          "time_s": 0.365,
+          "height_m": 0.129453916496875,
+          "velocity_m_per_s": 0.8057947593749999,
+          "acceleration_m_per_s2": 1.877377500000001,
+          "cable_tension_N": 116.87377500000002,
+          "power_W": 94.1762754033729,
+          "actuator_work_exact_J": 15.945955179524507
+        },
+        {
+          "time_s": 0.37,
+          "height_m": 0.1335061121,
+          "velocity_m_per_s": 0.81503415,
+          "acceleration_m_per_s2": 1.81818,
+          "cable_tension_N": 116.2818,
+          "power_W": 94.77363802347,
+          "actuator_work_exact_J": 16.418352925341114
+        },
+        {
+          "time_s": 0.375,
+          "height_m": 0.137603759765625,
+          "velocity_m_per_s": 0.823974609375,
+          "acceleration_m_per_s2": 1.7578125,
+          "cable_tension_N": 115.67812500000001,
+          "power_W": 95.31583786010742,
+          "actuator_work_exact_J": 16.893599617481232
+        },
+        {
+          "time_s": 0.38,
+          "height_m": 0.14174535040000005,
+          "velocity_m_per_s": 0.8326103999999999,
+          "acceleration_m_per_s2": 1.69632,
+          "cable_tension_N": 115.06320000000001,
+          "power_W": 95.80281697727999,
+          "actuator_work_exact_J": 17.371419265180805
+        },
+        {
+          "time_s": 0.385,
+          "height_m": 0.145929346784375,
+          "velocity_m_per_s": 0.8409360093749999,
+          "acceleration_m_per_s2": 1.6337475000000015,
+          "cable_tension_N": 114.43747500000002,
+          "power_W": 96.23459354945133,
+          "actuator_work_exact_J": 17.85153577886494
+        },
+        {
+          "time_s": 0.39,
+          "height_m": 0.15015418469999997,
+          "velocity_m_per_s": 0.8489461500000003,
+          "acceleration_m_per_s2": 1.5701399999999994,
+          "cable_tension_N": 113.8014,
+          "power_W": 96.61126039461003,
+          "actuator_work_exact_J": 18.333673347069112
+        },
+        {
+          "time_s": 0.395,
+          "height_m": 0.15441827405312503,
+          "velocity_m_per_s": 0.8566357593750002,
+          "acceleration_m_per_s2": 1.505542499999999,
+          "cable_tension_N": 113.155425,
+          "power_W": 96.93298342227588,
+          "actuator_work_exact_J": 18.817556805811485
+        },
+        {
+          "time_s": 0.4,
+          "height_m": 0.15872000000000003,
+          "velocity_m_per_s": 0.8640000000000001,
+          "acceleration_m_per_s2": 1.4399999999999986,
+          "cable_tension_N": 112.5,
+          "power_W": 97.20000000000002,
+          "actuator_work_exact_J": 19.302912000000006
+        },
+        {
+          "time_s": 0.405,
+          "height_m": 0.163057724071875,
+          "velocity_m_per_s": 0.8710342593750003,
+          "acceleration_m_per_s2": 1.3735574999999973,
+          "cable_tension_N": 111.83557499999998,
+          "power_W": 97.41261724190228,
+          "actuator_work_exact_J": 19.789466136475713
+        },
+        {
+          "time_s": 0.41,
+          "height_m": 0.16742978529999997,
+          "velocity_m_per_s": 0.8777341500000001,
+          "acceleration_m_per_s2": 1.30626,
+          "cable_tension_N": 111.1626,
+          "power_W": 97.57121022279001,
+          "actuator_work_exact_J": 20.27694812831111
+        },
+        {
+          "time_s": 0.415,
+          "height_m": 0.171834501340625,
+          "velocity_m_per_s": 0.884095509375,
+          "acceleration_m_per_s2": 1.238152499999999,
+          "cable_tension_N": 110.481525,
+          "power_W": 97.6762201214018,
+          "actuator_work_exact_J": 20.765088930000516
+        },
+        {
+          "time_s": 0.42,
+          "height_m": 0.17627016959999994,
+          "velocity_m_per_s": 0.8901143999999996,
+          "acceleration_m_per_s2": 1.1692800000000014,
+          "cable_tension_N": 109.79280000000003,
+          "power_W": 97.72815229631999,
+          "actuator_work_exact_J": 21.253621863196795
+        },
+        {
+          "time_s": 0.425,
+          "height_m": 0.180735068359375,
+          "velocity_m_per_s": 0.8957871093749998,
+          "acceleration_m_per_s2": 1.0996875000000017,
+          "cable_tension_N": 109.09687500000003,
+          "power_W": 97.7275742980957,
+          "actuator_work_exact_J": 21.74228293266678
+        },
+        {
+          "time_s": 0.43,
+          "height_m": 0.1852274579,
+          "velocity_m_per_s": 0.9011101499999999,
+          "acceleration_m_per_s2": 1.0294200000000018,
+          "cable_tension_N": 108.39420000000003,
+          "power_W": 97.67511382113001,
+          "actuator_work_exact_J": 22.230811132155115
+        },
+        {
+          "time_s": 0.435,
+          "height_m": 0.189745581628125,
+          "velocity_m_per_s": 0.9060802593750001,
+          "acceleration_m_per_s2": 0.9585225000000017,
+          "cable_tension_N": 107.68522500000003,
+          "power_W": 97.57145659885528,
+          "actuator_work_exact_J": 22.718948739864402
+        },
+        {
+          "time_s": 0.44,
+          "height_m": 0.19428766719999996,
+          "velocity_m_per_s": 0.9106943999999999,
+          "acceleration_m_per_s2": 0.8870399999999998,
+          "cable_tension_N": 106.97040000000001,
+          "power_W": 97.41734424576,
+          "actuator_work_exact_J": 23.206441603276797
+        },
+        {
+          "time_s": 0.445,
+          "height_m": 0.19885192764687504,
+          "velocity_m_per_s": 0.914949759375,
+          "acceleration_m_per_s2": 0.8150174999999997,
+          "cable_tension_N": 106.250175,
+          "power_W": 97.21357204980164,
+          "actuator_work_exact_J": 23.693039413060298
+        },
+        {
+          "time_s": 0.45,
+          "height_m": 0.20343656250000008,
+          "velocity_m_per_s": 0.9188437499999995,
+          "acceleration_m_per_s2": 0.7424999999999997,
+          "cable_tension_N": 105.525,
+          "power_W": 96.96098671874995,
+          "actuator_work_exact_J": 24.178495965820318
+        },
+        {
+          "time_s": 0.455,
+          "height_m": 0.208039758915625,
+          "velocity_m_per_s": 0.9223740093750004,
+          "acceleration_m_per_s2": 0.6695324999999981,
+          "cable_tension_N": 104.79532499999998,
+          "power_W": 96.66048408400619,
+          "actuator_work_exact_J": 24.66256941547538
+        },
+        {
+          "time_s": 0.46,
+          "height_m": 0.21265969279999997,
+          "velocity_m_per_s": 0.9255384000000004,
+          "acceleration_m_per_s2": 0.5961600000000002,
+          "cable_tension_N": 104.0616,
+          "power_W": 96.31300676544004,
+          "actuator_work_exact_J": 25.145022513052805
+        },
+        {
+          "time_s": 0.465,
+          "height_m": 0.21729452993437498,
+          "velocity_m_per_s": 0.928335009375,
+          "acceleration_m_per_s2": 0.5224275,
+          "cable_tension_N": 103.32427500000001,
+          "power_W": 95.9195418007901,
+          "actuator_work_exact_J": 25.62562283471859
+        },
+        {
+          "time_s": 0.47,
+          "height_m": 0.22194242709999995,
+          "velocity_m_per_s": 0.9307621500000002,
+          "acceleration_m_per_s2": 0.44837999999999845,
+          "cable_tension_N": 102.5838,
+          "power_W": 95.48111824317002,
+          "actuator_work_exact_J": 26.10414299787311
+        },
+        {
+          "time_s": 0.475,
+          "height_m": 0.22660153320312493,
+          "velocity_m_per_s": 0.9328183593750001,
+          "acceleration_m_per_s2": 0.37406250000000085,
+          "cable_tension_N": 101.84062500000002,
+          "power_W": 94.99880473022463,
+          "actuator_work_exact_J": 26.58036086516189
+        },
+        {
+          "time_s": 0.48,
+          "height_m": 0.23126999039999996,
+          "velocity_m_per_s": 0.9345024000000004,
+          "acceleration_m_per_s2": 0.2995199999999967,
+          "cable_tension_N": 101.09519999999996,
+          "power_W": 94.47370702848,
+          "actuator_work_exact_J": 27.0540597362688
+        },
+        {
+          "time_s": 0.485,
+          "height_m": 0.23594593522187501,
+          "velocity_m_per_s": 0.9358132593750002,
+          "acceleration_m_per_s2": 0.22479749999999932,
+          "cable_tension_N": 100.34797499999999,
+          "power_W": 93.90696555643102,
+          "actuator_work_exact_J": 27.525028527376247
+        },
+        {
+          "time_s": 0.49,
+          "height_m": 0.24062749969999994,
+          "velocity_m_per_s": 0.9367501499999997,
+          "acceleration_m_per_s2": 0.14994000000000085,
+          "cable_tension_N": 99.59940000000002,
+          "power_W": 93.29975288990998,
+          "actuator_work_exact_J": 27.99306193819511
+        },
+        {
+          "time_s": 0.495,
+          "height_m": 0.245312812490625,
+          "velocity_m_per_s": 0.9373125093749999,
+          "acceleration_m_per_s2": 0.07499249999999869,
+          "cable_tension_N": 98.84992499999998,
+          "power_W": 92.65327125328052,
+          "actuator_work_exact_J": 28.457960606484612
+        },
+        {
+          "time_s": 0.5,
+          "height_m": 0.25,
+          "velocity_m_per_s": 0.9375,
+          "acceleration_m_per_s2": 0.0,
+          "cable_tension_N": 98.10000000000001,
+          "power_W": 91.96875000000001,
+          "actuator_work_exact_J": 28.919531250000002
+        },
+        {
+          "time_s": 0.505,
+          "height_m": 0.254687187509375,
+          "velocity_m_per_s": 0.9373125093749997,
+          "acceleration_m_per_s2": -0.0749924999999978,
+          "cable_tension_N": 97.35007500000002,
+          "power_W": 91.24744308609444,
+          "actuator_work_exact_J": 29.377586795823987
+        },
+        {
+          "time_s": 0.51,
+          "height_m": 0.25937250030000014,
+          "velocity_m_per_s": 0.9367501499999995,
+          "acceleration_m_per_s2": -0.1499399999999973,
+          "cable_tension_N": 96.60060000000003,
+          "power_W": 90.49062654008998,
+          "actuator_work_exact_J": 29.831946497055124
+        },
+        {
+          "time_s": 0.515,
+          "height_m": 0.26405406477812493,
+          "velocity_m_per_s": 0.9358132593749999,
+          "acceleration_m_per_s2": -0.22479749999999754,
+          "cable_tension_N": 95.85202500000003,
+          "power_W": 89.699595932944,
+          "actuator_work_exact_J": 30.28243603684436
+        },
+        {
+          "time_s": 0.52,
+          "height_m": 0.26873000960000004,
+          "velocity_m_per_s": 0.9345023999999995,
+          "acceleration_m_per_s2": -0.29951999999999934,
+          "cable_tension_N": 95.10480000000001,
+          "power_W": 88.87566385151996,
+          "actuator_work_exact_J": 30.728887619788804
+        },
+        {
+          "time_s": 0.525,
+          "height_m": 0.2733984667968751,
+          "velocity_m_per_s": 0.9328183593749999,
+          "acceleration_m_per_s2": -0.37406250000000085,
+          "cable_tension_N": 94.359375,
+          "power_W": 88.02015737915038,
+          "actuator_work_exact_J": 31.171140050708782
+        },
+        {
+          "time_s": 0.53,
+          "height_m": 0.2780575729,
+          "velocity_m_per_s": 0.930762150000001,
+          "acceleration_m_per_s2": -0.448380000000002,
+          "cable_tension_N": 93.61619999999999,
+          "power_W": 87.13441558683009,
+          "actuator_work_exact_J": 31.609038800853124
+        },
+        {
+          "time_s": 0.535,
+          "height_m": 0.282705470065625,
+          "velocity_m_per_s": 0.9283350093749998,
+          "acceleration_m_per_s2": -0.5224274999999974,
+          "cable_tension_N": 92.87572500000003,
+          "power_W": 86.21978703858493,
+          "actuator_work_exact_J": 32.04243606159422
+        },
+        {
+          "time_s": 0.54,
+          "height_m": 0.2873403072000001,
+          "velocity_m_per_s": 0.9255384000000002,
+          "acceleration_m_per_s2": -0.5961599999999994,
+          "cable_tension_N": 92.13840000000002,
+          "power_W": 85.27762731456004,
+          "actuator_work_exact_J": 32.47119078569281
+        },
+        {
+          "time_s": 0.545,
+          "height_m": 0.2919602410843749,
+          "velocity_m_per_s": 0.9223740093750006,
+          "acceleration_m_per_s2": -0.6695325000000008,
+          "cable_tension_N": 91.404675,
+          "power_W": 84.30929655536887,
+          "actuator_work_exact_J": 32.89516871622975
+        },
+        {
+          "time_s": 0.55,
+          "height_m": 0.29656343750000014,
+          "velocity_m_per_s": 0.9188437499999991,
+          "acceleration_m_per_s2": -0.7425000000000015,
+          "cable_tension_N": 90.67499999999998,
+          "power_W": 83.3161570312499,
+          "actuator_work_exact_J": 33.31424240332032
+        },
+        {
+          "time_s": 0.555,
+          "height_m": 0.301148072353125,
+          "velocity_m_per_s": 0.9149497593750002,
+          "acceleration_m_per_s2": -0.8150175000000015,
+          "cable_tension_N": 89.94982499999999,
+          "power_W": 82.29957073957337,
+          "actuator_work_exact_J": 33.72829120874342
+        },
+        {
+          "time_s": 0.56,
+          "height_m": 0.30571233279999993,
+          "velocity_m_per_s": 0.9106944000000001,
+          "acceleration_m_per_s2": -0.8870400000000007,
+          "cable_tension_N": 89.2296,
+          "power_W": 81.26089703424002,
+          "actuator_work_exact_J": 34.137201298636796
+        },
+        {
+          "time_s": 0.565,
+          "height_m": 0.31025441837187495,
+          "velocity_m_per_s": 0.906080259374999,
+          "acceleration_m_per_s2": -0.9585224999999973,
+          "cable_tension_N": 88.51477500000003,
+          "power_W": 80.2014902905197,
+          "actuator_work_exact_J": 34.54086562442626
+        },
+        {
+          "time_s": 0.57,
+          "height_m": 0.3147725420999999,
+          "velocity_m_per_s": 0.9011101500000012,
+          "acceleration_m_per_s2": -1.0294200000000018,
+          "cable_tension_N": 87.80579999999999,
+          "power_W": 79.1226976088701,
+          "actuator_work_exact_J": 34.939183892175116
+        },
+        {
+          "time_s": 0.575,
+          "height_m": 0.31926493164062514,
+          "velocity_m_per_s": 0.8957871093750001,
+          "acceleration_m_per_s2": -1.0996874999999964,
+          "cable_tension_N": 87.10312500000003,
+          "power_W": 78.02585656127933,
+          "actuator_work_exact_J": 35.33206252055742
+        },
+        {
+          "time_s": 0.58,
+          "height_m": 0.3237298303999999,
+          "velocity_m_per_s": 0.8901144000000003,
+          "acceleration_m_per_s2": -1.1692800000000005,
+          "cable_tension_N": 86.4072,
+          "power_W": 76.91229298368003,
+          "actuator_work_exact_J": 35.719414587676795
+        },
+        {
+          "time_s": 0.585,
+          "height_m": 0.32816549865937494,
+          "velocity_m_per_s": 0.8840955093749998,
+          "acceleration_m_per_s2": -1.2381525,
+          "cable_tension_N": 85.71847500000001,
+          "power_W": 75.7833188179732,
+          "actuator_work_exact_J": 36.101159766969886
+        },
+        {
+          "time_s": 0.59,
+          "height_m": 0.3325702147000001,
+          "velocity_m_per_s": 0.8777341499999995,
+          "acceleration_m_per_s2": -1.3062599999999982,
+          "cable_tension_N": 85.03740000000002,
+          "power_W": 74.64023000720998,
+          "actuator_work_exact_J": 36.47722425245112
+        },
+        {
+          "time_s": 0.595,
+          "height_m": 0.33694227592812487,
+          "velocity_m_per_s": 0.8710342593749998,
+          "acceleration_m_per_s2": -1.3735575000000022,
+          "cable_tension_N": 84.36442499999998,
+          "power_W": 73.4843044474727,
+          "actuator_work_exact_J": 36.847540673573825
+        },
+        {
+          "time_s": 0.6,
+          "height_m": 0.3412799999999998,
+          "velocity_m_per_s": 0.8640000000000008,
+          "acceleration_m_per_s2": -1.4400000000000013,
+          "cable_tension_N": 83.69999999999999,
+          "power_W": 72.31680000000006,
+          "actuator_work_exact_J": 37.212047999999996
+        },
+        {
+          "time_s": 0.605,
+          "height_m": 0.34558172594687486,
+          "velocity_m_per_s": 0.856635759375,
+          "acceleration_m_per_s2": -1.5055425000000024,
+          "cable_tension_N": 83.04457499999998,
+          "power_W": 71.13895256709912,
+          "actuator_work_exact_J": 37.57069143658834
+        },
+        {
+          "time_s": 0.61,
+          "height_m": 0.34984581530000003,
+          "velocity_m_per_s": 0.8489461499999997,
+          "acceleration_m_per_s2": -1.5701399999999968,
+          "cable_tension_N": 82.39860000000004,
+          "power_W": 69.95197423539001,
+          "actuator_work_exact_J": 37.92342230892911
+        },
+        {
+          "time_s": 0.615,
+          "height_m": 0.35407065321562475,
+          "velocity_m_per_s": 0.8409360093750005,
+          "acceleration_m_per_s2": -1.633747500000002,
+          "cable_tension_N": 81.76252499999998,
+          "power_W": 68.7570514899237,
+          "actuator_work_exact_J": 38.27019793977055
+        },
+        {
+          "time_s": 0.62,
+          "height_m": 0.3582546496000001,
+          "velocity_m_per_s": 0.8326104000000005,
+          "acceleration_m_per_s2": -1.6963200000000036,
+          "cable_tension_N": 81.13679999999997,
+          "power_W": 67.55534350272002,
+          "actuator_work_exact_J": 38.61098151670082
+        },
+        {
+          "time_s": 0.625,
+          "height_m": 0.362396240234375,
+          "velocity_m_per_s": 0.823974609375,
+          "acceleration_m_per_s2": -1.7578125,
+          "cable_tension_N": 80.52187500000001,
+          "power_W": 66.34798049926758,
+          "actuator_work_exact_J": 38.94574195146561
+        },
+        {
+          "time_s": 0.63,
+          "height_m": 0.3664938878999999,
+          "velocity_m_per_s": 0.8150341499999993,
+          "acceleration_m_per_s2": -1.8181800000000035,
+          "cable_tension_N": 79.91819999999997,
+          "power_W": 65.13606220652993,
+          "actuator_work_exact_J": 39.2744537313211
+        },
+        {
+          "time_s": 0.635,
+          "height_m": 0.3705460835031252,
+          "velocity_m_per_s": 0.8057947593749994,
+          "acceleration_m_per_s2": -1.877377499999998,
+          "cable_tension_N": 79.32622500000002,
+          "power_W": 63.920656386002086,
+          "actuator_work_exact_J": 39.597096762837644
+        },
+        {
+          "time_s": 0.64,
+          "height_m": 0.37455134720000044,
+          "velocity_m_per_s": 0.7962623999999989,
+          "acceleration_m_per_s2": -1.9353600000000029,
+          "cable_tension_N": 78.74639999999998,
+          "power_W": 62.7027974553599,
+          "actuator_work_exact_J": 39.91365620858883
+        },
+        {
+          "time_s": 0.645,
+          "height_m": 0.378508229521875,
+          "velocity_m_per_s": 0.7864432593749999,
+          "acceleration_m_per_s2": -1.9920824999999986,
+          "cable_tension_N": 78.17917500000001,
+          "power_W": 61.483485202248524,
+          "actuator_work_exact_J": 40.22412231717781
+        },
+        {
+          "time_s": 0.65,
+          "height_m": 0.38241531249999966,
+          "velocity_m_per_s": 0.7763437500000014,
+          "acceleration_m_per_s2": -2.0475000000000065,
+          "cable_tension_N": 77.62499999999994,
+          "power_W": 60.263683593750066,
+          "actuator_work_exact_J": 40.528490247070295
+        },
+        {
+          "time_s": 0.655,
+          "height_m": 0.3862712107906248,
+          "velocity_m_per_s": 0.7659705093750016,
+          "acceleration_m_per_s2": -2.1015675000000016,
+          "cable_tension_N": 77.08432499999999,
+          "power_W": 59.04431968507816,
+          "actuator_work_exact_J": 40.8267598847213
+        },
+        {
+          "time_s": 0.66,
+          "height_m": 0.3900745728,
+          "velocity_m_per_s": 0.7553304000000001,
+          "acceleration_m_per_s2": -2.154239999999998,
+          "cable_tension_N": 76.55760000000002,
+          "power_W": 57.82628263104002,
+          "actuator_work_exact_J": 41.118935657500806
+        },
+        {
+          "time_s": 0.665,
+          "height_m": 0.3938240818093752,
+          "velocity_m_per_s": 0.7444305093749999,
+          "acceleration_m_per_s2": -2.205472499999999,
+          "cable_tension_N": 76.04527500000002,
+          "power_W": 56.61042280381196,
+          "actuator_work_exact_J": 41.40502634194132
+        },
+        {
+          "time_s": 0.67,
+          "height_m": 0.39751845710000006,
+          "velocity_m_per_s": 0.7332781499999999,
+          "acceleration_m_per_s2": -2.255220000000005,
+          "cable_tension_N": 75.54779999999995,
+          "power_W": 55.397551020569956,
+          "actuator_work_exact_J": 41.68504486784712
+        },
+        {
+          "time_s": 0.675,
+          "height_m": 0.4011564550781249,
+          "velocity_m_per_s": 0.7218808593749997,
+          "acceleration_m_per_s2": -2.3034375000000047,
+          "cable_tension_N": 75.06562499999995,
+          "power_W": 54.18843788452143,
+          "actuator_work_exact_J": 41.959008118824
+        },
+        {
+          "time_s": 0.68,
+          "height_m": 0.40473687039999967,
+          "velocity_m_per_s": 0.7102464000000017,
+          "acceleration_m_per_s2": -2.350080000000002,
+          "cable_tension_N": 74.59919999999998,
+          "power_W": 52.98381324288012,
+          "actuator_work_exact_J": 42.226936729804784
+        },
+        {
+          "time_s": 0.685,
+          "height_m": 0.4082585370968751,
+          "velocity_m_per_s": 0.6983827593749998,
+          "acceleration_m_per_s2": -2.3951025,
+          "cable_tension_N": 74.14897500000001,
+          "power_W": 51.784365765327884,
+          "actuator_work_exact_J": 42.488854882164645
+        },
+        {
+          "time_s": 0.69,
+          "height_m": 0.41172032970000016,
+          "velocity_m_per_s": 0.6862981500000003,
+          "acceleration_m_per_s2": -2.4384599999999956,
+          "cable_tension_N": 73.71540000000005,
+          "power_W": 50.59074264651005,
+          "actuator_work_exact_J": 42.74479009703714
+        },
+        {
+          "time_s": 0.695,
+          "height_m": 0.4151211643656249,
+          "velocity_m_per_s": 0.6740010093750008,
+          "acceleration_m_per_s2": -2.4801075000000026,
+          "cable_tension_N": 73.29892499999998,
+          "power_W": 49.40354943610247,
+          "actuator_work_exact_J": 42.994773027460404
+        },
+        {
+          "time_s": 0.7,
+          "height_m": 0.41845999999999983,
+          "velocity_m_per_s": 0.6615000000000006,
+          "acceleration_m_per_s2": -2.5199999999999996,
+          "cable_tension_N": 72.9,
+          "power_W": 48.22335000000005,
+          "actuator_work_exact_J": 43.238837249999996
+        },
+        {
+          "time_s": 0.705,
+          "height_m": 0.4217358393843752,
+          "velocity_m_per_s": 0.6488040093749996,
+          "acceleration_m_per_s2": -2.558092499999997,
+          "cable_tension_N": 72.51907500000003,
+          "power_W": 47.05066661616632,
+          "actuator_work_exact_J": 43.47701905651258
+        },
+        {
+          "time_s": 0.71,
+          "height_m": 0.42494773029999977,
+          "velocity_m_per_s": 0.6359221500000007,
+          "acceleration_m_per_s2": -2.594340000000006,
+          "cable_tension_N": 72.15659999999994,
+          "power_W": 45.885980208690015,
+          "actuator_work_exact_J": 43.7093572467331
+        },
+        {
+          "time_s": 0.715,
+          "height_m": 0.42809476665312496,
+          "velocity_m_per_s": 0.6228637593750008,
+          "acceleration_m_per_s2": -2.6286974999999977,
+          "cable_tension_N": 71.81302500000002,
+          "power_W": 44.72973072359093,
+          "actuator_work_exact_J": 43.93589292238536
+        },
+        {
+          "time_s": 0.72,
+          "height_m": 0.4311760896000002,
+          "velocity_m_per_s": 0.6096384000000006,
+          "acceleration_m_per_s2": -2.661120000000004,
+          "cable_tension_N": 71.48879999999997,
+          "power_W": 43.58231764992002,
+          "actuator_work_exact_J": 44.15666928353282
+        },
+        {
+          "time_s": 0.725,
+          "height_m": 0.43419088867187494,
+          "velocity_m_per_s": 0.5962558593750007,
+          "acceleration_m_per_s2": -2.6915625,
+          "cable_tension_N": 71.184375,
+          "power_W": 42.444100689697315,
+          "actuator_work_exact_J": 44.37173142790604
+        },
+        {
+          "time_s": 0.73,
+          "height_m": 0.43713840290000006,
+          "velocity_m_per_s": 0.58272615,
+          "acceleration_m_per_s2": -2.719979999999996,
+          "cable_tension_N": 70.90020000000004,
+          "power_W": 41.315400580230026,
+          "actuator_work_exact_J": 44.581126153959126
+        },
+        {
+          "time_s": 0.735,
+          "height_m": 0.44001792194062506,
+          "velocity_m_per_s": 0.5690595093750002,
+          "acceleration_m_per_s2": -2.7463274999999996,
+          "cable_tension_N": 70.63672500000001,
+          "power_W": 40.19650007235681,
+          "actuator_work_exact_J": 44.784901768425904
+        },
+        {
+          "time_s": 0.74,
+          "height_m": 0.44282878719999996,
+          "velocity_m_per_s": 0.5552663999999998,
+          "acceleration_m_per_s2": -2.7705599999999997,
+          "cable_tension_N": 70.3944,
+          "power_W": 39.08764506815999,
+          "actuator_work_exact_J": 44.98310789916479
+        },
+        {
+          "time_s": 0.745,
+          "height_m": 0.4455703929593753,
+          "velocity_m_per_s": 0.5413575093749996,
+          "acceleration_m_per_s2": -2.7926325,
+          "cable_tension_N": 70.173675,
+          "power_W": 37.989045921690675,
+          "actuator_work_exact_J": 45.17579531409823
+        },
+        {
+          "time_s": 0.75,
+          "height_m": 0.4482421875,
+          "velocity_m_per_s": 0.52734375,
+          "acceleration_m_per_s2": -2.8125,
+          "cable_tension_N": 69.97500000000001,
+          "power_W": 36.90087890625001,
+          "actuator_work_exact_J": 45.363015747070314
+        },
+        {
+          "time_s": 0.755,
+          "height_m": 0.450843674228125,
+          "velocity_m_per_s": 0.5132362593750015,
+          "acceleration_m_per_s2": -2.8301175000000036,
+          "cable_tension_N": 69.79882499999997,
+          "power_W": 35.823287851770324,
+          "actuator_work_exact_J": 45.544821731465284
+        },
+        {
+          "time_s": 0.76,
+          "height_m": 0.45337441280000035,
+          "velocity_m_per_s": 0.4990463999999992,
+          "acceleration_m_per_s2": -2.84544,
+          "cable_tension_N": 69.6456,
+          "power_W": 34.756385955839946,
+          "actuator_work_exact_J": 45.72126644244483
+        },
+        {
+          "time_s": 0.765,
+          "height_m": 0.4558340202468749,
+          "velocity_m_per_s": 0.4847857593750007,
+          "acceleration_m_per_s2": -2.858422500000003,
+          "cable_tension_N": 69.51577499999998,
+          "power_W": 33.700257771916675,
+          "actuator_work_exact_J": 45.89240354868241
+        },
+        {
+          "time_s": 0.77,
+          "height_m": 0.45822217209999994,
+          "velocity_m_per_s": 0.47046615,
+          "acceleration_m_per_s2": -2.8690199999999955,
+          "cable_tension_N": 69.40980000000005,
+          "power_W": 32.65496137827002,
+          "actuator_work_exact_J": 46.05828707448911
+        },
+        {
+          "time_s": 0.775,
+          "height_m": 0.46053860351562514,
+          "velocity_m_per_s": 0.4560996093749985,
+          "acceleration_m_per_s2": -2.8771875000000016,
+          "cable_tension_N": 69.32812499999999,
+          "power_W": 31.62053073120106,
+          "actuator_work_exact_J": 46.218971273242964
+        },
+        {
+          "time_s": 0.78,
+          "height_m": 0.46278311039999953,
+          "velocity_m_per_s": 0.4416984000000017,
+          "acceleration_m_per_s2": -2.8828800000000037,
+          "cable_tension_N": 69.27119999999996,
+          "power_W": 30.596978206080102,
+          "actuator_work_exact_J": 46.37451051305277
+        },
+        {
+          "time_s": 0.785,
+          "height_m": 0.46495555053437476,
+          "velocity_m_per_s": 0.4272750093750002,
+          "acceleration_m_per_s2": -2.886052499999998,
+          "cable_tension_N": 69.23947500000003,
+          "power_W": 29.5842973297451,
+          "actuator_work_exact_J": 46.5249591756042
+        },
+        {
+          "time_s": 0.7886751345948128,
+          "height_m": 0.4665063509461096,
+          "velocity_m_per_s": 0.41666666666666785,
+          "acceleration_m_per_s2": -2.8867513459481273,
+          "cable_tension_N": 69.23248654051874,
+          "power_W": 28.846869391882887,
+          "actuator_work_exact_J": 46.63232858336891
+        },
+        {
+          "time_s": 0.79,
+          "height_m": 0.46705584470000017,
+          "velocity_m_per_s": 0.41284215000000124,
+          "acceleration_m_per_s2": -2.886660000000006,
+          "cable_tension_N": 69.23339999999995,
+          "power_W": 28.582465707810062,
+          "actuator_work_exact_J": 46.67037156915313
+        },
+        {
+          "time_s": 0.795,
+          "height_m": 0.46908397780312516,
+          "velocity_m_per_s": 0.39841275937499887,
+          "acceleration_m_per_s2": -2.8846574999999994,
+          "cable_tension_N": 69.25342500000001,
+          "power_W": 27.591448150419534,
+          "actuator_work_exact_J": 46.810801856650585
+        },
+        {
+          "time_s": 0.8,
+          "height_m": 0.47104000000000024,
+          "velocity_m_per_s": 0.38399999999999945,
+          "acceleration_m_per_s2": -2.8800000000000026,
+          "cable_tension_N": 69.29999999999998,
+          "power_W": 26.611199999999954,
+          "actuator_work_exact_J": 46.946304000000026
+        },
+        {
+          "time_s": 0.805,
+          "height_m": 0.47292402782187537,
+          "velocity_m_per_s": 0.3696172593749987,
+          "acceleration_m_per_s2": -2.8726424999999978,
+          "cable_tension_N": 69.37357500000003,
+          "power_W": 25.641670664545934,
+          "actuator_work_exact_J": 47.0769317214654
+        },
+        {
+          "time_s": 0.81,
+          "height_m": 0.4747362452999997,
+          "velocity_m_per_s": 0.35527815000000196,
+          "acceleration_m_per_s2": -2.8625400000000063,
+          "cable_tension_N": 69.47459999999994,
+          "power_W": 24.682807359990115,
+          "actuator_work_exact_J": 47.20273848326709
+        },
+        {
+          "time_s": 0.815,
+          "height_m": 0.476476905090625,
+          "velocity_m_per_s": 0.34099650937500225,
+          "acceleration_m_per_s2": -2.849647500000003,
+          "cable_tension_N": 69.60352499999998,
+          "power_W": 23.734559065195697,
+          "actuator_work_exact_J": 47.32377748642
+        },
+        {
+          "time_s": 0.82,
+          "height_m": 0.4781463295999999,
+          "velocity_m_per_s": 0.32678640000000136,
+          "acceleration_m_per_s2": -2.833920000000006,
+          "cable_tension_N": 69.76079999999995,
+          "power_W": 22.796880693120077,
+          "actuator_work_exact_J": 47.4401016898848
+        },
+        {
+          "time_s": 0.825,
+          "height_m": 0.47974491210937575,
+          "velocity_m_per_s": 0.3126621093749993,
+          "acceleration_m_per_s2": -2.8153124999999974,
+          "cable_tension_N": 69.94687500000003,
+          "power_W": 21.869737481689413,
+          "actuator_work_exact_J": 47.55176385112389
+        },
+        {
+          "time_s": 0.83,
+          "height_m": 0.4812731178999998,
+          "velocity_m_per_s": 0.29863815000000127,
+          "acceleration_m_per_s2": -2.7937800000000053,
+          "cable_tension_N": 70.16219999999996,
+          "power_W": 20.953109607930077,
+          "actuator_work_exact_J": 47.6588165891671
+        },
+        {
+          "time_s": 0.835,
+          "height_m": 0.4827314853781248,
+          "velocity_m_per_s": 0.28472925937500104,
+          "acceleration_m_per_s2": -2.7692775000000083,
+          "cable_tension_N": 70.40722499999993,
+          "power_W": 20.046997028899035,
+          "actuator_work_exact_J": 47.76131247131523
+        },
+        {
+          "time_s": 0.84,
+          "height_m": 0.4841206271999996,
+          "velocity_m_per_s": 0.27095039999999937,
+          "acceleration_m_per_s2": -2.741759999999992,
+          "cable_tension_N": 70.68240000000009,
+          "power_W": 19.15142455295998,
+          "actuator_work_exact_J": 47.85930412462076
+        },
+        {
+          "time_s": 0.845,
+          "height_m": 0.48544123139687523,
+          "velocity_m_per_s": 0.25731675937499787,
+          "acceleration_m_per_s2": -2.7111824999999996,
+          "cable_tension_N": 70.98817500000001,
+          "power_W": 18.266447144945243,
+          "actuator_work_exact_J": 47.952844373309716
+        },
+        {
+          "time_s": 0.85,
+          "height_m": 0.48669406250000025,
+          "velocity_m_per_s": 0.24384374999999903,
+          "acceleration_m_per_s2": -2.677499999999995,
+          "cable_tension_N": 71.32500000000006,
+          "power_W": 17.392155468749944,
+          "actuator_work_exact_J": 48.04198640332034
+        },
+        {
+          "time_s": 0.855,
+          "height_m": 0.48787996266562494,
+          "velocity_m_per_s": 0.23054700937499817,
+          "acceleration_m_per_s2": -2.6406674999999993,
+          "cable_tension_N": 71.69332500000002,
+          "power_W": 16.528681670899793,
+          "actuator_work_exact_J": 48.12678395515659
+        },
+        {
+          "time_s": 0.86,
+          "height_m": 0.48899985280000013,
+          "velocity_m_per_s": 0.21744239999999948,
+          "acceleration_m_per_s2": -2.6006399999999985,
+          "cable_tension_N": 72.09360000000002,
+          "power_W": 15.676205408639968,
+          "actuator_work_exact_J": 48.20729154626882
+        },
+        {
+          "time_s": 0.865,
+          "height_m": 0.490054733684375,
+          "velocity_m_per_s": 0.20454600937500267,
+          "acceleration_m_per_s2": -2.5573724999999996,
+          "cable_tension_N": 72.52627500000001,
+          "power_W": 14.834960126084024,
+          "actuator_work_exact_J": 48.28356472419339
+        },
+        {
+          "time_s": 0.87,
+          "height_m": 0.4910456871000002,
+          "velocity_m_per_s": 0.1918741500000003,
+          "acceleration_m_per_s2": -2.5108199999999954,
+          "cable_tension_N": 72.99180000000005,
+          "power_W": 14.005239581970033,
+          "actuator_work_exact_J": 48.35566035170113
+        },
+        {
+          "time_s": 0.875,
+          "height_m": 0.491973876953125,
+          "velocity_m_per_s": 0.179443359375,
+          "acceleration_m_per_s2": -2.4609375,
+          "cable_tension_N": 73.49062500000001,
+          "power_W": 13.187404632568361,
+          "actuator_work_exact_J": 48.42363692522049
+        },
+        {
+          "time_s": 0.88,
+          "height_m": 0.4928405503999995,
+          "velocity_m_per_s": 0.1672703999999996,
+          "acceleration_m_per_s2": -2.407679999999999,
+          "cable_tension_N": 74.02320000000002,
+          "power_W": 12.381890273279973,
+          "actuator_work_exact_J": 48.48755492782076
+        },
+        {
+          "time_s": 0.885,
+          "height_m": 0.49364703897187456,
+          "velocity_m_per_s": 0.15537225937499954,
+          "acceleration_m_per_s2": -2.3510025,
+          "cable_tension_N": 74.58997500000001,
+          "power_W": 11.589212942474733,
+          "actuator_work_exact_J": 48.54747721805736
+        },
+        {
+          "time_s": 0.89,
+          "height_m": 0.49439475970000046,
+          "velocity_m_per_s": 0.14376614999999937,
+          "acceleration_m_per_s2": -2.290859999999995,
+          "cable_tension_N": 75.19140000000006,
+          "power_W": 10.809978091109961,
+          "actuator_work_exact_J": 48.60346945599916
+        },
+        {
+          "time_s": 0.895,
+          "height_m": 0.49508521624062496,
+          "velocity_m_per_s": 0.13246950937499768,
+          "acceleration_m_per_s2": -2.2272074999999845,
+          "cable_tension_N": 75.82792500000016,
+          "power_W": 10.044888021674144,
+          "actuator_work_exact_J": 48.65560056777558
+        },
+        {
+          "time_s": 0.9,
+          "height_m": 0.4957200000000008,
+          "velocity_m_per_s": 0.12149999999999572,
+          "acceleration_m_per_s2": -2.1599999999999966,
+          "cable_tension_N": 76.50000000000004,
+          "power_W": 9.294749999999677,
+          "actuator_work_exact_J": 48.70394325000008
+        },
+        {
+          "time_s": 0.905,
+          "height_m": 0.49630079125937554,
+          "velocity_m_per_s": 0.11087550937499913,
+          "acceleration_m_per_s2": -2.0891924999999887,
+          "cable_tension_N": 77.20807500000012,
+          "power_W": 8.560484643488149,
+          "actuator_work_exact_J": 48.74857451544057
+        },
+        {
+          "time_s": 0.91,
+          "height_m": 0.4968293603,
+          "velocity_m_per_s": 0.10061415000000196,
+          "acceleration_m_per_s2": -2.0147400000000104,
+          "cable_tension_N": 77.9525999999999,
+          "power_W": 7.843134589290143,
+          "actuator_work_exact_J": 48.78957628133112
+        },
+        {
+          "time_s": 0.915,
+          "height_m": 0.4973075685281254,
+          "velocity_m_per_s": 0.0907342593750009,
+          "acceleration_m_per_s2": -1.936597500000012,
+          "cable_tension_N": 78.73402499999989,
+          "power_W": 7.143873445987795,
+          "actuator_work_exact_J": 48.827036001730754
+        },
+        {
+          "time_s": 0.92,
+          "height_m": 0.4977373695999998,
+          "velocity_m_per_s": 0.08125440000000239,
+          "acceleration_m_per_s2": -1.8547200000000004,
+          "cable_tension_N": 79.5528,
+          "power_W": 6.464015032320191,
+          "actuator_work_exact_J": 48.86104734535679
+        },
+        {
+          "time_s": 0.925,
+          "height_m": 0.49812081054687507,
+          "velocity_m_per_s": 0.07219335937500126,
+          "acceleration_m_per_s2": -1.769062500000004,
+          "cable_tension_N": 80.40937499999997,
+          "power_W": 5.80502290649424,
+          "actuator_work_exact_J": 48.89171092033769
+        },
+        {
+          "time_s": 0.93,
+          "height_m": 0.49846003289999974,
+          "velocity_m_per_s": 0.06357015000000033,
+          "acceleration_m_per_s2": -1.6795799999999943,
+          "cable_tension_N": 81.30420000000007,
+          "power_W": 5.168520189630031,
+          "actuator_work_exact_J": 48.919135047345094
+        },
+        {
+          "time_s": 0.935,
+          "height_m": 0.4987572738156256,
+          "velocity_m_per_s": 0.0554040093749979,
+          "acceleration_m_per_s2": -1.5862275000000068,
+          "cable_tension_N": 82.23772499999994,
+          "power_W": 4.5562996868784955,
+          "actuator_work_exact_J": 48.943436582587
+        },
+        {
+          "time_s": 0.94,
+          "height_m": 0.49901486719999966,
+          "velocity_m_per_s": 0.04771440000000027,
+          "acceleration_m_per_s2": -1.4889600000000058,
+          "cable_tension_N": 83.21039999999995,
+          "power_W": 3.97033430976002,
+          "actuator_work_exact_J": 48.96474179215677
+        },
+        {
+          "time_s": 0.945,
+          "height_m": 0.4992352448343751,
+          "velocity_m_per_s": 0.04052100937500036,
+          "acceleration_m_per_s2": -1.3877325000000056,
+          "cable_tension_N": 84.22267499999995,
+          "power_W": 3.4127878032626064,
+          "actuator_work_exact_J": 48.98318727925605
+        },
+        {
+          "time_s": 0.95,
+          "height_m": 0.49942093749999916,
+          "velocity_m_per_s": 0.03384375000000084,
+          "acceleration_m_per_s2": -1.2824999999999989,
+          "cable_tension_N": 85.27500000000002,
+          "power_W": 2.8860257812500723,
+          "actuator_work_exact_J": 48.99892096582023
+        },
+        {
+          "time_s": 0.955,
+          "height_m": 0.49957457610312517,
+          "velocity_m_per_s": 0.02770275937500344,
+          "acceleration_m_per_s2": -1.173217500000014,
+          "cable_tension_N": 86.36782499999987,
+          "power_W": 2.392627073717403,
+          "actuator_work_exact_J": 49.01210313010153
+        },
+        {
+          "time_s": 0.96,
+          "height_m": 0.4996988928000001,
+          "velocity_m_per_s": 0.02211840000000187,
+          "acceleration_m_per_s2": -1.0598400000000154,
+          "cable_tension_N": 87.50159999999985,
+          "power_W": 1.9353953894401603,
+          "actuator_work_exact_J": 49.02290750177281
+        },
+        {
+          "time_s": 0.965,
+          "height_m": 0.4997967221218751,
+          "velocity_m_per_s": 0.01711125937500313,
+          "acceleration_m_per_s2": -0.9423225000000031,
+          "cable_tension_N": 88.67677499999998,
+          "power_W": 1.5173712975637927,
+          "actuator_work_exact_J": 49.03152241614294
+        },
+        {
+          "time_s": 0.97,
+          "height_m": 0.4998710020999999,
+          "velocity_m_per_s": 0.012702150000000856,
+          "acceleration_m_per_s2": -0.8206200000000052,
+          "cable_tension_N": 89.89379999999996,
+          "power_W": 1.1418445316700763,
+          "actuator_work_exact_J": 49.03815202908311
+        },
+        {
+          "time_s": 0.975,
+          "height_m": 0.49992477539062463,
+          "velocity_m_per_s": 0.008912109374998423,
+          "acceleration_m_per_s2": -0.6946874999999935,
+          "cable_tension_N": 91.15312500000007,
+          "power_W": 0.8123666198729037,
+          "actuator_work_exact_J": 49.04301759428784
+        },
+        {
+          "time_s": 0.98,
+          "height_m": 0.49996119039999964,
+          "velocity_m_per_s": 0.00576239999999828,
+          "acceleration_m_per_s2": -0.5644799999999961,
+          "cable_tension_N": 92.45520000000005,
+          "power_W": 0.5327638444798413,
+          "actuator_work_exact_J": 49.04635880450877
+        },
+        {
+          "time_s": 0.985,
+          "height_m": 0.49998350240937395,
+          "velocity_m_per_s": 0.0032745093750055076,
+          "acceleration_m_per_s2": -0.42995250000001306,
+          "cable_tension_N": 93.80047499999988,
+          "power_W": 0.30715053476746934,
+          "actuator_work_exact_J": 49.04843519841783
+        },
+        {
+          "time_s": 0.99,
+          "height_m": 0.49999507470000015,
+          "velocity_m_per_s": 0.0014701499999993928,
+          "acceleration_m_per_s2": -0.29106000000000165,
+          "cable_tension_N": 95.18939999999999,
+          "power_W": 0.1399426964099422,
+          "actuator_work_exact_J": 49.04952763477513
+        },
+        {
+          "time_s": 0.995,
+          "height_m": 0.49999937967812613,
+          "velocity_m_per_s": 0.00037125937500093187,
+          "acceleration_m_per_s2": -0.14775749999999732,
+          "cable_tension_N": 96.62242500000004,
+          "power_W": 0.03587198111657443,
+          "actuator_work_exact_J": 49.0499398355918
+        },
+        {
+          "time_s": 1.0,
+          "height_m": 0.5,
+          "velocity_m_per_s": 0.0,
+          "acceleration_m_per_s2": 0.0,
+          "cable_tension_N": 98.10000000000001,
+          "power_W": 0.0,
+          "actuator_work_exact_J": 49.050000000000004
+        }
+      ],
+      "x": "time_s",
+      "ys": [
+        "cable_tension_N"
+      ],
+      "xlabel": "Time (s)",
+      "ylabel": "Single-strand tension (N)",
+      "log": false
+    },
+    {
+      "name": "lift_power",
+      "rows": [
+        {
+          "time_s": 0.0,
+          "height_m": 0.0,
+          "velocity_m_per_s": 0.0,
+          "acceleration_m_per_s2": 0.0,
+          "cable_tension_N": 98.10000000000001,
+          "power_W": 0.0,
+          "actuator_work_exact_J": 0.0
+        },
+        {
+          "time_s": 0.005,
+          "height_m": 6.203218750000002e-07,
+          "velocity_m_per_s": 0.000371259375,
+          "acceleration_m_per_s2": 0.14775749999999999,
+          "cable_tension_N": 99.577575,
+          "power_W": 0.036969108258515626,
+          "actuator_work_exact_J": 6.154274355512698e-05
+        },
+        {
+          "time_s": 0.01,
+          "height_m": 4.925300000000001e-06,
+          "velocity_m_per_s": 0.00147015,
+          "acceleration_m_per_s2": 0.29106,
+          "cable_tension_N": 101.01060000000001,
+          "power_W": 0.14850073359000002,
+          "actuator_work_exact_J": 0.0004939786351125002
+        },
+        {
+          "time_s": 0.015,
+          "height_m": 1.6497590624999996e-05,
+          "velocity_m_per_s": 0.0032745093750000003,
+          "acceleration_m_per_s2": 0.42995249999999996,
+          "cable_tension_N": 102.39952500000001,
+          "power_W": 0.33530820460804694,
+          "actuator_work_exact_J": 0.0016720256985473143
+        },
+        {
+          "time_s": 0.02,
+          "height_m": 3.880960000000001e-05,
+          "velocity_m_per_s": 0.0057624,
+          "acceleration_m_per_s2": 0.56448,
+          "cable_tension_N": 103.7448,
+          "power_W": 0.59781903552,
+          "actuator_work_exact_J": 0.003973248028800001
+        },
+        {
+          "time_s": 0.025,
+          "height_m": 7.522460937500001e-05,
+          "velocity_m_per_s": 0.008912109375000001,
+          "acceleration_m_per_s2": 0.6946875,
+          "cable_tension_N": 105.04687500000001,
+          "power_W": 0.9361892395019534,
+          "actuator_work_exact_J": 0.007776662647247317
+        },
+        {
+          "time_s": 0.03,
+          "height_m": 0.00012899789999999998,
+          "velocity_m_per_s": 0.01270215,
+          "acceleration_m_per_s2": 0.8206199999999999,
+          "cable_tension_N": 106.3062,
+          "power_W": 1.35031729833,
+          "actuator_work_exact_J": 0.013461417063112498
+        },
+        {
+          "time_s": 0.035,
+          "height_m": 0.00020327787812500004,
+          "velocity_m_per_s": 0.017111259375000003,
+          "acceleration_m_per_s2": 0.9423225000000001,
+          "cable_tension_N": 107.523225,
+          "power_W": 1.8398577918114847,
+          "actuator_work_exact_J": 0.02140553583105513
+        },
+        {
+          "time_s": 0.04,
+          "height_m": 0.0003011072000000001,
+          "velocity_m_per_s": 0.0221184,
+          "acceleration_m_per_s2": 1.0598400000000001,
+          "cable_tension_N": 108.69839999999999,
+          "power_W": 2.4042346905599996,
+          "actuator_work_exact_J": 0.03198473441280002
+        },
+        {
+          "time_s": 0.045,
+          "height_m": 0.00042542389687499996,
+          "velocity_m_per_s": 0.027702759375,
+          "acceleration_m_per_s2": 1.1732174999999998,
+          "cable_tension_N": 109.832175,
+          "power_W": 3.0426543156578907,
+          "actuator_work_exact_J": 0.045571298668383255
+        },
+        {
+          "time_s": 0.05,
+          "height_m": 0.0005790625,
+          "velocity_m_per_s": 0.03384375,
+          "acceleration_m_per_s2": 1.2825,
+          "cable_tension_N": 110.92500000000001,
+          "power_W": 3.75411796875,
+          "actuator_work_exact_J": 0.0625330283203125
+        },
+        {
+          "time_s": 0.055,
+          "height_m": 0.0007647551656249999,
+          "velocity_m_per_s": 0.04052100937499999,
+          "acceleration_m_per_s2": 1.3877324999999998,
+          "cable_tension_N": 111.97732500000001,
+          "power_W": 4.537434236112421,
+          "actuator_work_exact_J": 0.08323224275165668
+        },
+        {
+          "time_s": 0.06,
+          "height_m": 0.0009851327999999997,
+          "velocity_m_per_s": 0.0477144,
+          "acceleration_m_per_s2": 1.4889599999999998,
+          "cable_tension_N": 112.98960000000001,
+          "power_W": 5.3912309702400005,
+          "actuator_work_exact_J": 0.10802484751679997
+        },
+        {
+          "time_s": 0.065,
+          "height_m": 0.0012427261843750003,
+          "velocity_m_per_s": 0.055404009375,
+          "acceleration_m_per_s2": 1.5862275000000001,
+          "cable_tension_N": 113.962275,
+          "power_W": 6.313966952496329,
+          "actuator_work_exact_J": 0.13725945996131297
+        },
+        {
+          "time_s": 0.07,
+          "height_m": 0.0015399671000000004,
+          "velocity_m_per_s": 0.06357015,
+          "acceleration_m_per_s2": 1.67958,
+          "cable_tension_N": 114.89580000000001,
+          "power_W": 7.3039432403700015,
+          "actuator_work_exact_J": 0.17127659236511256
+        },
+        {
+          "time_s": 0.075,
+          "height_m": 0.0018791894531249998,
+          "velocity_m_per_s": 0.072193359375,
+          "acceleration_m_per_s2": 1.7690625,
+          "cable_tension_N": 115.790625,
+          "power_W": 8.35931420288086,
+          "actuator_work_exact_J": 0.21040789104080201
+        },
+        {
+          "time_s": 0.08,
+          "height_m": 0.0022626304000000004,
+          "velocity_m_per_s": 0.0812544,
+          "acceleration_m_per_s2": 1.85472,
+          "cable_tension_N": 116.64720000000001,
+          "power_W": 9.478098247680002,
+          "actuator_work_exact_J": 0.25497542983680005
+        },
+        {
+          "time_s": 0.085,
+          "height_m": 0.0026924314718750003,
+          "velocity_m_per_s": 0.09073425937500003,
+          "acceleration_m_per_s2": 1.9365975,
+          "cable_tension_N": 117.465975,
+          "power_W": 10.658188243387269,
+          "actuator_work_exact_J": 0.3052910565125864
+        },
+        {
+          "time_s": 0.09,
+          "height_m": 0.0031706397,
+          "velocity_m_per_s": 0.10061415,
+          "acceleration_m_per_s2": 2.0147399999999998,
+          "cable_tension_N": 118.2474,
+          "power_W": 11.89736164071,
+          "actuator_work_exact_J": 0.36165579047111257
+        },
+        {
+          "time_s": 0.095,
+          "height_m": 0.003699208740625001,
+          "velocity_m_per_s": 0.110875509375,
+          "acceleration_m_per_s2": 2.0891925,
+          "cable_tension_N": 118.991925,
+          "power_W": 13.193290295886797,
+          "actuator_work_exact_J": 0.4243592703511412
+        },
+        {
+          "time_s": 0.1,
+          "height_m": 0.004280000000000001,
+          "velocity_m_per_s": 0.12150000000000002,
+          "acceleration_m_per_s2": 2.1599999999999997,
+          "cable_tension_N": 119.7,
+          "power_W": 14.543550000000003,
+          "actuator_work_exact_J": 0.4936792500000002
+        },
+        {
+          "time_s": 0.105,
+          "height_m": 0.0049147837593749985,
+          "velocity_m_per_s": 0.13246950937499996,
+          "acceleration_m_per_s2": 2.2272075,
+          "cable_tension_N": 120.37207500000001,
+          "power_W": 15.9456297177007,
+          "actuator_work_exact_J": 0.5698811413649534
+        },
+        {
+          "time_s": 0.11,
+          "height_m": 0.005605240299999999,
+          "velocity_m_per_s": 0.14376615,
+          "acceleration_m_per_s2": 2.29086,
+          "cable_tension_N": 121.0086,
+          "power_W": 17.39694053889,
+          "actuator_work_exact_J": 0.6532176028591125
+        },
+        {
+          "time_s": 0.115,
+          "height_m": 0.0063529610281250004,
+          "velocity_m_per_s": 0.15537225937500002,
+          "acceleration_m_per_s2": 2.3510025000000003,
+          "cable_tension_N": 121.61002500000001,
+          "power_W": 18.894824346900236,
+          "actuator_work_exact_J": 0.743928171775524
+        },
+        {
+          "time_s": 0.12,
+          "height_m": 0.0071594495999999985,
+          "velocity_m_per_s": 0.16727039999999999,
+          "acceleration_m_per_s2": 2.407679999999999,
+          "cable_tension_N": 122.1768,
+          "power_W": 20.436562206719998,
+          "actuator_work_exact_J": 0.8422389393408
+        },
+        {
+          "time_s": 0.125,
+          "height_m": 0.008026123046875,
+          "velocity_m_per_s": 0.179443359375,
+          "acceleration_m_per_s2": 2.4609375,
+          "cable_tension_N": 122.70937500000001,
+          "power_W": 22.01938247680664,
+          "actuator_work_exact_J": 0.9483622670173646
+        },
+        {
+          "time_s": 0.13,
+          "height_m": 0.008954312900000002,
+          "velocity_m_per_s": 0.19187414999999997,
+          "acceleration_m_per_s2": 2.5108200000000003,
+          "cable_tension_N": 123.2082,
+          "power_W": 23.640468648029998,
+          "actuator_work_exact_J": 1.0624965426811128
+        },
+        {
+          "time_s": 0.135,
+          "height_m": 0.009945266315625001,
+          "velocity_m_per_s": 0.20454600937500003,
+          "acceleration_m_per_s2": 2.557372500000001,
+          "cable_tension_N": 123.67372500000002,
+          "power_W": 25.29696691329118,
+          "actuator_work_exact_J": 1.1848259753190007
+        },
+        {
+          "time_s": 0.14,
+          "height_m": 0.011000147200000003,
+          "velocity_m_per_s": 0.21744240000000004,
+          "acceleration_m_per_s2": 2.60064,
+          "cable_tension_N": 124.10640000000001,
+          "power_W": 26.985993471360008,
+          "actuator_work_exact_J": 1.3155204269088003
+        },
+        {
+          "time_s": 0.145,
+          "height_m": 0.012120037334374998,
+          "velocity_m_per_s": 0.23054700937499997,
+          "acceleration_m_per_s2": 2.6406674999999997,
+          "cable_tension_N": 124.506675,
+          "power_W": 28.704641568475076,
+          "actuator_work_exact_J": 1.454735280160969
+        },
+        {
+          "time_s": 0.15,
+          "height_m": 0.013305937499999998,
+          "velocity_m_per_s": 0.24384375,
+          "acceleration_m_per_s2": 2.6775,
+          "cable_tension_N": 124.875,
+          "power_W": 30.44998828125,
+          "actuator_work_exact_J": 1.6026113408203124
+        },
+        {
+          "time_s": 0.155,
+          "height_m": 0.014558768603125001,
+          "velocity_m_per_s": 0.25731675937500004,
+          "acceleration_m_per_s2": 2.7111825,
+          "cable_tension_N": 125.211825,
+          "power_W": 32.219101044429614,
+          "actuator_work_exact_J": 1.7592747732428209
+        },
+        {
+          "time_s": 0.16,
+          "height_m": 0.015879372800000006,
+          "velocity_m_per_s": 0.27095040000000004,
+          "acceleration_m_per_s2": 2.7417599999999998,
+          "cable_tension_N": 125.5176,
+          "power_W": 34.009043927040004,
+          "actuator_work_exact_J": 1.924837067980801
+        },
+        {
+          "time_s": 0.165,
+          "height_m": 0.017268514621875,
+          "velocity_m_per_s": 0.28472925937500004,
+          "acceleration_m_per_s2": 2.7692775000000003,
+          "cable_tension_N": 125.792775,
+          "power_W": 35.81688366047602,
+          "actuator_work_exact_J": 2.099395040127118
+        },
+        {
+          "time_s": 0.17,
+          "height_m": 0.0187268821,
+          "velocity_m_per_s": 0.2986381500000001,
+          "acceleration_m_per_s2": 2.79378,
+          "cable_tension_N": 126.0378,
+          "power_W": 37.63969542207001,
+          "actuator_work_exact_J": 2.283030857187113
+        },
+        {
+          "time_s": 0.175,
+          "height_m": 0.020255087890624995,
+          "velocity_m_per_s": 0.312662109375,
+          "acceleration_m_per_s2": 2.8153125,
+          "cable_tension_N": 126.253125,
+          "power_W": 39.47456837768554,
+          "actuator_work_exact_J": 2.4758120952644345
+        },
+        {
+          "time_s": 0.18,
+          "height_m": 0.0218536704,
+          "velocity_m_per_s": 0.3267864,
+          "acceleration_m_per_s2": 2.8339199999999996,
+          "cable_tension_N": 126.4392,
+          "power_W": 41.318610986879996,
+          "actuator_work_exact_J": 2.6777918223648003
+        },
+        {
+          "time_s": 0.185,
+          "height_m": 0.023523094909374997,
+          "velocity_m_per_s": 0.34099650937500003,
+          "acceleration_m_per_s2": 2.8496474999999997,
+          "cable_tension_N": 126.596475,
+          "power_W": 43.168956074179455,
+          "actuator_work_exact_J": 2.88900870763936
+        },
+        {
+          "time_s": 0.19,
+          "height_m": 0.025263754700000005,
+          "velocity_m_per_s": 0.35527814999999996,
+          "acceleration_m_per_s2": 2.86254,
+          "cable_tension_N": 126.72540000000001,
+          "power_W": 45.022765670009996,
+          "actuator_work_exact_J": 3.109487155407113
+        },
+        {
+          "time_s": 0.195,
+          "height_m": 0.027075972178124998,
+          "velocity_m_per_s": 0.36961725937500006,
+          "acceleration_m_per_s2": 2.8726425,
+          "cable_tension_N": 126.826425,
+          "power_W": 46.87723562482899,
+          "actuator_work_exact_J": 3.339237462813493
+        },
+        {
+          "time_s": 0.2,
+          "height_m": 0.028960000000000003,
+          "velocity_m_per_s": 0.38400000000000006,
+          "acceleration_m_per_s2": 2.8799999999999994,
+          "cable_tension_N": 126.89999999999999,
+          "power_W": 48.729600000000005,
+          "actuator_work_exact_J": 3.5782560000000005
+        },
+        {
+          "time_s": 0.205,
+          "height_m": 0.030916022196874997,
+          "velocity_m_per_s": 0.398412759375,
+          "acceleration_m_per_s2": 2.8846575,
+          "cable_tension_N": 126.946575,
+          "power_W": 50.577135238955385,
+          "actuator_work_exact_J": 3.826525411677446
+        },
+        {
+          "time_s": 0.21,
+          "height_m": 0.03294415529999999,
+          "velocity_m_per_s": 0.4128421499999999,
+          "acceleration_m_per_s2": 2.8866600000000004,
+          "cable_tension_N": 126.96660000000001,
+          "power_W": 52.417164122189995,
+          "actuator_work_exact_J": 4.084014839013112
+        },
+        {
+          "time_s": 0.21132486540518713,
+          "height_m": 0.03349364905389035,
+          "velocity_m_per_s": 0.41666666666666663,
+          "acceleration_m_per_s2": 2.88675134594813,
+          "cable_tension_N": 126.9675134594813,
+          "power_W": 52.9031306081172,
+          "actuator_work_exact_J": 4.153782527742199
+        },
+        {
+          "time_s": 0.215,
+          "height_m": 0.035044449465624995,
+          "velocity_m_per_s": 0.42727500937499996,
+          "acceleration_m_per_s2": 2.886052500000001,
+          "cable_tension_N": 126.960525,
+          "power_W": 54.24705950962992,
+          "actuator_work_exact_J": 4.350680160759844
+        },
+        {
+          "time_s": 0.22,
+          "height_m": 0.0372168896,
+          "velocity_m_per_s": 0.4416984,
+          "acceleration_m_per_s2": 2.8828799999999997,
+          "cable_tension_N": 126.92880000000001,
+          "power_W": 56.06424787392,
+          "actuator_work_exact_J": 4.6264642525728
+        },
+        {
+          "time_s": 0.225,
+          "height_m": 0.03946139648437501,
+          "velocity_m_per_s": 0.45609960937499994,
+          "acceleration_m_per_s2": 2.8771875,
+          "cable_tension_N": 126.871875,
+          "power_W": 57.86621262817382,
+          "actuator_work_exact_J": 4.911297263477326
+        },
+        {
+          "time_s": 0.23,
+          "height_m": 0.0417778279,
+          "velocity_m_per_s": 0.4704661500000001,
+          "acceleration_m_per_s2": 2.8690200000000003,
+          "cable_tension_N": 126.79020000000001,
+          "power_W": 59.650497251730016,
+          "actuator_work_exact_J": 5.205096908469113
+        },
+        {
+          "time_s": 0.235,
+          "height_m": 0.044165979753124994,
+          "velocity_m_per_s": 0.484785759375,
+          "acceleration_m_per_s2": 2.8584224999999996,
+          "cable_tension_N": 126.684225,
+          "power_W": 61.41470821745836,
+          "actuator_work_exact_J": 5.507768776245539
+        },
+        {
+          "time_s": 0.24,
+          "height_m": 0.04662558719999999,
+          "velocity_m_per_s": 0.49904640000000006,
+          "acceleration_m_per_s2": 2.845439999999999,
+          "cable_tension_N": 126.55439999999999,
+          "power_W": 63.156517724160004,
+          "actuator_work_exact_J": 5.8192066510848
+        },
+        {
+          "time_s": 0.245,
+          "height_m": 0.04915632577187499,
+          "velocity_m_per_s": 0.513236259375,
+          "acceleration_m_per_s2": 2.8301175,
+          "cable_tension_N": 126.40117500000001,
+          "power_W": 64.87366623760477,
+          "actuator_work_exact_J": 6.139292847907148
+        },
+        {
+          "time_s": 0.25,
+          "height_m": 0.0517578125,
+          "velocity_m_per_s": 0.52734375,
+          "acceleration_m_per_s2": 2.8125,
+          "cable_tension_N": 126.22500000000001,
+          "power_W": 66.56396484375,
+          "actuator_work_exact_J": 6.467898559570313
+        },
+        {
+          "time_s": 0.255,
+          "height_m": 0.05442960704062502,
+          "velocity_m_per_s": 0.5413575093749999,
+          "acceleration_m_per_s2": 2.7926325000000007,
+          "cable_tension_N": 126.02632500000001,
+          "power_W": 68.2252974176843,
+          "actuator_work_exact_J": 6.804884215468831
+        },
+        {
+          "time_s": 0.26,
+          "height_m": 0.05717121280000001,
+          "velocity_m_per_s": 0.5552663999999999,
+          "acceleration_m_per_s2": 2.7705600000000006,
+          "cable_tension_N": 125.80560000000003,
+          "power_W": 69.85562261184,
+          "actuator_work_exact_J": 7.150099850524801
+        },
+        {
+          "time_s": 0.265,
+          "height_m": 0.059982078059375,
+          "velocity_m_per_s": 0.5690595093750002,
+          "acceleration_m_per_s2": 2.7463274999999996,
+          "cable_tension_N": 125.563275,
+          "power_W": 71.45297566701822,
+          "actuator_work_exact_J": 7.503385483675268
+        },
+        {
+          "time_s": 0.27,
+          "height_m": 0.06286159710000001,
+          "velocity_m_per_s": 0.58272615,
+          "acceleration_m_per_s2": 2.7199800000000005,
+          "cable_tension_N": 125.29980000000002,
+          "power_W": 73.01547004977002,
+          "actuator_work_exact_J": 7.864571504979114
+        },
+        {
+          "time_s": 0.275,
+          "height_m": 0.06580911132812503,
+          "velocity_m_per_s": 0.5962558593749999,
+          "acceleration_m_per_s2": 2.691562499999999,
+          "cable_tension_N": 125.01562499999999,
+          "power_W": 74.54129891967771,
+          "actuator_work_exact_J": 8.233479070484165
+        },
+        {
+          "time_s": 0.28,
+          "height_m": 0.06882391040000001,
+          "velocity_m_per_s": 0.6096384,
+          "acceleration_m_per_s2": 2.6611199999999995,
+          "cable_tension_N": 124.71119999999999,
+          "power_W": 76.02873643008,
+          "actuator_work_exact_J": 8.609920504012802
+        },
+        {
+          "time_s": 0.285,
+          "height_m": 0.07190523334687499,
+          "velocity_m_per_s": 0.6228637593750002,
+          "acceleration_m_per_s2": 2.6286974999999995,
+          "cable_tension_N": 124.386975,
+          "power_W": 77.47613886578416,
+          "actuator_work_exact_J": 8.993699705042227
+        },
+        {
+          "time_s": 0.29,
+          "height_m": 0.07505226969999998,
+          "velocity_m_per_s": 0.63592215,
+          "acceleration_m_per_s2": 2.59434,
+          "cable_tension_N": 124.04340000000002,
+          "power_W": 78.88194562131001,
+          "actuator_work_exact_J": 9.38461256187311
+        },
+        {
+          "time_s": 0.295,
+          "height_m": 0.07826416061562501,
+          "velocity_m_per_s": 0.6488040093749999,
+          "acceleration_m_per_s2": 2.5580925000000003,
+          "cable_tension_N": 123.68092500000002,
+          "power_W": 80.24468002320867,
+          "actuator_work_exact_J": 9.78244736929819
+        },
+        {
+          "time_s": 0.3,
+          "height_m": 0.08153999999999997,
+          "velocity_m_per_s": 0.6615,
+          "acceleration_m_per_s2": 2.52,
+          "cable_tension_N": 123.3,
+          "power_W": 81.56295,
+          "actuator_work_exact_J": 10.18698525
+        },
+        {
+          "time_s": 0.305,
+          "height_m": 0.084878835634375,
+          "velocity_m_per_s": 0.674001009375,
+          "acceleration_m_per_s2": 2.480107500000001,
+          "cable_tension_N": 122.90107500000002,
+          "power_W": 82.83544860327258,
+          "actuator_work_exact_J": 10.598000578924783
+        },
+        {
+          "time_s": 0.31,
+          "height_m": 0.0882796703,
+          "velocity_m_per_s": 0.68629815,
+          "acceleration_m_per_s2": 2.4384599999999996,
+          "cable_tension_N": 122.4846,
+          "power_W": 84.06095438349,
+          "actuator_work_exact_J": 11.015261409897112
+        },
+        {
+          "time_s": 0.315,
+          "height_m": 0.09174146290312499,
+          "velocity_m_per_s": 0.6983827593749999,
+          "acceleration_m_per_s2": 2.3951024999999984,
+          "cable_tension_N": 122.05102499999998,
+          "power_W": 85.23833162404709,
+          "actuator_work_exact_J": 11.438529903757757
+        },
+        {
+          "time_s": 0.32,
+          "height_m": 0.09526312960000005,
+          "velocity_m_per_s": 0.7102463999999999,
+          "acceleration_m_per_s2": 2.350079999999999,
+          "cable_tension_N": 121.60079999999999,
+          "power_W": 86.36653043711999,
+          "actuator_work_exact_J": 11.867562757324805
+        },
+        {
+          "time_s": 0.325,
+          "height_m": 0.09884354492187497,
+          "velocity_m_per_s": 0.7218808593750001,
+          "acceleration_m_per_s2": 2.3034374999999985,
+          "cable_tension_N": 121.134375,
+          "power_W": 87.44458672485354,
+          "actuator_work_exact_J": 12.30211163249588
+        },
+        {
+          "time_s": 0.33,
+          "height_m": 0.1024815429,
+          "velocity_m_per_s": 0.7332781500000001,
+          "acceleration_m_per_s2": 2.2552200000000004,
+          "cable_tension_N": 120.6522,
+          "power_W": 88.47162200943,
+          "actuator_work_exact_J": 12.741923584827115
+        },
+        {
+          "time_s": 0.335,
+          "height_m": 0.10617591819062502,
+          "velocity_m_per_s": 0.7444305093750001,
+          "acceleration_m_per_s2": 2.2054724999999986,
+          "cable_tension_N": 120.154725,
+          "power_W": 89.44684313556306,
+          "actuator_work_exact_J": 13.186741490941927
+        },
+        {
+          "time_s": 0.34,
+          "height_m": 0.1099254272,
+          "velocity_m_per_s": 0.7553304000000003,
+          "acceleration_m_per_s2": 2.1542399999999997,
+          "cable_tension_N": 119.64240000000001,
+          "power_W": 90.36954184896004,
+          "actuator_work_exact_J": 13.636304474140804
+        },
+        {
+          "time_s": 0.345,
+          "height_m": 0.113728789209375,
+          "velocity_m_per_s": 0.765970509375,
+          "acceleration_m_per_s2": 2.1015675000000016,
+          "cable_tension_N": 119.11567500000002,
+          "power_W": 91.23909425429697,
+          "actuator_work_exact_J": 14.090348327600674
+        },
+        {
+          "time_s": 0.35,
+          "height_m": 0.11758468749999998,
+          "velocity_m_per_s": 0.77634375,
+          "acceleration_m_per_s2": 2.0475000000000008,
+          "cable_tension_N": 118.57500000000002,
+          "power_W": 92.05496015625002,
+          "actuator_work_exact_J": 14.548605934570313
+        },
+        {
+          "time_s": 0.355,
+          "height_m": 0.12149177047812496,
+          "velocity_m_per_s": 0.7864432593750001,
+          "acceleration_m_per_s2": 1.9920824999999982,
+          "cable_tension_N": 118.02082499999999,
+          "power_W": 92.8166822871265,
+          "actuator_work_exact_J": 15.010807684985927
+        },
+        {
+          "time_s": 0.36,
+          "height_m": 0.1254486528,
+          "velocity_m_per_s": 0.7962624,
+          "acceleration_m_per_s2": 1.9353599999999989,
+          "cable_tension_N": 117.4536,
+          "power_W": 93.52388542464,
+          "actuator_work_exact_J": 15.476681887948802
+        },
+        {
+          "time_s": 0.365,
+          "height_m": 0.129453916496875,
+          "velocity_m_per_s": 0.8057947593749999,
+          "acceleration_m_per_s2": 1.877377500000001,
+          "cable_tension_N": 116.87377500000002,
+          "power_W": 94.1762754033729,
+          "actuator_work_exact_J": 15.945955179524507
+        },
+        {
+          "time_s": 0.37,
+          "height_m": 0.1335061121,
+          "velocity_m_per_s": 0.81503415,
+          "acceleration_m_per_s2": 1.81818,
+          "cable_tension_N": 116.2818,
+          "power_W": 94.77363802347,
+          "actuator_work_exact_J": 16.418352925341114
+        },
+        {
+          "time_s": 0.375,
+          "height_m": 0.137603759765625,
+          "velocity_m_per_s": 0.823974609375,
+          "acceleration_m_per_s2": 1.7578125,
+          "cable_tension_N": 115.67812500000001,
+          "power_W": 95.31583786010742,
+          "actuator_work_exact_J": 16.893599617481232
+        },
+        {
+          "time_s": 0.38,
+          "height_m": 0.14174535040000005,
+          "velocity_m_per_s": 0.8326103999999999,
+          "acceleration_m_per_s2": 1.69632,
+          "cable_tension_N": 115.06320000000001,
+          "power_W": 95.80281697727999,
+          "actuator_work_exact_J": 17.371419265180805
+        },
+        {
+          "time_s": 0.385,
+          "height_m": 0.145929346784375,
+          "velocity_m_per_s": 0.8409360093749999,
+          "acceleration_m_per_s2": 1.6337475000000015,
+          "cable_tension_N": 114.43747500000002,
+          "power_W": 96.23459354945133,
+          "actuator_work_exact_J": 17.85153577886494
+        },
+        {
+          "time_s": 0.39,
+          "height_m": 0.15015418469999997,
+          "velocity_m_per_s": 0.8489461500000003,
+          "acceleration_m_per_s2": 1.5701399999999994,
+          "cable_tension_N": 113.8014,
+          "power_W": 96.61126039461003,
+          "actuator_work_exact_J": 18.333673347069112
+        },
+        {
+          "time_s": 0.395,
+          "height_m": 0.15441827405312503,
+          "velocity_m_per_s": 0.8566357593750002,
+          "acceleration_m_per_s2": 1.505542499999999,
+          "cable_tension_N": 113.155425,
+          "power_W": 96.93298342227588,
+          "actuator_work_exact_J": 18.817556805811485
+        },
+        {
+          "time_s": 0.4,
+          "height_m": 0.15872000000000003,
+          "velocity_m_per_s": 0.8640000000000001,
+          "acceleration_m_per_s2": 1.4399999999999986,
+          "cable_tension_N": 112.5,
+          "power_W": 97.20000000000002,
+          "actuator_work_exact_J": 19.302912000000006
+        },
+        {
+          "time_s": 0.405,
+          "height_m": 0.163057724071875,
+          "velocity_m_per_s": 0.8710342593750003,
+          "acceleration_m_per_s2": 1.3735574999999973,
+          "cable_tension_N": 111.83557499999998,
+          "power_W": 97.41261724190228,
+          "actuator_work_exact_J": 19.789466136475713
+        },
+        {
+          "time_s": 0.41,
+          "height_m": 0.16742978529999997,
+          "velocity_m_per_s": 0.8777341500000001,
+          "acceleration_m_per_s2": 1.30626,
+          "cable_tension_N": 111.1626,
+          "power_W": 97.57121022279001,
+          "actuator_work_exact_J": 20.27694812831111
+        },
+        {
+          "time_s": 0.415,
+          "height_m": 0.171834501340625,
+          "velocity_m_per_s": 0.884095509375,
+          "acceleration_m_per_s2": 1.238152499999999,
+          "cable_tension_N": 110.481525,
+          "power_W": 97.6762201214018,
+          "actuator_work_exact_J": 20.765088930000516
+        },
+        {
+          "time_s": 0.42,
+          "height_m": 0.17627016959999994,
+          "velocity_m_per_s": 0.8901143999999996,
+          "acceleration_m_per_s2": 1.1692800000000014,
+          "cable_tension_N": 109.79280000000003,
+          "power_W": 97.72815229631999,
+          "actuator_work_exact_J": 21.253621863196795
+        },
+        {
+          "time_s": 0.425,
+          "height_m": 0.180735068359375,
+          "velocity_m_per_s": 0.8957871093749998,
+          "acceleration_m_per_s2": 1.0996875000000017,
+          "cable_tension_N": 109.09687500000003,
+          "power_W": 97.7275742980957,
+          "actuator_work_exact_J": 21.74228293266678
+        },
+        {
+          "time_s": 0.43,
+          "height_m": 0.1852274579,
+          "velocity_m_per_s": 0.9011101499999999,
+          "acceleration_m_per_s2": 1.0294200000000018,
+          "cable_tension_N": 108.39420000000003,
+          "power_W": 97.67511382113001,
+          "actuator_work_exact_J": 22.230811132155115
+        },
+        {
+          "time_s": 0.435,
+          "height_m": 0.189745581628125,
+          "velocity_m_per_s": 0.9060802593750001,
+          "acceleration_m_per_s2": 0.9585225000000017,
+          "cable_tension_N": 107.68522500000003,
+          "power_W": 97.57145659885528,
+          "actuator_work_exact_J": 22.718948739864402
+        },
+        {
+          "time_s": 0.44,
+          "height_m": 0.19428766719999996,
+          "velocity_m_per_s": 0.9106943999999999,
+          "acceleration_m_per_s2": 0.8870399999999998,
+          "cable_tension_N": 106.97040000000001,
+          "power_W": 97.41734424576,
+          "actuator_work_exact_J": 23.206441603276797
+        },
+        {
+          "time_s": 0.445,
+          "height_m": 0.19885192764687504,
+          "velocity_m_per_s": 0.914949759375,
+          "acceleration_m_per_s2": 0.8150174999999997,
+          "cable_tension_N": 106.250175,
+          "power_W": 97.21357204980164,
+          "actuator_work_exact_J": 23.693039413060298
+        },
+        {
+          "time_s": 0.45,
+          "height_m": 0.20343656250000008,
+          "velocity_m_per_s": 0.9188437499999995,
+          "acceleration_m_per_s2": 0.7424999999999997,
+          "cable_tension_N": 105.525,
+          "power_W": 96.96098671874995,
+          "actuator_work_exact_J": 24.178495965820318
+        },
+        {
+          "time_s": 0.455,
+          "height_m": 0.208039758915625,
+          "velocity_m_per_s": 0.9223740093750004,
+          "acceleration_m_per_s2": 0.6695324999999981,
+          "cable_tension_N": 104.79532499999998,
+          "power_W": 96.66048408400619,
+          "actuator_work_exact_J": 24.66256941547538
+        },
+        {
+          "time_s": 0.46,
+          "height_m": 0.21265969279999997,
+          "velocity_m_per_s": 0.9255384000000004,
+          "acceleration_m_per_s2": 0.5961600000000002,
+          "cable_tension_N": 104.0616,
+          "power_W": 96.31300676544004,
+          "actuator_work_exact_J": 25.145022513052805
+        },
+        {
+          "time_s": 0.465,
+          "height_m": 0.21729452993437498,
+          "velocity_m_per_s": 0.928335009375,
+          "acceleration_m_per_s2": 0.5224275,
+          "cable_tension_N": 103.32427500000001,
+          "power_W": 95.9195418007901,
+          "actuator_work_exact_J": 25.62562283471859
+        },
+        {
+          "time_s": 0.47,
+          "height_m": 0.22194242709999995,
+          "velocity_m_per_s": 0.9307621500000002,
+          "acceleration_m_per_s2": 0.44837999999999845,
+          "cable_tension_N": 102.5838,
+          "power_W": 95.48111824317002,
+          "actuator_work_exact_J": 26.10414299787311
+        },
+        {
+          "time_s": 0.475,
+          "height_m": 0.22660153320312493,
+          "velocity_m_per_s": 0.9328183593750001,
+          "acceleration_m_per_s2": 0.37406250000000085,
+          "cable_tension_N": 101.84062500000002,
+          "power_W": 94.99880473022463,
+          "actuator_work_exact_J": 26.58036086516189
+        },
+        {
+          "time_s": 0.48,
+          "height_m": 0.23126999039999996,
+          "velocity_m_per_s": 0.9345024000000004,
+          "acceleration_m_per_s2": 0.2995199999999967,
+          "cable_tension_N": 101.09519999999996,
+          "power_W": 94.47370702848,
+          "actuator_work_exact_J": 27.0540597362688
+        },
+        {
+          "time_s": 0.485,
+          "height_m": 0.23594593522187501,
+          "velocity_m_per_s": 0.9358132593750002,
+          "acceleration_m_per_s2": 0.22479749999999932,
+          "cable_tension_N": 100.34797499999999,
+          "power_W": 93.90696555643102,
+          "actuator_work_exact_J": 27.525028527376247
+        },
+        {
+          "time_s": 0.49,
+          "height_m": 0.24062749969999994,
+          "velocity_m_per_s": 0.9367501499999997,
+          "acceleration_m_per_s2": 0.14994000000000085,
+          "cable_tension_N": 99.59940000000002,
+          "power_W": 93.29975288990998,
+          "actuator_work_exact_J": 27.99306193819511
+        },
+        {
+          "time_s": 0.495,
+          "height_m": 0.245312812490625,
+          "velocity_m_per_s": 0.9373125093749999,
+          "acceleration_m_per_s2": 0.07499249999999869,
+          "cable_tension_N": 98.84992499999998,
+          "power_W": 92.65327125328052,
+          "actuator_work_exact_J": 28.457960606484612
+        },
+        {
+          "time_s": 0.5,
+          "height_m": 0.25,
+          "velocity_m_per_s": 0.9375,
+          "acceleration_m_per_s2": 0.0,
+          "cable_tension_N": 98.10000000000001,
+          "power_W": 91.96875000000001,
+          "actuator_work_exact_J": 28.919531250000002
+        },
+        {
+          "time_s": 0.505,
+          "height_m": 0.254687187509375,
+          "velocity_m_per_s": 0.9373125093749997,
+          "acceleration_m_per_s2": -0.0749924999999978,
+          "cable_tension_N": 97.35007500000002,
+          "power_W": 91.24744308609444,
+          "actuator_work_exact_J": 29.377586795823987
+        },
+        {
+          "time_s": 0.51,
+          "height_m": 0.25937250030000014,
+          "velocity_m_per_s": 0.9367501499999995,
+          "acceleration_m_per_s2": -0.1499399999999973,
+          "cable_tension_N": 96.60060000000003,
+          "power_W": 90.49062654008998,
+          "actuator_work_exact_J": 29.831946497055124
+        },
+        {
+          "time_s": 0.515,
+          "height_m": 0.26405406477812493,
+          "velocity_m_per_s": 0.9358132593749999,
+          "acceleration_m_per_s2": -0.22479749999999754,
+          "cable_tension_N": 95.85202500000003,
+          "power_W": 89.699595932944,
+          "actuator_work_exact_J": 30.28243603684436
+        },
+        {
+          "time_s": 0.52,
+          "height_m": 0.26873000960000004,
+          "velocity_m_per_s": 0.9345023999999995,
+          "acceleration_m_per_s2": -0.29951999999999934,
+          "cable_tension_N": 95.10480000000001,
+          "power_W": 88.87566385151996,
+          "actuator_work_exact_J": 30.728887619788804
+        },
+        {
+          "time_s": 0.525,
+          "height_m": 0.2733984667968751,
+          "velocity_m_per_s": 0.9328183593749999,
+          "acceleration_m_per_s2": -0.37406250000000085,
+          "cable_tension_N": 94.359375,
+          "power_W": 88.02015737915038,
+          "actuator_work_exact_J": 31.171140050708782
+        },
+        {
+          "time_s": 0.53,
+          "height_m": 0.2780575729,
+          "velocity_m_per_s": 0.930762150000001,
+          "acceleration_m_per_s2": -0.448380000000002,
+          "cable_tension_N": 93.61619999999999,
+          "power_W": 87.13441558683009,
+          "actuator_work_exact_J": 31.609038800853124
+        },
+        {
+          "time_s": 0.535,
+          "height_m": 0.282705470065625,
+          "velocity_m_per_s": 0.9283350093749998,
+          "acceleration_m_per_s2": -0.5224274999999974,
+          "cable_tension_N": 92.87572500000003,
+          "power_W": 86.21978703858493,
+          "actuator_work_exact_J": 32.04243606159422
+        },
+        {
+          "time_s": 0.54,
+          "height_m": 0.2873403072000001,
+          "velocity_m_per_s": 0.9255384000000002,
+          "acceleration_m_per_s2": -0.5961599999999994,
+          "cable_tension_N": 92.13840000000002,
+          "power_W": 85.27762731456004,
+          "actuator_work_exact_J": 32.47119078569281
+        },
+        {
+          "time_s": 0.545,
+          "height_m": 0.2919602410843749,
+          "velocity_m_per_s": 0.9223740093750006,
+          "acceleration_m_per_s2": -0.6695325000000008,
+          "cable_tension_N": 91.404675,
+          "power_W": 84.30929655536887,
+          "actuator_work_exact_J": 32.89516871622975
+        },
+        {
+          "time_s": 0.55,
+          "height_m": 0.29656343750000014,
+          "velocity_m_per_s": 0.9188437499999991,
+          "acceleration_m_per_s2": -0.7425000000000015,
+          "cable_tension_N": 90.67499999999998,
+          "power_W": 83.3161570312499,
+          "actuator_work_exact_J": 33.31424240332032
+        },
+        {
+          "time_s": 0.555,
+          "height_m": 0.301148072353125,
+          "velocity_m_per_s": 0.9149497593750002,
+          "acceleration_m_per_s2": -0.8150175000000015,
+          "cable_tension_N": 89.94982499999999,
+          "power_W": 82.29957073957337,
+          "actuator_work_exact_J": 33.72829120874342
+        },
+        {
+          "time_s": 0.56,
+          "height_m": 0.30571233279999993,
+          "velocity_m_per_s": 0.9106944000000001,
+          "acceleration_m_per_s2": -0.8870400000000007,
+          "cable_tension_N": 89.2296,
+          "power_W": 81.26089703424002,
+          "actuator_work_exact_J": 34.137201298636796
+        },
+        {
+          "time_s": 0.565,
+          "height_m": 0.31025441837187495,
+          "velocity_m_per_s": 0.906080259374999,
+          "acceleration_m_per_s2": -0.9585224999999973,
+          "cable_tension_N": 88.51477500000003,
+          "power_W": 80.2014902905197,
+          "actuator_work_exact_J": 34.54086562442626
+        },
+        {
+          "time_s": 0.57,
+          "height_m": 0.3147725420999999,
+          "velocity_m_per_s": 0.9011101500000012,
+          "acceleration_m_per_s2": -1.0294200000000018,
+          "cable_tension_N": 87.80579999999999,
+          "power_W": 79.1226976088701,
+          "actuator_work_exact_J": 34.939183892175116
+        },
+        {
+          "time_s": 0.575,
+          "height_m": 0.31926493164062514,
+          "velocity_m_per_s": 0.8957871093750001,
+          "acceleration_m_per_s2": -1.0996874999999964,
+          "cable_tension_N": 87.10312500000003,
+          "power_W": 78.02585656127933,
+          "actuator_work_exact_J": 35.33206252055742
+        },
+        {
+          "time_s": 0.58,
+          "height_m": 0.3237298303999999,
+          "velocity_m_per_s": 0.8901144000000003,
+          "acceleration_m_per_s2": -1.1692800000000005,
+          "cable_tension_N": 86.4072,
+          "power_W": 76.91229298368003,
+          "actuator_work_exact_J": 35.719414587676795
+        },
+        {
+          "time_s": 0.585,
+          "height_m": 0.32816549865937494,
+          "velocity_m_per_s": 0.8840955093749998,
+          "acceleration_m_per_s2": -1.2381525,
+          "cable_tension_N": 85.71847500000001,
+          "power_W": 75.7833188179732,
+          "actuator_work_exact_J": 36.101159766969886
+        },
+        {
+          "time_s": 0.59,
+          "height_m": 0.3325702147000001,
+          "velocity_m_per_s": 0.8777341499999995,
+          "acceleration_m_per_s2": -1.3062599999999982,
+          "cable_tension_N": 85.03740000000002,
+          "power_W": 74.64023000720998,
+          "actuator_work_exact_J": 36.47722425245112
+        },
+        {
+          "time_s": 0.595,
+          "height_m": 0.33694227592812487,
+          "velocity_m_per_s": 0.8710342593749998,
+          "acceleration_m_per_s2": -1.3735575000000022,
+          "cable_tension_N": 84.36442499999998,
+          "power_W": 73.4843044474727,
+          "actuator_work_exact_J": 36.847540673573825
+        },
+        {
+          "time_s": 0.6,
+          "height_m": 0.3412799999999998,
+          "velocity_m_per_s": 0.8640000000000008,
+          "acceleration_m_per_s2": -1.4400000000000013,
+          "cable_tension_N": 83.69999999999999,
+          "power_W": 72.31680000000006,
+          "actuator_work_exact_J": 37.212047999999996
+        },
+        {
+          "time_s": 0.605,
+          "height_m": 0.34558172594687486,
+          "velocity_m_per_s": 0.856635759375,
+          "acceleration_m_per_s2": -1.5055425000000024,
+          "cable_tension_N": 83.04457499999998,
+          "power_W": 71.13895256709912,
+          "actuator_work_exact_J": 37.57069143658834
+        },
+        {
+          "time_s": 0.61,
+          "height_m": 0.34984581530000003,
+          "velocity_m_per_s": 0.8489461499999997,
+          "acceleration_m_per_s2": -1.5701399999999968,
+          "cable_tension_N": 82.39860000000004,
+          "power_W": 69.95197423539001,
+          "actuator_work_exact_J": 37.92342230892911
+        },
+        {
+          "time_s": 0.615,
+          "height_m": 0.35407065321562475,
+          "velocity_m_per_s": 0.8409360093750005,
+          "acceleration_m_per_s2": -1.633747500000002,
+          "cable_tension_N": 81.76252499999998,
+          "power_W": 68.7570514899237,
+          "actuator_work_exact_J": 38.27019793977055
+        },
+        {
+          "time_s": 0.62,
+          "height_m": 0.3582546496000001,
+          "velocity_m_per_s": 0.8326104000000005,
+          "acceleration_m_per_s2": -1.6963200000000036,
+          "cable_tension_N": 81.13679999999997,
+          "power_W": 67.55534350272002,
+          "actuator_work_exact_J": 38.61098151670082
+        },
+        {
+          "time_s": 0.625,
+          "height_m": 0.362396240234375,
+          "velocity_m_per_s": 0.823974609375,
+          "acceleration_m_per_s2": -1.7578125,
+          "cable_tension_N": 80.52187500000001,
+          "power_W": 66.34798049926758,
+          "actuator_work_exact_J": 38.94574195146561
+        },
+        {
+          "time_s": 0.63,
+          "height_m": 0.3664938878999999,
+          "velocity_m_per_s": 0.8150341499999993,
+          "acceleration_m_per_s2": -1.8181800000000035,
+          "cable_tension_N": 79.91819999999997,
+          "power_W": 65.13606220652993,
+          "actuator_work_exact_J": 39.2744537313211
+        },
+        {
+          "time_s": 0.635,
+          "height_m": 0.3705460835031252,
+          "velocity_m_per_s": 0.8057947593749994,
+          "acceleration_m_per_s2": -1.877377499999998,
+          "cable_tension_N": 79.32622500000002,
+          "power_W": 63.920656386002086,
+          "actuator_work_exact_J": 39.597096762837644
+        },
+        {
+          "time_s": 0.64,
+          "height_m": 0.37455134720000044,
+          "velocity_m_per_s": 0.7962623999999989,
+          "acceleration_m_per_s2": -1.9353600000000029,
+          "cable_tension_N": 78.74639999999998,
+          "power_W": 62.7027974553599,
+          "actuator_work_exact_J": 39.91365620858883
+        },
+        {
+          "time_s": 0.645,
+          "height_m": 0.378508229521875,
+          "velocity_m_per_s": 0.7864432593749999,
+          "acceleration_m_per_s2": -1.9920824999999986,
+          "cable_tension_N": 78.17917500000001,
+          "power_W": 61.483485202248524,
+          "actuator_work_exact_J": 40.22412231717781
+        },
+        {
+          "time_s": 0.65,
+          "height_m": 0.38241531249999966,
+          "velocity_m_per_s": 0.7763437500000014,
+          "acceleration_m_per_s2": -2.0475000000000065,
+          "cable_tension_N": 77.62499999999994,
+          "power_W": 60.263683593750066,
+          "actuator_work_exact_J": 40.528490247070295
+        },
+        {
+          "time_s": 0.655,
+          "height_m": 0.3862712107906248,
+          "velocity_m_per_s": 0.7659705093750016,
+          "acceleration_m_per_s2": -2.1015675000000016,
+          "cable_tension_N": 77.08432499999999,
+          "power_W": 59.04431968507816,
+          "actuator_work_exact_J": 40.8267598847213
+        },
+        {
+          "time_s": 0.66,
+          "height_m": 0.3900745728,
+          "velocity_m_per_s": 0.7553304000000001,
+          "acceleration_m_per_s2": -2.154239999999998,
+          "cable_tension_N": 76.55760000000002,
+          "power_W": 57.82628263104002,
+          "actuator_work_exact_J": 41.118935657500806
+        },
+        {
+          "time_s": 0.665,
+          "height_m": 0.3938240818093752,
+          "velocity_m_per_s": 0.7444305093749999,
+          "acceleration_m_per_s2": -2.205472499999999,
+          "cable_tension_N": 76.04527500000002,
+          "power_W": 56.61042280381196,
+          "actuator_work_exact_J": 41.40502634194132
+        },
+        {
+          "time_s": 0.67,
+          "height_m": 0.39751845710000006,
+          "velocity_m_per_s": 0.7332781499999999,
+          "acceleration_m_per_s2": -2.255220000000005,
+          "cable_tension_N": 75.54779999999995,
+          "power_W": 55.397551020569956,
+          "actuator_work_exact_J": 41.68504486784712
+        },
+        {
+          "time_s": 0.675,
+          "height_m": 0.4011564550781249,
+          "velocity_m_per_s": 0.7218808593749997,
+          "acceleration_m_per_s2": -2.3034375000000047,
+          "cable_tension_N": 75.06562499999995,
+          "power_W": 54.18843788452143,
+          "actuator_work_exact_J": 41.959008118824
+        },
+        {
+          "time_s": 0.68,
+          "height_m": 0.40473687039999967,
+          "velocity_m_per_s": 0.7102464000000017,
+          "acceleration_m_per_s2": -2.350080000000002,
+          "cable_tension_N": 74.59919999999998,
+          "power_W": 52.98381324288012,
+          "actuator_work_exact_J": 42.226936729804784
+        },
+        {
+          "time_s": 0.685,
+          "height_m": 0.4082585370968751,
+          "velocity_m_per_s": 0.6983827593749998,
+          "acceleration_m_per_s2": -2.3951025,
+          "cable_tension_N": 74.14897500000001,
+          "power_W": 51.784365765327884,
+          "actuator_work_exact_J": 42.488854882164645
+        },
+        {
+          "time_s": 0.69,
+          "height_m": 0.41172032970000016,
+          "velocity_m_per_s": 0.6862981500000003,
+          "acceleration_m_per_s2": -2.4384599999999956,
+          "cable_tension_N": 73.71540000000005,
+          "power_W": 50.59074264651005,
+          "actuator_work_exact_J": 42.74479009703714
+        },
+        {
+          "time_s": 0.695,
+          "height_m": 0.4151211643656249,
+          "velocity_m_per_s": 0.6740010093750008,
+          "acceleration_m_per_s2": -2.4801075000000026,
+          "cable_tension_N": 73.29892499999998,
+          "power_W": 49.40354943610247,
+          "actuator_work_exact_J": 42.994773027460404
+        },
+        {
+          "time_s": 0.7,
+          "height_m": 0.41845999999999983,
+          "velocity_m_per_s": 0.6615000000000006,
+          "acceleration_m_per_s2": -2.5199999999999996,
+          "cable_tension_N": 72.9,
+          "power_W": 48.22335000000005,
+          "actuator_work_exact_J": 43.238837249999996
+        },
+        {
+          "time_s": 0.705,
+          "height_m": 0.4217358393843752,
+          "velocity_m_per_s": 0.6488040093749996,
+          "acceleration_m_per_s2": -2.558092499999997,
+          "cable_tension_N": 72.51907500000003,
+          "power_W": 47.05066661616632,
+          "actuator_work_exact_J": 43.47701905651258
+        },
+        {
+          "time_s": 0.71,
+          "height_m": 0.42494773029999977,
+          "velocity_m_per_s": 0.6359221500000007,
+          "acceleration_m_per_s2": -2.594340000000006,
+          "cable_tension_N": 72.15659999999994,
+          "power_W": 45.885980208690015,
+          "actuator_work_exact_J": 43.7093572467331
+        },
+        {
+          "time_s": 0.715,
+          "height_m": 0.42809476665312496,
+          "velocity_m_per_s": 0.6228637593750008,
+          "acceleration_m_per_s2": -2.6286974999999977,
+          "cable_tension_N": 71.81302500000002,
+          "power_W": 44.72973072359093,
+          "actuator_work_exact_J": 43.93589292238536
+        },
+        {
+          "time_s": 0.72,
+          "height_m": 0.4311760896000002,
+          "velocity_m_per_s": 0.6096384000000006,
+          "acceleration_m_per_s2": -2.661120000000004,
+          "cable_tension_N": 71.48879999999997,
+          "power_W": 43.58231764992002,
+          "actuator_work_exact_J": 44.15666928353282
+        },
+        {
+          "time_s": 0.725,
+          "height_m": 0.43419088867187494,
+          "velocity_m_per_s": 0.5962558593750007,
+          "acceleration_m_per_s2": -2.6915625,
+          "cable_tension_N": 71.184375,
+          "power_W": 42.444100689697315,
+          "actuator_work_exact_J": 44.37173142790604
+        },
+        {
+          "time_s": 0.73,
+          "height_m": 0.43713840290000006,
+          "velocity_m_per_s": 0.58272615,
+          "acceleration_m_per_s2": -2.719979999999996,
+          "cable_tension_N": 70.90020000000004,
+          "power_W": 41.315400580230026,
+          "actuator_work_exact_J": 44.581126153959126
+        },
+        {
+          "time_s": 0.735,
+          "height_m": 0.44001792194062506,
+          "velocity_m_per_s": 0.5690595093750002,
+          "acceleration_m_per_s2": -2.7463274999999996,
+          "cable_tension_N": 70.63672500000001,
+          "power_W": 40.19650007235681,
+          "actuator_work_exact_J": 44.784901768425904
+        },
+        {
+          "time_s": 0.74,
+          "height_m": 0.44282878719999996,
+          "velocity_m_per_s": 0.5552663999999998,
+          "acceleration_m_per_s2": -2.7705599999999997,
+          "cable_tension_N": 70.3944,
+          "power_W": 39.08764506815999,
+          "actuator_work_exact_J": 44.98310789916479
+        },
+        {
+          "time_s": 0.745,
+          "height_m": 0.4455703929593753,
+          "velocity_m_per_s": 0.5413575093749996,
+          "acceleration_m_per_s2": -2.7926325,
+          "cable_tension_N": 70.173675,
+          "power_W": 37.989045921690675,
+          "actuator_work_exact_J": 45.17579531409823
+        },
+        {
+          "time_s": 0.75,
+          "height_m": 0.4482421875,
+          "velocity_m_per_s": 0.52734375,
+          "acceleration_m_per_s2": -2.8125,
+          "cable_tension_N": 69.97500000000001,
+          "power_W": 36.90087890625001,
+          "actuator_work_exact_J": 45.363015747070314
+        },
+        {
+          "time_s": 0.755,
+          "height_m": 0.450843674228125,
+          "velocity_m_per_s": 0.5132362593750015,
+          "acceleration_m_per_s2": -2.8301175000000036,
+          "cable_tension_N": 69.79882499999997,
+          "power_W": 35.823287851770324,
+          "actuator_work_exact_J": 45.544821731465284
+        },
+        {
+          "time_s": 0.76,
+          "height_m": 0.45337441280000035,
+          "velocity_m_per_s": 0.4990463999999992,
+          "acceleration_m_per_s2": -2.84544,
+          "cable_tension_N": 69.6456,
+          "power_W": 34.756385955839946,
+          "actuator_work_exact_J": 45.72126644244483
+        },
+        {
+          "time_s": 0.765,
+          "height_m": 0.4558340202468749,
+          "velocity_m_per_s": 0.4847857593750007,
+          "acceleration_m_per_s2": -2.858422500000003,
+          "cable_tension_N": 69.51577499999998,
+          "power_W": 33.700257771916675,
+          "actuator_work_exact_J": 45.89240354868241
+        },
+        {
+          "time_s": 0.77,
+          "height_m": 0.45822217209999994,
+          "velocity_m_per_s": 0.47046615,
+          "acceleration_m_per_s2": -2.8690199999999955,
+          "cable_tension_N": 69.40980000000005,
+          "power_W": 32.65496137827002,
+          "actuator_work_exact_J": 46.05828707448911
+        },
+        {
+          "time_s": 0.775,
+          "height_m": 0.46053860351562514,
+          "velocity_m_per_s": 0.4560996093749985,
+          "acceleration_m_per_s2": -2.8771875000000016,
+          "cable_tension_N": 69.32812499999999,
+          "power_W": 31.62053073120106,
+          "actuator_work_exact_J": 46.218971273242964
+        },
+        {
+          "time_s": 0.78,
+          "height_m": 0.46278311039999953,
+          "velocity_m_per_s": 0.4416984000000017,
+          "acceleration_m_per_s2": -2.8828800000000037,
+          "cable_tension_N": 69.27119999999996,
+          "power_W": 30.596978206080102,
+          "actuator_work_exact_J": 46.37451051305277
+        },
+        {
+          "time_s": 0.785,
+          "height_m": 0.46495555053437476,
+          "velocity_m_per_s": 0.4272750093750002,
+          "acceleration_m_per_s2": -2.886052499999998,
+          "cable_tension_N": 69.23947500000003,
+          "power_W": 29.5842973297451,
+          "actuator_work_exact_J": 46.5249591756042
+        },
+        {
+          "time_s": 0.7886751345948128,
+          "height_m": 0.4665063509461096,
+          "velocity_m_per_s": 0.41666666666666785,
+          "acceleration_m_per_s2": -2.8867513459481273,
+          "cable_tension_N": 69.23248654051874,
+          "power_W": 28.846869391882887,
+          "actuator_work_exact_J": 46.63232858336891
+        },
+        {
+          "time_s": 0.79,
+          "height_m": 0.46705584470000017,
+          "velocity_m_per_s": 0.41284215000000124,
+          "acceleration_m_per_s2": -2.886660000000006,
+          "cable_tension_N": 69.23339999999995,
+          "power_W": 28.582465707810062,
+          "actuator_work_exact_J": 46.67037156915313
+        },
+        {
+          "time_s": 0.795,
+          "height_m": 0.46908397780312516,
+          "velocity_m_per_s": 0.39841275937499887,
+          "acceleration_m_per_s2": -2.8846574999999994,
+          "cable_tension_N": 69.25342500000001,
+          "power_W": 27.591448150419534,
+          "actuator_work_exact_J": 46.810801856650585
+        },
+        {
+          "time_s": 0.8,
+          "height_m": 0.47104000000000024,
+          "velocity_m_per_s": 0.38399999999999945,
+          "acceleration_m_per_s2": -2.8800000000000026,
+          "cable_tension_N": 69.29999999999998,
+          "power_W": 26.611199999999954,
+          "actuator_work_exact_J": 46.946304000000026
+        },
+        {
+          "time_s": 0.805,
+          "height_m": 0.47292402782187537,
+          "velocity_m_per_s": 0.3696172593749987,
+          "acceleration_m_per_s2": -2.8726424999999978,
+          "cable_tension_N": 69.37357500000003,
+          "power_W": 25.641670664545934,
+          "actuator_work_exact_J": 47.0769317214654
+        },
+        {
+          "time_s": 0.81,
+          "height_m": 0.4747362452999997,
+          "velocity_m_per_s": 0.35527815000000196,
+          "acceleration_m_per_s2": -2.8625400000000063,
+          "cable_tension_N": 69.47459999999994,
+          "power_W": 24.682807359990115,
+          "actuator_work_exact_J": 47.20273848326709
+        },
+        {
+          "time_s": 0.815,
+          "height_m": 0.476476905090625,
+          "velocity_m_per_s": 0.34099650937500225,
+          "acceleration_m_per_s2": -2.849647500000003,
+          "cable_tension_N": 69.60352499999998,
+          "power_W": 23.734559065195697,
+          "actuator_work_exact_J": 47.32377748642
+        },
+        {
+          "time_s": 0.82,
+          "height_m": 0.4781463295999999,
+          "velocity_m_per_s": 0.32678640000000136,
+          "acceleration_m_per_s2": -2.833920000000006,
+          "cable_tension_N": 69.76079999999995,
+          "power_W": 22.796880693120077,
+          "actuator_work_exact_J": 47.4401016898848
+        },
+        {
+          "time_s": 0.825,
+          "height_m": 0.47974491210937575,
+          "velocity_m_per_s": 0.3126621093749993,
+          "acceleration_m_per_s2": -2.8153124999999974,
+          "cable_tension_N": 69.94687500000003,
+          "power_W": 21.869737481689413,
+          "actuator_work_exact_J": 47.55176385112389
+        },
+        {
+          "time_s": 0.83,
+          "height_m": 0.4812731178999998,
+          "velocity_m_per_s": 0.29863815000000127,
+          "acceleration_m_per_s2": -2.7937800000000053,
+          "cable_tension_N": 70.16219999999996,
+          "power_W": 20.953109607930077,
+          "actuator_work_exact_J": 47.6588165891671
+        },
+        {
+          "time_s": 0.835,
+          "height_m": 0.4827314853781248,
+          "velocity_m_per_s": 0.28472925937500104,
+          "acceleration_m_per_s2": -2.7692775000000083,
+          "cable_tension_N": 70.40722499999993,
+          "power_W": 20.046997028899035,
+          "actuator_work_exact_J": 47.76131247131523
+        },
+        {
+          "time_s": 0.84,
+          "height_m": 0.4841206271999996,
+          "velocity_m_per_s": 0.27095039999999937,
+          "acceleration_m_per_s2": -2.741759999999992,
+          "cable_tension_N": 70.68240000000009,
+          "power_W": 19.15142455295998,
+          "actuator_work_exact_J": 47.85930412462076
+        },
+        {
+          "time_s": 0.845,
+          "height_m": 0.48544123139687523,
+          "velocity_m_per_s": 0.25731675937499787,
+          "acceleration_m_per_s2": -2.7111824999999996,
+          "cable_tension_N": 70.98817500000001,
+          "power_W": 18.266447144945243,
+          "actuator_work_exact_J": 47.952844373309716
+        },
+        {
+          "time_s": 0.85,
+          "height_m": 0.48669406250000025,
+          "velocity_m_per_s": 0.24384374999999903,
+          "acceleration_m_per_s2": -2.677499999999995,
+          "cable_tension_N": 71.32500000000006,
+          "power_W": 17.392155468749944,
+          "actuator_work_exact_J": 48.04198640332034
+        },
+        {
+          "time_s": 0.855,
+          "height_m": 0.48787996266562494,
+          "velocity_m_per_s": 0.23054700937499817,
+          "acceleration_m_per_s2": -2.6406674999999993,
+          "cable_tension_N": 71.69332500000002,
+          "power_W": 16.528681670899793,
+          "actuator_work_exact_J": 48.12678395515659
+        },
+        {
+          "time_s": 0.86,
+          "height_m": 0.48899985280000013,
+          "velocity_m_per_s": 0.21744239999999948,
+          "acceleration_m_per_s2": -2.6006399999999985,
+          "cable_tension_N": 72.09360000000002,
+          "power_W": 15.676205408639968,
+          "actuator_work_exact_J": 48.20729154626882
+        },
+        {
+          "time_s": 0.865,
+          "height_m": 0.490054733684375,
+          "velocity_m_per_s": 0.20454600937500267,
+          "acceleration_m_per_s2": -2.5573724999999996,
+          "cable_tension_N": 72.52627500000001,
+          "power_W": 14.834960126084024,
+          "actuator_work_exact_J": 48.28356472419339
+        },
+        {
+          "time_s": 0.87,
+          "height_m": 0.4910456871000002,
+          "velocity_m_per_s": 0.1918741500000003,
+          "acceleration_m_per_s2": -2.5108199999999954,
+          "cable_tension_N": 72.99180000000005,
+          "power_W": 14.005239581970033,
+          "actuator_work_exact_J": 48.35566035170113
+        },
+        {
+          "time_s": 0.875,
+          "height_m": 0.491973876953125,
+          "velocity_m_per_s": 0.179443359375,
+          "acceleration_m_per_s2": -2.4609375,
+          "cable_tension_N": 73.49062500000001,
+          "power_W": 13.187404632568361,
+          "actuator_work_exact_J": 48.42363692522049
+        },
+        {
+          "time_s": 0.88,
+          "height_m": 0.4928405503999995,
+          "velocity_m_per_s": 0.1672703999999996,
+          "acceleration_m_per_s2": -2.407679999999999,
+          "cable_tension_N": 74.02320000000002,
+          "power_W": 12.381890273279973,
+          "actuator_work_exact_J": 48.48755492782076
+        },
+        {
+          "time_s": 0.885,
+          "height_m": 0.49364703897187456,
+          "velocity_m_per_s": 0.15537225937499954,
+          "acceleration_m_per_s2": -2.3510025,
+          "cable_tension_N": 74.58997500000001,
+          "power_W": 11.589212942474733,
+          "actuator_work_exact_J": 48.54747721805736
+        },
+        {
+          "time_s": 0.89,
+          "height_m": 0.49439475970000046,
+          "velocity_m_per_s": 0.14376614999999937,
+          "acceleration_m_per_s2": -2.290859999999995,
+          "cable_tension_N": 75.19140000000006,
+          "power_W": 10.809978091109961,
+          "actuator_work_exact_J": 48.60346945599916
+        },
+        {
+          "time_s": 0.895,
+          "height_m": 0.49508521624062496,
+          "velocity_m_per_s": 0.13246950937499768,
+          "acceleration_m_per_s2": -2.2272074999999845,
+          "cable_tension_N": 75.82792500000016,
+          "power_W": 10.044888021674144,
+          "actuator_work_exact_J": 48.65560056777558
+        },
+        {
+          "time_s": 0.9,
+          "height_m": 0.4957200000000008,
+          "velocity_m_per_s": 0.12149999999999572,
+          "acceleration_m_per_s2": -2.1599999999999966,
+          "cable_tension_N": 76.50000000000004,
+          "power_W": 9.294749999999677,
+          "actuator_work_exact_J": 48.70394325000008
+        },
+        {
+          "time_s": 0.905,
+          "height_m": 0.49630079125937554,
+          "velocity_m_per_s": 0.11087550937499913,
+          "acceleration_m_per_s2": -2.0891924999999887,
+          "cable_tension_N": 77.20807500000012,
+          "power_W": 8.560484643488149,
+          "actuator_work_exact_J": 48.74857451544057
+        },
+        {
+          "time_s": 0.91,
+          "height_m": 0.4968293603,
+          "velocity_m_per_s": 0.10061415000000196,
+          "acceleration_m_per_s2": -2.0147400000000104,
+          "cable_tension_N": 77.9525999999999,
+          "power_W": 7.843134589290143,
+          "actuator_work_exact_J": 48.78957628133112
+        },
+        {
+          "time_s": 0.915,
+          "height_m": 0.4973075685281254,
+          "velocity_m_per_s": 0.0907342593750009,
+          "acceleration_m_per_s2": -1.936597500000012,
+          "cable_tension_N": 78.73402499999989,
+          "power_W": 7.143873445987795,
+          "actuator_work_exact_J": 48.827036001730754
+        },
+        {
+          "time_s": 0.92,
+          "height_m": 0.4977373695999998,
+          "velocity_m_per_s": 0.08125440000000239,
+          "acceleration_m_per_s2": -1.8547200000000004,
+          "cable_tension_N": 79.5528,
+          "power_W": 6.464015032320191,
+          "actuator_work_exact_J": 48.86104734535679
+        },
+        {
+          "time_s": 0.925,
+          "height_m": 0.49812081054687507,
+          "velocity_m_per_s": 0.07219335937500126,
+          "acceleration_m_per_s2": -1.769062500000004,
+          "cable_tension_N": 80.40937499999997,
+          "power_W": 5.80502290649424,
+          "actuator_work_exact_J": 48.89171092033769
+        },
+        {
+          "time_s": 0.93,
+          "height_m": 0.49846003289999974,
+          "velocity_m_per_s": 0.06357015000000033,
+          "acceleration_m_per_s2": -1.6795799999999943,
+          "cable_tension_N": 81.30420000000007,
+          "power_W": 5.168520189630031,
+          "actuator_work_exact_J": 48.919135047345094
+        },
+        {
+          "time_s": 0.935,
+          "height_m": 0.4987572738156256,
+          "velocity_m_per_s": 0.0554040093749979,
+          "acceleration_m_per_s2": -1.5862275000000068,
+          "cable_tension_N": 82.23772499999994,
+          "power_W": 4.5562996868784955,
+          "actuator_work_exact_J": 48.943436582587
+        },
+        {
+          "time_s": 0.94,
+          "height_m": 0.49901486719999966,
+          "velocity_m_per_s": 0.04771440000000027,
+          "acceleration_m_per_s2": -1.4889600000000058,
+          "cable_tension_N": 83.21039999999995,
+          "power_W": 3.97033430976002,
+          "actuator_work_exact_J": 48.96474179215677
+        },
+        {
+          "time_s": 0.945,
+          "height_m": 0.4992352448343751,
+          "velocity_m_per_s": 0.04052100937500036,
+          "acceleration_m_per_s2": -1.3877325000000056,
+          "cable_tension_N": 84.22267499999995,
+          "power_W": 3.4127878032626064,
+          "actuator_work_exact_J": 48.98318727925605
+        },
+        {
+          "time_s": 0.95,
+          "height_m": 0.49942093749999916,
+          "velocity_m_per_s": 0.03384375000000084,
+          "acceleration_m_per_s2": -1.2824999999999989,
+          "cable_tension_N": 85.27500000000002,
+          "power_W": 2.8860257812500723,
+          "actuator_work_exact_J": 48.99892096582023
+        },
+        {
+          "time_s": 0.955,
+          "height_m": 0.49957457610312517,
+          "velocity_m_per_s": 0.02770275937500344,
+          "acceleration_m_per_s2": -1.173217500000014,
+          "cable_tension_N": 86.36782499999987,
+          "power_W": 2.392627073717403,
+          "actuator_work_exact_J": 49.01210313010153
+        },
+        {
+          "time_s": 0.96,
+          "height_m": 0.4996988928000001,
+          "velocity_m_per_s": 0.02211840000000187,
+          "acceleration_m_per_s2": -1.0598400000000154,
+          "cable_tension_N": 87.50159999999985,
+          "power_W": 1.9353953894401603,
+          "actuator_work_exact_J": 49.02290750177281
+        },
+        {
+          "time_s": 0.965,
+          "height_m": 0.4997967221218751,
+          "velocity_m_per_s": 0.01711125937500313,
+          "acceleration_m_per_s2": -0.9423225000000031,
+          "cable_tension_N": 88.67677499999998,
+          "power_W": 1.5173712975637927,
+          "actuator_work_exact_J": 49.03152241614294
+        },
+        {
+          "time_s": 0.97,
+          "height_m": 0.4998710020999999,
+          "velocity_m_per_s": 0.012702150000000856,
+          "acceleration_m_per_s2": -0.8206200000000052,
+          "cable_tension_N": 89.89379999999996,
+          "power_W": 1.1418445316700763,
+          "actuator_work_exact_J": 49.03815202908311
+        },
+        {
+          "time_s": 0.975,
+          "height_m": 0.49992477539062463,
+          "velocity_m_per_s": 0.008912109374998423,
+          "acceleration_m_per_s2": -0.6946874999999935,
+          "cable_tension_N": 91.15312500000007,
+          "power_W": 0.8123666198729037,
+          "actuator_work_exact_J": 49.04301759428784
+        },
+        {
+          "time_s": 0.98,
+          "height_m": 0.49996119039999964,
+          "velocity_m_per_s": 0.00576239999999828,
+          "acceleration_m_per_s2": -0.5644799999999961,
+          "cable_tension_N": 92.45520000000005,
+          "power_W": 0.5327638444798413,
+          "actuator_work_exact_J": 49.04635880450877
+        },
+        {
+          "time_s": 0.985,
+          "height_m": 0.49998350240937395,
+          "velocity_m_per_s": 0.0032745093750055076,
+          "acceleration_m_per_s2": -0.42995250000001306,
+          "cable_tension_N": 93.80047499999988,
+          "power_W": 0.30715053476746934,
+          "actuator_work_exact_J": 49.04843519841783
+        },
+        {
+          "time_s": 0.99,
+          "height_m": 0.49999507470000015,
+          "velocity_m_per_s": 0.0014701499999993928,
+          "acceleration_m_per_s2": -0.29106000000000165,
+          "cable_tension_N": 95.18939999999999,
+          "power_W": 0.1399426964099422,
+          "actuator_work_exact_J": 49.04952763477513
+        },
+        {
+          "time_s": 0.995,
+          "height_m": 0.49999937967812613,
+          "velocity_m_per_s": 0.00037125937500093187,
+          "acceleration_m_per_s2": -0.14775749999999732,
+          "cable_tension_N": 96.62242500000004,
+          "power_W": 0.03587198111657443,
+          "actuator_work_exact_J": 49.0499398355918
+        },
+        {
+          "time_s": 1.0,
+          "height_m": 0.5,
+          "velocity_m_per_s": 0.0,
+          "acceleration_m_per_s2": 0.0,
+          "cable_tension_N": 98.10000000000001,
+          "power_W": 0.0,
+          "actuator_work_exact_J": 49.050000000000004
+        }
+      ],
+      "x": "time_s",
+      "ys": [
+        "power_W"
+      ],
+      "xlabel": "Time (s)",
+      "ylabel": "Mechanical power (W)",
+      "log": false
+    }
+  ],
+  "notes": [
+    "Up is positive; a massless vertical cable carries the moving mass without pulley mechanical advantage.",
+    "The cable pulls only. Inputs demanding negative tension are rejected because the prescribed motion would lose tautness.",
+    "Work includes gravity and kinetic energy. Total work here equals m g lift because initial and final speeds are zero; motor losses are omitted."
+  ]
+}

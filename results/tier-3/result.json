@@ -1,0 +1,1046 @@
+{
+  "inputs": {
+    "mass_kg": 10,
+    "incline_deg": 20,
+    "mu_static": 0.3,
+    "mu_kinetic": 0.25,
+    "applied_downslope_N": 0,
+    "gravity_m_per_s2": 9.81,
+    "duration_s": 2
+  },
+  "title": "Tier 3: friction and the start of motion",
+  "metrics": {
+    "state": "sliding from rest",
+    "normal_force_N": 92.18384609909762,
+    "tangential_force_before_friction_N": 33.5521760602481,
+    "static_friction_limit_N": 27.655153829729286,
+    "actual_friction_N": -23.045961524774405,
+    "downslope_acceleration_m_per_s2": 1.0506214535473695,
+    "final_displacement_m": 2.101242907094739,
+    "final_velocity_m_per_s": 2.101242907094739
+  },
+  "tables": [
+    {
+      "name": "block_motion",
+      "rows": [
+        {
+          "time_s": 0.0,
+          "displacement_m": 0.0,
+          "velocity_m_per_s": 0.0
+        },
+        {
+          "time_s": 0.01,
+          "displacement_m": 5.253107267736847e-05,
+          "velocity_m_per_s": 0.010506214535473695
+        },
+        {
+          "time_s": 0.02,
+          "displacement_m": 0.0002101242907094739,
+          "velocity_m_per_s": 0.02101242907094739
+        },
+        {
+          "time_s": 0.03,
+          "displacement_m": 0.0004727796540963163,
+          "velocity_m_per_s": 0.031518643606421086
+        },
+        {
+          "time_s": 0.04,
+          "displacement_m": 0.0008404971628378956,
+          "velocity_m_per_s": 0.04202485814189478
+        },
+        {
+          "time_s": 0.05,
+          "displacement_m": 0.001313276816934212,
+          "velocity_m_per_s": 0.05253107267736848
+        },
+        {
+          "time_s": 0.06,
+          "displacement_m": 0.001891118616385265,
+          "velocity_m_per_s": 0.06303728721284217
+        },
+        {
+          "time_s": 0.07,
+          "displacement_m": 0.0025740225611910555,
+          "velocity_m_per_s": 0.07354350174831586
+        },
+        {
+          "time_s": 0.08,
+          "displacement_m": 0.0033619886513515823,
+          "velocity_m_per_s": 0.08404971628378956
+        },
+        {
+          "time_s": 0.09,
+          "displacement_m": 0.004255016886866846,
+          "velocity_m_per_s": 0.09455593081926325
+        },
+        {
+          "time_s": 0.1,
+          "displacement_m": 0.005253107267736848,
+          "velocity_m_per_s": 0.10506214535473696
+        },
+        {
+          "time_s": 0.11,
+          "displacement_m": 0.006356259793961585,
+          "velocity_m_per_s": 0.11556835989021064
+        },
+        {
+          "time_s": 0.12,
+          "displacement_m": 0.00756447446554106,
+          "velocity_m_per_s": 0.12607457442568434
+        },
+        {
+          "time_s": 0.13,
+          "displacement_m": 0.008877751282475272,
+          "velocity_m_per_s": 0.13658078896115802
+        },
+        {
+          "time_s": 0.14,
+          "displacement_m": 0.010296090244764222,
+          "velocity_m_per_s": 0.14708700349663173
+        },
+        {
+          "time_s": 0.15,
+          "displacement_m": 0.011819491352407905,
+          "velocity_m_per_s": 0.1575932180321054
+        },
+        {
+          "time_s": 0.16,
+          "displacement_m": 0.013447954605406329,
+          "velocity_m_per_s": 0.16809943256757912
+        },
+        {
+          "time_s": 0.17,
+          "displacement_m": 0.015181480003759492,
+          "velocity_m_per_s": 0.17860564710305282
+        },
+        {
+          "time_s": 0.18,
+          "displacement_m": 0.017020067547467384,
+          "velocity_m_per_s": 0.1891118616385265
+        },
+        {
+          "time_s": 0.19,
+          "displacement_m": 0.01896371723653002,
+          "velocity_m_per_s": 0.1996180761740002
+        },
+        {
+          "time_s": 0.2,
+          "displacement_m": 0.021012429070947393,
+          "velocity_m_per_s": 0.21012429070947392
+        },
+        {
+          "time_s": 0.21,
+          "displacement_m": 0.023166203050719494,
+          "velocity_m_per_s": 0.22063050524494757
+        },
+        {
+          "time_s": 0.22,
+          "displacement_m": 0.02542503917584634,
+          "velocity_m_per_s": 0.23113671978042127
+        },
+        {
+          "time_s": 0.23,
+          "displacement_m": 0.027788937446327926,
+          "velocity_m_per_s": 0.24164293431589498
+        },
+        {
+          "time_s": 0.24,
+          "displacement_m": 0.03025789786216424,
+          "velocity_m_per_s": 0.2521491488513687
+        },
+        {
+          "time_s": 0.25,
+          "displacement_m": 0.032831920423355296,
+          "velocity_m_per_s": 0.26265536338684237
+        },
+        {
+          "time_s": 0.26,
+          "displacement_m": 0.03551100512990109,
+          "velocity_m_per_s": 0.27316157792231605
+        },
+        {
+          "time_s": 0.27,
+          "displacement_m": 0.038295151981801626,
+          "velocity_m_per_s": 0.2836677924577898
+        },
+        {
+          "time_s": 0.28,
+          "displacement_m": 0.04118436097905689,
+          "velocity_m_per_s": 0.29417400699326346
+        },
+        {
+          "time_s": 0.29,
+          "displacement_m": 0.04417863212166688,
+          "velocity_m_per_s": 0.30468022152873714
+        },
+        {
+          "time_s": 0.3,
+          "displacement_m": 0.04727796540963162,
+          "velocity_m_per_s": 0.3151864360642108
+        },
+        {
+          "time_s": 0.31,
+          "displacement_m": 0.05048236084295111,
+          "velocity_m_per_s": 0.32569265059968455
+        },
+        {
+          "time_s": 0.32,
+          "displacement_m": 0.053791818421625316,
+          "velocity_m_per_s": 0.33619886513515823
+        },
+        {
+          "time_s": 0.33,
+          "displacement_m": 0.057206338145654276,
+          "velocity_m_per_s": 0.34670507967063197
+        },
+        {
+          "time_s": 0.34,
+          "displacement_m": 0.06072592001503797,
+          "velocity_m_per_s": 0.35721129420610565
+        },
+        {
+          "time_s": 0.35,
+          "displacement_m": 0.06435056402977637,
+          "velocity_m_per_s": 0.36771750874157927
+        },
+        {
+          "time_s": 0.36,
+          "displacement_m": 0.06808027018986954,
+          "velocity_m_per_s": 0.378223723277053
+        },
+        {
+          "time_s": 0.37,
+          "displacement_m": 0.07191503849531744,
+          "velocity_m_per_s": 0.3887299378125267
+        },
+        {
+          "time_s": 0.38,
+          "displacement_m": 0.07585486894612008,
+          "velocity_m_per_s": 0.3992361523480004
+        },
+        {
+          "time_s": 0.39,
+          "displacement_m": 0.07989976154227744,
+          "velocity_m_per_s": 0.4097423668834741
+        },
+        {
+          "time_s": 0.4,
+          "displacement_m": 0.08404971628378957,
+          "velocity_m_per_s": 0.42024858141894783
+        },
+        {
+          "time_s": 0.41,
+          "displacement_m": 0.08830473317065639,
+          "velocity_m_per_s": 0.43075479595442145
+        },
+        {
+          "time_s": 0.42,
+          "displacement_m": 0.09266481220287798,
+          "velocity_m_per_s": 0.44126101048989513
+        },
+        {
+          "time_s": 0.43,
+          "displacement_m": 0.09712995338045431,
+          "velocity_m_per_s": 0.45176722502536887
+        },
+        {
+          "time_s": 0.44,
+          "displacement_m": 0.10170015670338536,
+          "velocity_m_per_s": 0.46227343956084255
+        },
+        {
+          "time_s": 0.45,
+          "displacement_m": 0.10637542217167116,
+          "velocity_m_per_s": 0.4727796540963163
+        },
+        {
+          "time_s": 0.46,
+          "displacement_m": 0.1111557497853117,
+          "velocity_m_per_s": 0.48328586863178996
+        },
+        {
+          "time_s": 0.47,
+          "displacement_m": 0.11604113954430695,
+          "velocity_m_per_s": 0.49379208316726364
+        },
+        {
+          "time_s": 0.48,
+          "displacement_m": 0.12103159144865697,
+          "velocity_m_per_s": 0.5042982977027374
+        },
+        {
+          "time_s": 0.49,
+          "displacement_m": 0.1261271054983617,
+          "velocity_m_per_s": 0.514804512238211
+        },
+        {
+          "time_s": 0.5,
+          "displacement_m": 0.13132768169342118,
+          "velocity_m_per_s": 0.5253107267736847
+        },
+        {
+          "time_s": 0.51,
+          "displacement_m": 0.1366333200338354,
+          "velocity_m_per_s": 0.5358169413091585
+        },
+        {
+          "time_s": 0.52,
+          "displacement_m": 0.14204402051960435,
+          "velocity_m_per_s": 0.5463231558446321
+        },
+        {
+          "time_s": 0.53,
+          "displacement_m": 0.14755978315072804,
+          "velocity_m_per_s": 0.5568293703801058
+        },
+        {
+          "time_s": 0.54,
+          "displacement_m": 0.1531806079272065,
+          "velocity_m_per_s": 0.5673355849155796
+        },
+        {
+          "time_s": 0.55,
+          "displacement_m": 0.15890649484903968,
+          "velocity_m_per_s": 0.5778417994510533
+        },
+        {
+          "time_s": 0.56,
+          "displacement_m": 0.16473744391622755,
+          "velocity_m_per_s": 0.5883480139865269
+        },
+        {
+          "time_s": 0.57,
+          "displacement_m": 0.17067345512877014,
+          "velocity_m_per_s": 0.5988542285220005
+        },
+        {
+          "time_s": 0.58,
+          "displacement_m": 0.17671452848666752,
+          "velocity_m_per_s": 0.6093604430574743
+        },
+        {
+          "time_s": 0.59,
+          "displacement_m": 0.18286066398991963,
+          "velocity_m_per_s": 0.6198666575929479
+        },
+        {
+          "time_s": 0.6,
+          "displacement_m": 0.18911186163852647,
+          "velocity_m_per_s": 0.6303728721284216
+        },
+        {
+          "time_s": 0.61,
+          "displacement_m": 0.1954681214324881,
+          "velocity_m_per_s": 0.6408790866638954
+        },
+        {
+          "time_s": 0.62,
+          "displacement_m": 0.20192944337180443,
+          "velocity_m_per_s": 0.6513853011993691
+        },
+        {
+          "time_s": 0.63,
+          "displacement_m": 0.20849582745647546,
+          "velocity_m_per_s": 0.6618915157348427
+        },
+        {
+          "time_s": 0.64,
+          "displacement_m": 0.21516727368650126,
+          "velocity_m_per_s": 0.6723977302703165
+        },
+        {
+          "time_s": 0.65,
+          "displacement_m": 0.2219437820618818,
+          "velocity_m_per_s": 0.6829039448057902
+        },
+        {
+          "time_s": 0.66,
+          "displacement_m": 0.2288253525826171,
+          "velocity_m_per_s": 0.6934101593412639
+        },
+        {
+          "time_s": 0.67,
+          "displacement_m": 0.23581198524870708,
+          "velocity_m_per_s": 0.7039163738767376
+        },
+        {
+          "time_s": 0.68,
+          "displacement_m": 0.24290368006015187,
+          "velocity_m_per_s": 0.7144225884122113
+        },
+        {
+          "time_s": 0.69,
+          "displacement_m": 0.2501004370169513,
+          "velocity_m_per_s": 0.7249288029476849
+        },
+        {
+          "time_s": 0.7,
+          "displacement_m": 0.2574022561191055,
+          "velocity_m_per_s": 0.7354350174831585
+        },
+        {
+          "time_s": 0.71,
+          "displacement_m": 0.26480913736661443,
+          "velocity_m_per_s": 0.7459412320186323
+        },
+        {
+          "time_s": 0.72,
+          "displacement_m": 0.27232108075947814,
+          "velocity_m_per_s": 0.756447446554106
+        },
+        {
+          "time_s": 0.73,
+          "displacement_m": 0.2799380862976966,
+          "velocity_m_per_s": 0.7669536610895797
+        },
+        {
+          "time_s": 0.74,
+          "displacement_m": 0.28766015398126976,
+          "velocity_m_per_s": 0.7774598756250534
+        },
+        {
+          "time_s": 0.75,
+          "displacement_m": 0.2954872838101977,
+          "velocity_m_per_s": 0.7879660901605271
+        },
+        {
+          "time_s": 0.76,
+          "displacement_m": 0.3034194757844803,
+          "velocity_m_per_s": 0.7984723046960008
+        },
+        {
+          "time_s": 0.77,
+          "displacement_m": 0.31145672990411766,
+          "velocity_m_per_s": 0.8089785192314745
+        },
+        {
+          "time_s": 0.78,
+          "displacement_m": 0.3195990461691098,
+          "velocity_m_per_s": 0.8194847337669482
+        },
+        {
+          "time_s": 0.79,
+          "displacement_m": 0.3278464245794567,
+          "velocity_m_per_s": 0.8299909483024219
+        },
+        {
+          "time_s": 0.8,
+          "displacement_m": 0.3361988651351583,
+          "velocity_m_per_s": 0.8404971628378957
+        },
+        {
+          "time_s": 0.81,
+          "displacement_m": 0.34465636783621456,
+          "velocity_m_per_s": 0.8510033773733693
+        },
+        {
+          "time_s": 0.82,
+          "displacement_m": 0.35321893268262555,
+          "velocity_m_per_s": 0.8615095919088429
+        },
+        {
+          "time_s": 0.83,
+          "displacement_m": 0.3618865596743914,
+          "velocity_m_per_s": 0.8720158064443166
+        },
+        {
+          "time_s": 0.84,
+          "displacement_m": 0.3706592488115119,
+          "velocity_m_per_s": 0.8825220209797903
+        },
+        {
+          "time_s": 0.85,
+          "displacement_m": 0.37953700009398716,
+          "velocity_m_per_s": 0.893028235515264
+        },
+        {
+          "time_s": 0.86,
+          "displacement_m": 0.38851981352181725,
+          "velocity_m_per_s": 0.9035344500507377
+        },
+        {
+          "time_s": 0.87,
+          "displacement_m": 0.397607689095002,
+          "velocity_m_per_s": 0.9140406645862115
+        },
+        {
+          "time_s": 0.88,
+          "displacement_m": 0.40680062681354145,
+          "velocity_m_per_s": 0.9245468791216851
+        },
+        {
+          "time_s": 0.89,
+          "displacement_m": 0.4160986266774357,
+          "velocity_m_per_s": 0.9350530936571588
+        },
+        {
+          "time_s": 0.9,
+          "displacement_m": 0.42550168868668464,
+          "velocity_m_per_s": 0.9455593081926326
+        },
+        {
+          "time_s": 0.91,
+          "displacement_m": 0.43500981284128837,
+          "velocity_m_per_s": 0.9560655227281063
+        },
+        {
+          "time_s": 0.92,
+          "displacement_m": 0.4446229991412468,
+          "velocity_m_per_s": 0.9665717372635799
+        },
+        {
+          "time_s": 0.93,
+          "displacement_m": 0.45434124758655997,
+          "velocity_m_per_s": 0.9770779517990537
+        },
+        {
+          "time_s": 0.94,
+          "displacement_m": 0.4641645581772278,
+          "velocity_m_per_s": 0.9875841663345273
+        },
+        {
+          "time_s": 0.95,
+          "displacement_m": 0.4740929309132504,
+          "velocity_m_per_s": 0.9980903808700009
+        },
+        {
+          "time_s": 0.96,
+          "displacement_m": 0.48412636579462787,
+          "velocity_m_per_s": 1.0085965954054747
+        },
+        {
+          "time_s": 0.97,
+          "displacement_m": 0.4942648628213599,
+          "velocity_m_per_s": 1.0191028099409483
+        },
+        {
+          "time_s": 0.98,
+          "displacement_m": 0.5045084219934468,
+          "velocity_m_per_s": 1.029609024476422
+        },
+        {
+          "time_s": 0.99,
+          "displacement_m": 0.5148570433108883,
+          "velocity_m_per_s": 1.0401152390118957
+        },
+        {
+          "time_s": 1.0,
+          "displacement_m": 0.5253107267736847,
+          "velocity_m_per_s": 1.0506214535473695
+        },
+        {
+          "time_s": 1.01,
+          "displacement_m": 0.5358694723818358,
+          "velocity_m_per_s": 1.0611276680828432
+        },
+        {
+          "time_s": 1.02,
+          "displacement_m": 0.5465332801353416,
+          "velocity_m_per_s": 1.071633882618317
+        },
+        {
+          "time_s": 1.03,
+          "displacement_m": 0.5573021500342022,
+          "velocity_m_per_s": 1.0821400971537907
+        },
+        {
+          "time_s": 1.04,
+          "displacement_m": 0.5681760820784174,
+          "velocity_m_per_s": 1.0926463116892642
+        },
+        {
+          "time_s": 1.05,
+          "displacement_m": 0.5791550762679875,
+          "velocity_m_per_s": 1.103152526224738
+        },
+        {
+          "time_s": 1.06,
+          "displacement_m": 0.5902391326029122,
+          "velocity_m_per_s": 1.1136587407602117
+        },
+        {
+          "time_s": 1.07,
+          "displacement_m": 0.6014282510831918,
+          "velocity_m_per_s": 1.1241649552956854
+        },
+        {
+          "time_s": 1.08,
+          "displacement_m": 0.612722431708826,
+          "velocity_m_per_s": 1.1346711698311591
+        },
+        {
+          "time_s": 1.09,
+          "displacement_m": 0.6241216744798149,
+          "velocity_m_per_s": 1.1451773843666329
+        },
+        {
+          "time_s": 1.1,
+          "displacement_m": 0.6356259793961587,
+          "velocity_m_per_s": 1.1556835989021066
+        },
+        {
+          "time_s": 1.11,
+          "displacement_m": 0.647235346457857,
+          "velocity_m_per_s": 1.16618981343758
+        },
+        {
+          "time_s": 1.12,
+          "displacement_m": 0.6589497756649102,
+          "velocity_m_per_s": 1.1766960279730538
+        },
+        {
+          "time_s": 1.13,
+          "displacement_m": 0.6707692670173179,
+          "velocity_m_per_s": 1.1872022425085274
+        },
+        {
+          "time_s": 1.14,
+          "displacement_m": 0.6826938205150805,
+          "velocity_m_per_s": 1.197708457044001
+        },
+        {
+          "time_s": 1.15,
+          "displacement_m": 0.694723436158198,
+          "velocity_m_per_s": 1.2082146715794748
+        },
+        {
+          "time_s": 1.16,
+          "displacement_m": 0.7068581139466701,
+          "velocity_m_per_s": 1.2187208861149486
+        },
+        {
+          "time_s": 1.17,
+          "displacement_m": 0.719097853880497,
+          "velocity_m_per_s": 1.2292271006504223
+        },
+        {
+          "time_s": 1.18,
+          "displacement_m": 0.7314426559596785,
+          "velocity_m_per_s": 1.2397333151858958
+        },
+        {
+          "time_s": 1.19,
+          "displacement_m": 0.7438925201842148,
+          "velocity_m_per_s": 1.2502395297213695
+        },
+        {
+          "time_s": 1.2,
+          "displacement_m": 0.7564474465541059,
+          "velocity_m_per_s": 1.2607457442568433
+        },
+        {
+          "time_s": 1.21,
+          "displacement_m": 0.7691074350693518,
+          "velocity_m_per_s": 1.271251958792317
+        },
+        {
+          "time_s": 1.22,
+          "displacement_m": 0.7818724857299524,
+          "velocity_m_per_s": 1.2817581733277907
+        },
+        {
+          "time_s": 1.23,
+          "displacement_m": 0.7947425985359077,
+          "velocity_m_per_s": 1.2922643878632645
+        },
+        {
+          "time_s": 1.24,
+          "displacement_m": 0.8077177734872177,
+          "velocity_m_per_s": 1.3027706023987382
+        },
+        {
+          "time_s": 1.25,
+          "displacement_m": 0.8207980105838825,
+          "velocity_m_per_s": 1.313276816934212
+        },
+        {
+          "time_s": 1.26,
+          "displacement_m": 0.8339833098259019,
+          "velocity_m_per_s": 1.3237830314696855
+        },
+        {
+          "time_s": 1.27,
+          "displacement_m": 0.8472736712132761,
+          "velocity_m_per_s": 1.3342892460051592
+        },
+        {
+          "time_s": 1.28,
+          "displacement_m": 0.8606690947460051,
+          "velocity_m_per_s": 1.344795460540633
+        },
+        {
+          "time_s": 1.29,
+          "displacement_m": 0.8741695804240888,
+          "velocity_m_per_s": 1.3553016750761067
+        },
+        {
+          "time_s": 1.3,
+          "displacement_m": 0.8877751282475272,
+          "velocity_m_per_s": 1.3658078896115804
+        },
+        {
+          "time_s": 1.31,
+          "displacement_m": 0.9014857382163205,
+          "velocity_m_per_s": 1.3763141041470541
+        },
+        {
+          "time_s": 1.32,
+          "displacement_m": 0.9153014103304684,
+          "velocity_m_per_s": 1.3868203186825279
+        },
+        {
+          "time_s": 1.33,
+          "displacement_m": 0.929222144589971,
+          "velocity_m_per_s": 1.3973265332180014
+        },
+        {
+          "time_s": 1.34,
+          "displacement_m": 0.9432479409948283,
+          "velocity_m_per_s": 1.4078327477534751
+        },
+        {
+          "time_s": 1.35,
+          "displacement_m": 0.9573787995450406,
+          "velocity_m_per_s": 1.4183389622889488
+        },
+        {
+          "time_s": 1.36,
+          "displacement_m": 0.9716147202406075,
+          "velocity_m_per_s": 1.4288451768244226
+        },
+        {
+          "time_s": 1.37,
+          "displacement_m": 0.985955703081529,
+          "velocity_m_per_s": 1.4393513913598963
+        },
+        {
+          "time_s": 1.38,
+          "displacement_m": 1.0004017480678051,
+          "velocity_m_per_s": 1.4498576058953698
+        },
+        {
+          "time_s": 1.39,
+          "displacement_m": 1.0149528551994362,
+          "velocity_m_per_s": 1.4603638204308436
+        },
+        {
+          "time_s": 1.4,
+          "displacement_m": 1.029609024476422,
+          "velocity_m_per_s": 1.470870034966317
+        },
+        {
+          "time_s": 1.41,
+          "displacement_m": 1.0443702558987624,
+          "velocity_m_per_s": 1.4813762495017908
+        },
+        {
+          "time_s": 1.42,
+          "displacement_m": 1.0592365494664577,
+          "velocity_m_per_s": 1.4918824640372645
+        },
+        {
+          "time_s": 1.43,
+          "displacement_m": 1.074207905179508,
+          "velocity_m_per_s": 1.5023886785727383
+        },
+        {
+          "time_s": 1.44,
+          "displacement_m": 1.0892843230379126,
+          "velocity_m_per_s": 1.512894893108212
+        },
+        {
+          "time_s": 1.45,
+          "displacement_m": 1.104465803041672,
+          "velocity_m_per_s": 1.5234011076436857
+        },
+        {
+          "time_s": 1.46,
+          "displacement_m": 1.1197523451907865,
+          "velocity_m_per_s": 1.5339073221791595
+        },
+        {
+          "time_s": 1.47,
+          "displacement_m": 1.1351439494852553,
+          "velocity_m_per_s": 1.544413536714633
+        },
+        {
+          "time_s": 1.48,
+          "displacement_m": 1.150640615925079,
+          "velocity_m_per_s": 1.5549197512501067
+        },
+        {
+          "time_s": 1.49,
+          "displacement_m": 1.1662423445102574,
+          "velocity_m_per_s": 1.5654259657855805
+        },
+        {
+          "time_s": 1.5,
+          "displacement_m": 1.1819491352407907,
+          "velocity_m_per_s": 1.5759321803210542
+        },
+        {
+          "time_s": 1.51,
+          "displacement_m": 1.1977609881166786,
+          "velocity_m_per_s": 1.586438394856528
+        },
+        {
+          "time_s": 1.52,
+          "displacement_m": 1.2136779031379212,
+          "velocity_m_per_s": 1.5969446093920017
+        },
+        {
+          "time_s": 1.53,
+          "displacement_m": 1.2296998803045187,
+          "velocity_m_per_s": 1.6074508239274754
+        },
+        {
+          "time_s": 1.54,
+          "displacement_m": 1.2458269196164706,
+          "velocity_m_per_s": 1.617957038462949
+        },
+        {
+          "time_s": 1.55,
+          "displacement_m": 1.2620590210737777,
+          "velocity_m_per_s": 1.6284632529984227
+        },
+        {
+          "time_s": 1.56,
+          "displacement_m": 1.2783961846764391,
+          "velocity_m_per_s": 1.6389694675338964
+        },
+        {
+          "time_s": 1.57,
+          "displacement_m": 1.2948384104244557,
+          "velocity_m_per_s": 1.6494756820693701
+        },
+        {
+          "time_s": 1.58,
+          "displacement_m": 1.3113856983178267,
+          "velocity_m_per_s": 1.6599818966048439
+        },
+        {
+          "time_s": 1.59,
+          "displacement_m": 1.3280380483565526,
+          "velocity_m_per_s": 1.6704881111403176
+        },
+        {
+          "time_s": 1.6,
+          "displacement_m": 1.3447954605406331,
+          "velocity_m_per_s": 1.6809943256757913
+        },
+        {
+          "time_s": 1.61,
+          "displacement_m": 1.3616579348700684,
+          "velocity_m_per_s": 1.6915005402112648
+        },
+        {
+          "time_s": 1.62,
+          "displacement_m": 1.3786254713448582,
+          "velocity_m_per_s": 1.7020067547467386
+        },
+        {
+          "time_s": 1.63,
+          "displacement_m": 1.3956980699650028,
+          "velocity_m_per_s": 1.712512969282212
+        },
+        {
+          "time_s": 1.64,
+          "displacement_m": 1.4128757307305022,
+          "velocity_m_per_s": 1.7230191838176858
+        },
+        {
+          "time_s": 1.65,
+          "displacement_m": 1.4301584536413565,
+          "velocity_m_per_s": 1.7335253983531596
+        },
+        {
+          "time_s": 1.66,
+          "displacement_m": 1.4475462386975655,
+          "velocity_m_per_s": 1.7440316128886333
+        },
+        {
+          "time_s": 1.67,
+          "displacement_m": 1.4650390858991293,
+          "velocity_m_per_s": 1.754537827424107
+        },
+        {
+          "time_s": 1.68,
+          "displacement_m": 1.4826369952460476,
+          "velocity_m_per_s": 1.7650440419595805
+        },
+        {
+          "time_s": 1.69,
+          "displacement_m": 1.5003399667383208,
+          "velocity_m_per_s": 1.7755502564950543
+        },
+        {
+          "time_s": 1.7,
+          "displacement_m": 1.5181480003759487,
+          "velocity_m_per_s": 1.786056471030528
+        },
+        {
+          "time_s": 1.71,
+          "displacement_m": 1.5360610961589314,
+          "velocity_m_per_s": 1.7965626855660017
+        },
+        {
+          "time_s": 1.72,
+          "displacement_m": 1.554079254087269,
+          "velocity_m_per_s": 1.8070689001014755
+        },
+        {
+          "time_s": 1.73,
+          "displacement_m": 1.572202474160961,
+          "velocity_m_per_s": 1.8175751146369492
+        },
+        {
+          "time_s": 1.74,
+          "displacement_m": 1.590430756380008,
+          "velocity_m_per_s": 1.828081329172423
+        },
+        {
+          "time_s": 1.75,
+          "displacement_m": 1.6087641007444093,
+          "velocity_m_per_s": 1.8385875437078965
+        },
+        {
+          "time_s": 1.76,
+          "displacement_m": 1.6272025072541658,
+          "velocity_m_per_s": 1.8490937582433702
+        },
+        {
+          "time_s": 1.77,
+          "displacement_m": 1.645745975909277,
+          "velocity_m_per_s": 1.859599972778844
+        },
+        {
+          "time_s": 1.78,
+          "displacement_m": 1.6643945067097428,
+          "velocity_m_per_s": 1.8701061873143177
+        },
+        {
+          "time_s": 1.79,
+          "displacement_m": 1.6831480996555632,
+          "velocity_m_per_s": 1.8806124018497914
+        },
+        {
+          "time_s": 1.8,
+          "displacement_m": 1.7020067547467386,
+          "velocity_m_per_s": 1.8911186163852651
+        },
+        {
+          "time_s": 1.81,
+          "displacement_m": 1.7209704719832688,
+          "velocity_m_per_s": 1.9016248309207389
+        },
+        {
+          "time_s": 1.82,
+          "displacement_m": 1.7400392513651535,
+          "velocity_m_per_s": 1.9121310454562126
+        },
+        {
+          "time_s": 1.83,
+          "displacement_m": 1.7592130928923928,
+          "velocity_m_per_s": 1.922637259991686
+        },
+        {
+          "time_s": 1.84,
+          "displacement_m": 1.7784919965649872,
+          "velocity_m_per_s": 1.9331434745271598
+        },
+        {
+          "time_s": 1.85,
+          "displacement_m": 1.7978759623829361,
+          "velocity_m_per_s": 1.9436496890626336
+        },
+        {
+          "time_s": 1.86,
+          "displacement_m": 1.8173649903462399,
+          "velocity_m_per_s": 1.9541559035981073
+        },
+        {
+          "time_s": 1.87,
+          "displacement_m": 1.8369590804548983,
+          "velocity_m_per_s": 1.964662118133581
+        },
+        {
+          "time_s": 1.88,
+          "displacement_m": 1.8566582327089112,
+          "velocity_m_per_s": 1.9751683326690546
+        },
+        {
+          "time_s": 1.89,
+          "displacement_m": 1.8764624471082791,
+          "velocity_m_per_s": 1.9856745472045283
+        },
+        {
+          "time_s": 1.9,
+          "displacement_m": 1.8963717236530016,
+          "velocity_m_per_s": 1.9961807617400018
+        },
+        {
+          "time_s": 1.91,
+          "displacement_m": 1.9163860623430793,
+          "velocity_m_per_s": 2.0066869762754758
+        },
+        {
+          "time_s": 1.92,
+          "displacement_m": 1.9365054631785115,
+          "velocity_m_per_s": 2.0171931908109495
+        },
+        {
+          "time_s": 1.93,
+          "displacement_m": 1.9567299261592979,
+          "velocity_m_per_s": 2.027699405346423
+        },
+        {
+          "time_s": 1.94,
+          "displacement_m": 1.9770594512854396,
+          "velocity_m_per_s": 2.0382056198818965
+        },
+        {
+          "time_s": 1.95,
+          "displacement_m": 1.997494038556936,
+          "velocity_m_per_s": 2.0487118344173703
+        },
+        {
+          "time_s": 1.96,
+          "displacement_m": 2.0180336879737872,
+          "velocity_m_per_s": 2.059218048952844
+        },
+        {
+          "time_s": 1.97,
+          "displacement_m": 2.0386783995359927,
+          "velocity_m_per_s": 2.0697242634883177
+        },
+        {
+          "time_s": 1.98,
+          "displacement_m": 2.0594281732435533,
+          "velocity_m_per_s": 2.0802304780237915
+        },
+        {
+          "time_s": 1.99,
+          "displacement_m": 2.080283009096469,
+          "velocity_m_per_s": 2.090736692559265
+        },
+        {
+          "time_s": 2.0,
+          "displacement_m": 2.101242907094739,
+          "velocity_m_per_s": 2.101242907094739
+        }
+      ],
+      "x": "time_s",
+      "ys": [
+        "displacement_m"
+      ],
+      "xlabel": "Time (s)",
+      "ylabel": "Downslope displacement (m)",
+      "log": false
+    }
+  ],
+  "notes": [
+    "Positive displacement and applied force are downhill. The block starts at rest on a sufficiently long plane.",
+    "Static friction adjusts to the required value up to its limit; it is not always mu_static times normal force.",
+    "The kinetic phase has constant loads and no velocity reversal. Tipping and rolling are outside this model."
+  ]
+}

@@ -1,0 +1,4 @@
+member,axial_force_N,state
+AB,500.0,tension
+AC,-707.1067811865476,compression
+BC,-707.1067811865476,compression

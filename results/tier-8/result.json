@@ -1,0 +1,3266 @@
+{
+  "inputs": {
+    "mass_kg": 20,
+    "initial_speed_m_per_s": 2,
+    "stop_duration_s": 0.1
+  },
+  "title": "Tier 8: impulse, momentum, and stopping loads",
+  "metrics": {
+    "peak_stop_load_N": 628.3185307179585,
+    "average_stop_load_N": 400.0,
+    "exact_impulse_on_mass_Ns": -40.0,
+    "integrated_impulse_Ns": -39.999177529584266,
+    "impulse_integration_residual_Ns": 0.0008224704157342444,
+    "stop_distance_m": 0.1,
+    "initial_kinetic_energy_J": 40.0,
+    "integrated_work_on_mass_J": -39.999177529584315,
+    "work_integration_residual_J": 0.0008224704156845064
+  },
+  "tables": [
+    {
+      "name": "stop_loads",
+      "rows": [
+        {
+          "time_s": 0.0,
+          "force_on_mass_N": -0.0,
+          "load_on_stop_N": 0.0,
+          "velocity_m_per_s": 2.0,
+          "displacement_m": 0.0,
+          "kinetic_energy_J": 40.0
+        },
+        {
+          "time_s": 0.0005,
+          "force_on_mass_N": -9.869198534883921,
+          "load_on_stop_N": 9.869198534883921,
+          "velocity_m_per_s": 1.9998766324816606,
+          "displacement_m": 0.0009999794385778323,
+          "kinetic_energy_J": 39.99506545146187
+        },
+        {
+          "time_s": 0.001,
+          "force_on_mass_N": -19.735961992705345,
+          "load_on_stop_N": 19.735961992705345,
+          "velocity_m_per_s": 1.9995065603657316,
+          "displacement_m": 0.0019998355147105486,
+          "kinetic_energy_J": 39.98026484945599
+        },
+        {
+          "time_s": 0.0015000000000000002,
+          "force_on_mass_N": -29.597855897220615,
+          "load_on_stop_N": 29.597855897220615,
+          "velocity_m_per_s": 1.9988898749619701,
+          "displacement_m": 0.002999444896390871,
+          "kinetic_energy_J": 39.95560732225481
+        },
+        {
+          "time_s": 0.002,
+          "force_on_mass_N": -39.452446973675464,
+          "load_on_stop_N": 39.452446973675464,
+          "velocity_m_per_s": 1.9980267284282716,
+          "displacement_m": 0.0039986843124796825,
+          "kinetic_energy_J": 39.921108075137816
+        },
+        {
+          "time_s": 0.0025,
+          "force_on_mass_N": -49.29730374917919,
+          "load_on_stop_N": 49.29730374917919,
+          "velocity_m_per_s": 1.996917333733128,
+          "displacement_m": 0.004997430583121346,
+          "kinetic_energy_J": 39.87678837763825
+        },
+        {
+          "time_s": 0.0030000000000000005,
+          "force_on_mass_N": -59.12999715263421,
+          "load_on_stop_N": 59.12999715263421,
+          "velocity_m_per_s": 1.99556196460308,
+          "displacement_m": 0.005995560650136482,
+          "kinetic_energy_J": 39.822675545705046
+        },
+        {
+          "time_s": 0.0035000000000000005,
+          "force_on_mass_N": -68.94810111407294,
+          "load_on_stop_N": 68.94810111407294,
+          "velocity_m_per_s": 1.9939609554551798,
+          "displacement_m": 0.00699295160738473,
+          "kinetic_energy_J": 39.758802918797336
+        },
+        {
+          "time_s": 0.004,
+          "force_on_mass_N": -78.74919316325438,
+          "load_on_stop_N": 78.74919316325438,
+          "velocity_m_per_s": 1.992114701314478,
+          "displacement_m": 0.007989480731090015,
+          "kinetic_energy_J": 39.68520983193272
+        },
+        {
+          "time_s": 0.0045000000000000005,
+          "force_on_mass_N": -88.53085502737224,
+          "load_on_stop_N": 88.53085502737224,
+          "velocity_m_per_s": 1.9900236577165575,
+          "displacement_m": 0.008985025510120783,
+          "kinetic_energy_J": 39.60194158271587
+        },
+        {
+          "time_s": 0.005,
+          "force_on_mass_N": -98.29067322772771,
+          "load_on_stop_N": 98.29067322772771,
+          "velocity_m_per_s": 1.9876883405951378,
+          "displacement_m": 0.009979463676217808,
+          "kinetic_energy_J": 39.509049393378525
+        },
+        {
+          "time_s": 0.0055000000000000005,
+          "force_on_mass_N": -108.02623967521914,
+          "load_on_stop_N": 108.02623967521914,
+          "velocity_m_per_s": 1.9851093261547739,
+          "displacement_m": 0.01097267323416204,
+          "kinetic_energy_J": 39.406590367866606
+        },
+        {
+          "time_s": 0.006000000000000001,
+          "force_on_mass_N": -117.73515226450208,
+          "load_on_stop_N": 117.73515226450208,
+          "velocity_m_per_s": 1.9822872507286888,
+          "displacement_m": 0.01196453249187511,
+          "kinetic_energy_J": 39.294627444015035
+        },
+        {
+          "time_s": 0.006500000000000001,
+          "force_on_mass_N": -127.41501546667263,
+          "load_on_stop_N": 127.41501546667263,
+          "velocity_m_per_s": 1.9792228106217657,
+          "displacement_m": 0.012954920090445025,
+          "kinetic_energy_J": 39.173229340855215
+        },
+        {
+          "time_s": 0.007000000000000001,
+          "force_on_mass_N": -137.06344092032856,
+          "load_on_stop_N": 137.06344092032856,
+          "velocity_m_per_s": 1.9759167619387474,
+          "displacement_m": 0.013943715034069664,
+          "kinetic_energy_J": 39.04247050110505
+        },
+        {
+          "time_s": 0.0075,
+          "force_on_mass_N": -146.6780480208617,
+          "load_on_stop_N": 146.6780480208617,
+          "velocity_m_per_s": 1.9723699203976766,
+          "displacement_m": 0.014930796719910683,
+          "kinetic_energy_J": 38.902431028895364
+        },
+        {
+          "time_s": 0.008,
+          "force_on_mass_N": -156.25646450783645,
+          "load_on_stop_N": 156.25646450783645,
+          "velocity_m_per_s": 1.968583161128631,
+          "displacement_m": 0.015916044967850467,
+          "kinetic_energy_J": 38.75319662279194
+        },
+        {
+          "time_s": 0.0085,
+          "force_on_mass_N": -165.79632705030954,
+          "load_on_stop_N": 165.79632705030954,
+          "velocity_m_per_s": 1.964557418457798,
+          "displacement_m": 0.016899340050144755,
+          "kinetic_energy_J": 38.594858504175676
+        },
+        {
+          "time_s": 0.009000000000000001,
+          "force_on_mass_N": -175.2952818299467,
+          "load_on_stop_N": 175.2952818299467,
+          "velocity_m_per_s": 1.960293685676943,
+          "displacement_m": 0.017880562720963694,
+          "kinetic_energy_J": 38.427513341048936
+        },
+        {
+          "time_s": 0.009500000000000001,
+          "force_on_mass_N": -184.75098512179193,
+          "load_on_stop_N": 184.75098512179193,
+          "velocity_m_per_s": 1.95579301479833,
+          "displacement_m": 0.01885959424581395,
+          "kinetic_energy_J": 38.25126316733941
+        },
+        {
+          "time_s": 0.01,
+          "force_on_mass_N": -194.16110387254662,
+          "load_on_stop_N": 194.16110387254662,
+          "velocity_m_per_s": 1.9510565162951536,
+          "displacement_m": 0.01983631643083466,
+          "kinetic_energy_J": 38.06621529777781
+        },
+        {
+          "time_s": 0.0105,
+          "force_on_mass_N": -203.52331627621575,
+          "load_on_stop_N": 203.52331627621575,
+          "velocity_m_per_s": 1.9460853588275453,
+          "displacement_m": 0.020810611651960027,
+          "kinetic_energy_J": 37.872482238429356
+        },
+        {
+          "time_s": 0.011000000000000001,
+          "force_on_mass_N": -212.8353123469785,
+          "load_on_stop_N": 212.8353123469785,
+          "velocity_m_per_s": 1.9408807689542256,
+          "displacement_m": 0.021782362883941267,
+          "kinetic_energy_J": 37.67018159296346
+        },
+        {
+          "time_s": 0.011500000000000002,
+          "force_on_mass_N": -222.0947944891428,
+          "load_on_stop_N": 222.0947944891428,
+          "velocity_m_per_s": 1.9354440308298673,
+          "displacement_m": 0.022751453729220855,
+          "kinetic_energy_J": 37.459435964749645
+        },
+        {
+          "time_s": 0.012000000000000002,
+          "force_on_mass_N": -231.29947806404257,
+          "load_on_stop_N": 231.29947806404257,
+          "velocity_m_per_s": 1.9297764858882513,
+          "displacement_m": 0.023717768446651872,
+          "kinetic_energy_J": 37.24037285487208
+        },
+        {
+          "time_s": 0.0125,
+          "force_on_mass_N": -240.44709195373846,
+          "load_on_stop_N": 240.44709195373846,
+          "velocity_m_per_s": 1.9238795325112867,
+          "displacement_m": 0.02468119198005541,
+          "kinetic_energy_J": 37.01312455615847
+        },
+        {
+          "time_s": 0.013000000000000001,
+          "force_on_mass_N": -249.53537912138185,
+          "load_on_stop_N": 249.53537912138185,
+          "velocity_m_per_s": 1.917754625683981,
+          "displacement_m": 0.025641609986608957,
+          "kinetic_energy_J": 36.77782804332306
+        },
+        {
+          "time_s": 0.013500000000000002,
+          "force_on_mass_N": -258.5620971681051,
+          "load_on_stop_N": 258.5620971681051,
+          "velocity_m_per_s": 1.9114032766354452,
+          "displacement_m": 0.026598908865058783,
+          "kinetic_energy_J": 36.53462485932716
+        },
+        {
+          "time_s": 0.014000000000000002,
+          "force_on_mass_N": -267.52501888629973,
+          "load_on_stop_N": 267.52501888629973,
+          "velocity_m_per_s": 1.9048270524660196,
+          "displacement_m": 0.027552975783749333,
+          "kinetic_energy_J": 36.283660998063844
+        },
+        {
+          "time_s": 0.014500000000000002,
+          "force_on_mass_N": -276.421932809147,
+          "load_on_stop_N": 276.421932809147,
+          "velocity_m_per_s": 1.8980275757606155,
+          "displacement_m": 0.028503698708462772,
+          "kinetic_energy_J": 36.02508678347719
+        },
+        {
+          "time_s": 0.015,
+          "force_on_mass_N": -285.25064375626374,
+          "load_on_stop_N": 285.25064375626374,
+          "velocity_m_per_s": 1.8910065241883678,
+          "displacement_m": 0.029450966430061738,
+          "kinetic_energy_J": 35.75905674522972
+        },
+        {
+          "time_s": 0.0155,
+          "force_on_mass_N": -294.0089733753307,
+          "load_on_stop_N": 294.0089733753307,
+          "velocity_m_per_s": 1.8837656300886936,
+          "displacement_m": 0.03039466859192854,
+          "kinetic_energy_J": 35.485729491034526
+        },
+        {
+          "time_s": 0.016,
+          "force_on_mass_N": -302.694760679568,
+          "load_on_stop_N": 302.694760679568,
+          "velocity_m_per_s": 1.8763066800438635,
+          "displacement_m": 0.031334695717194,
+          "kinetic_energy_J": 35.205267575772254
+        },
+        {
+          "time_s": 0.0165,
+          "force_on_mass_N": -311.3058625809265,
+          "load_on_stop_N": 311.3058625809265,
+          "velocity_m_per_s": 1.8686315144381913,
+          "displacement_m": 0.03227093923574921,
+          "kinetic_energy_J": 34.91783736751569
+        },
+        {
+          "time_s": 0.017,
+          "force_on_mass_N": -319.84015441886277,
+          "load_on_stop_N": 319.84015441886277,
+          "velocity_m_per_s": 1.8607420270039436,
+          "displacement_m": 0.03320329151103364,
+          "kinetic_energy_J": 34.62360891058745
+        },
+        {
+          "time_s": 0.0175,
+          "force_on_mass_N": -328.2955304845671,
+          "load_on_stop_N": 328.2955304845671,
+          "velocity_m_per_s": 1.8526401643540922,
+          "displacement_m": 0.034131645866592765,
+          "kinetic_energy_J": 34.32275578577958
+        },
+        {
+          "time_s": 0.018000000000000002,
+          "force_on_mass_N": -336.669904540516,
+          "load_on_stop_N": 336.669904540516,
+          "velocity_m_per_s": 1.844327925502015,
+          "displacement_m": 0.03505589661239898,
+          "kinetic_energy_J": 34.015454967865665
+        },
+        {
+          "time_s": 0.018500000000000003,
+          "force_on_mass_N": -344.96121033521933,
+          "load_on_stop_N": 344.96121033521933,
+          "velocity_m_per_s": 1.8358073613682704,
+          "displacement_m": 0.03597593907092894,
+          "kinetic_energy_J": 33.70188668053932
+        },
+        {
+          "time_s": 0.019000000000000003,
+          "force_on_mass_N": -353.1674021130378,
+          "load_on_stop_N": 353.1674021130378,
+          "velocity_m_per_s": 1.8270805742745617,
+          "displacement_m": 0.03689166960299123,
+          "kinetic_energy_J": 33.38223424891462
+        },
+        {
+          "time_s": 0.019500000000000003,
+          "force_on_mass_N": -361.28645511894223,
+          "load_on_stop_N": 361.28645511894223,
+          "velocity_m_per_s": 1.8181497174250234,
+          "displacement_m": 0.037802985633297786,
+          "kinetic_energy_J": 33.056683949726924
+        },
+        {
+          "time_s": 0.02,
+          "force_on_mass_N": -369.3163660980913,
+          "load_on_stop_N": 369.3163660980913,
+          "velocity_m_per_s": 1.8090169943749475,
+          "displacement_m": 0.03870978567577278,
+          "kinetic_energy_J": 32.72542485937369
+        },
+        {
+          "time_s": 0.020500000000000004,
+          "force_on_mass_N": -377.2551537901051,
+          "load_on_stop_N": 377.2551537901051,
+          "velocity_m_per_s": 1.7996846584870905,
+          "displacement_m": 0.03961196935859282,
+          "kinetic_energy_J": 32.38864869993796
+        },
+        {
+          "time_s": 0.021,
+          "force_on_mass_N": -385.1008594179112,
+          "load_on_stop_N": 385.1008594179112,
+          "velocity_m_per_s": 1.7901550123756904,
+          "displacement_m": 0.04050943744895215,
+          "kinetic_energy_J": 32.046549683338085
+        },
+        {
+          "time_s": 0.0215,
+          "force_on_mass_N": -392.8515471710437,
+          "load_on_stop_N": 392.8515471710437,
+          "velocity_m_per_s": 1.78043040733833,
+          "displacement_m": 0.041402091877546926,
+          "kinetic_energy_J": 31.699324353749315
+        },
+        {
+          "time_s": 0.022000000000000002,
+          "force_on_mass_N": -400.5053046832757,
+          "load_on_stop_N": 400.5053046832757,
+          "velocity_m_per_s": 1.7705132427757893,
+          "displacement_m": 0.042289835762772315,
+          "kinetic_energy_J": 31.34717142844441
+        },
+        {
+          "time_s": 0.0225,
+          "force_on_mass_N": -408.0602435044667,
+          "load_on_stop_N": 408.0602435044667,
+          "velocity_m_per_s": 1.760405965600031,
+          "displacement_m": 0.04317257343462658,
+          "kinetic_energy_J": 30.99029163720178
+        },
+        {
+          "time_s": 0.023000000000000003,
+          "force_on_mass_N": -415.51449956650947,
+          "load_on_stop_N": 415.51449956650947,
+          "velocity_m_per_s": 1.7501110696304596,
+          "displacement_m": 0.0440502104583162,
+          "kinetic_energy_J": 30.628887560430712
+        },
+        {
+          "time_s": 0.0235,
+          "force_on_mass_N": -422.866233643261,
+          "load_on_stop_N": 422.866233643261,
+          "velocity_m_per_s": 1.7396310949786098,
+          "displacement_m": 0.04492265365755628,
+          "kinetic_energy_J": 30.26316346616477
+        },
+        {
+          "time_s": 0.024000000000000004,
+          "force_on_mass_N": -430.11363180434444,
+          "load_on_stop_N": 430.11363180434444,
+          "velocity_m_per_s": 1.7289686274214116,
+          "displacement_m": 0.04578981113756042,
+          "kinetic_energy_J": 29.893325146074798
+        },
+        {
+          "time_s": 0.0245,
+          "force_on_mass_N": -437.2549058627085,
+          "load_on_stop_N": 437.2549058627085,
+          "velocity_m_per_s": 1.718126297763189,
+          "displacement_m": 0.046651592307714304,
+          "kinetic_energy_J": 29.519579750654422
+        },
+        {
+          "time_s": 0.025,
+          "force_on_mass_N": -444.2882938158365,
+          "load_on_stop_N": 444.2882938158365,
+          "velocity_m_per_s": 1.7071067811865475,
+          "displacement_m": 0.04750790790392765,
+          "kinetic_energy_J": 29.14213562373095
+        },
+        {
+          "time_s": 0.025500000000000002,
+          "force_on_mass_N": -451.2120602804939,
+          "load_on_stop_N": 451.2120602804939,
+          "velocity_m_per_s": 1.6959127965923144,
+          "displacement_m": 0.04835867001065876,
+          "kinetic_energy_J": 28.76120213645565
+        },
+        {
+          "time_s": 0.026000000000000002,
+          "force_on_mass_N": -458.02449692090823,
+          "load_on_stop_N": 458.02449692090823,
+          "velocity_m_per_s": 1.6845471059286887,
+          "displacement_m": 0.04920379208260636,
+          "kinetic_energy_J": 28.376989520927207
+        },
+        {
+          "time_s": 0.026500000000000003,
+          "force_on_mass_N": -464.7239228702749,
+          "load_on_stop_N": 464.7239228702749,
+          "velocity_m_per_s": 1.6730125135097733,
+          "displacement_m": 0.05004318896606338,
+          "kinetic_energy_J": 27.989708703602894
+        },
+        {
+          "time_s": 0.027000000000000003,
+          "force_on_mass_N": -471.30868514548666,
+          "load_on_stop_N": 471.30868514548666,
+          "velocity_m_per_s": 1.6613118653236518,
+          "displacement_m": 0.05087677691992731,
+          "kinetic_energy_J": 27.599571138651516
+        },
+        {
+          "time_s": 0.0275,
+          "force_on_mass_N": -477.7771590549819,
+          "load_on_stop_N": 477.7771590549819,
+          "velocity_m_per_s": 1.6494480483301839,
+          "displacement_m": 0.05170447363636213,
+          "kinetic_energy_J": 27.206788641402525
+        },
+        {
+          "time_s": 0.028000000000000004,
+          "force_on_mass_N": -484.1277485996136,
+          "load_on_stop_N": 484.1277485996136,
+          "velocity_m_per_s": 1.6374239897486897,
+          "displacement_m": 0.0525261982611065,
+          "kinetic_energy_J": 26.81157322204517
+        },
+        {
+          "time_s": 0.0285,
+          "force_on_mass_N": -490.3588868664372,
+          "load_on_stop_N": 490.3588868664372,
+          "velocity_m_per_s": 1.6252426563357052,
+          "displacement_m": 0.05334187141342331,
+          "kinetic_energy_J": 26.41413691973139
+        },
+        {
+          "time_s": 0.029000000000000005,
+          "force_on_mass_N": -496.4690364153241,
+          "load_on_stop_N": 496.4690364153241,
+          "velocity_m_per_s": 1.6129070536529766,
+          "displacement_m": 0.05415141520568578,
+          "kinetic_energy_J": 26.01469163723526
+        },
+        {
+          "time_s": 0.029500000000000002,
+          "force_on_mass_N": -502.45668965830123,
+          "load_on_stop_N": 502.45668965830123,
+          "velocity_m_per_s": 1.600420225325884,
+          "displacement_m": 0.054954753262594934,
+          "kinetic_energy_J": 25.613448976321532
+        },
+        {
+          "time_s": 0.03,
+          "force_on_mass_N": -508.32036923152583,
+          "load_on_stop_N": 508.32036923152583,
+          "velocity_m_per_s": 1.5877852522924734,
+          "displacement_m": 0.055751810740024194,
+          "kinetic_energy_J": 25.210620073974734
+        },
+        {
+          "time_s": 0.030500000000000003,
+          "force_on_mass_N": -514.0586283598037,
+          "load_on_stop_N": 514.0586283598037,
+          "velocity_m_per_s": 1.5750052520432787,
+          "displacement_m": 0.05654251434348598,
+          "kinetic_energy_J": 24.80641543963912
+        },
+        {
+          "time_s": 0.031,
+          "force_on_mass_N": -519.6700512135579,
+          "load_on_stop_N": 519.6700512135579,
+          "velocity_m_per_s": 1.5620833778521308,
+          "displacement_m": 0.057326792346216,
+          "kinetic_energy_J": 24.401044793619228
+        },
+        {
+          "time_s": 0.0315,
+          "force_on_mass_N": -525.1532532581654,
+          "load_on_stop_N": 525.1532532581654,
+          "velocity_m_per_s": 1.5490228179981318,
+          "displacement_m": 0.05810457460687085,
+          "kinetic_energy_J": 23.99471690678873
+        },
+        {
+          "time_s": 0.032,
+          "force_on_mass_N": -530.5068815955681,
+          "load_on_stop_N": 530.5068815955681,
+          "velocity_m_per_s": 1.5358267949789965,
+          "displacement_m": 0.05887579258683425,
+          "kinetic_energy_J": 23.58763944175457
+        },
+        {
+          "time_s": 0.0325,
+          "force_on_mass_N": -535.7296152980819,
+          "load_on_stop_N": 535.7296152980819,
+          "velocity_m_per_s": 1.5224985647159488,
+          "displacement_m": 0.05964037936712797,
+          "kinetic_energy_J": 23.180018795621244
+        },
+        {
+          "time_s": 0.033,
+          "force_on_mass_N": -540.8201657343152,
+          "load_on_stop_N": 540.8201657343152,
+          "velocity_m_per_s": 1.5090414157503713,
+          "displacement_m": 0.06039826966492305,
+          "kinetic_energy_J": 22.77205994449885
+        },
+        {
+          "time_s": 0.0335,
+          "force_on_mass_N": -545.7772768871196,
+          "load_on_stop_N": 545.7772768871196,
+          "velocity_m_per_s": 1.4954586684324076,
+          "displacement_m": 0.06114939984964744,
+          "kinetic_energy_J": 22.363966289896297
+        },
+        {
+          "time_s": 0.034,
+          "force_on_mass_N": -550.5997256634926,
+          "load_on_stop_N": 550.5997256634926,
+          "velocity_m_per_s": 1.4817536741017152,
+          "displacement_m": 0.061893707958685776,
+          "kinetic_energy_J": 21.95593950713932
+        },
+        {
+          "time_s": 0.0345,
+          "force_on_mass_N": -555.2863221963587,
+          "load_on_stop_N": 555.2863221963587,
+          "velocity_m_per_s": 1.4679298142605735,
+          "displacement_m": 0.0626311337126678,
+          "kinetic_energy_J": 21.548179395950818
+        },
+        {
+          "time_s": 0.035,
+          "force_on_mass_N": -559.8359101381506,
+          "load_on_stop_N": 559.8359101381506,
+          "velocity_m_per_s": 1.4539904997395467,
+          "displacement_m": 0.06336161853034143,
+          "kinetic_energy_J": 21.140883733328568
+        },
+        {
+          "time_s": 0.035500000000000004,
+          "force_on_mass_N": -564.2473669461202,
+          "load_on_stop_N": 564.2473669461202,
+          "velocity_m_per_s": 1.439939169855915,
+          "displacement_m": 0.06408510554302671,
+          "kinetic_energy_J": 20.734248128853416
+        },
+        {
+          "time_s": 0.036000000000000004,
+          "force_on_mass_N": -568.5196041593106,
+          "load_on_stop_N": 568.5196041593106,
+          "velocity_m_per_s": 1.4257792915650727,
+          "displacement_m": 0.06480153960864735,
+          "kinetic_energy_J": 20.328465882558007
+        },
+        {
+          "time_s": 0.036500000000000005,
+          "force_on_mass_N": -572.6515676671161,
+          "load_on_stop_N": 572.6515676671161,
+          "velocity_m_per_s": 1.4115143586051087,
+          "displacement_m": 0.06551086732533626,
+          "kinetic_energy_J": 19.92372784548391
+        },
+        {
+          "time_s": 0.037000000000000005,
+          "force_on_mass_N": -576.642237969369,
+          "load_on_stop_N": 576.642237969369,
+          "velocity_m_per_s": 1.3971478906347805,
+          "displacement_m": 0.06621303704461155,
+          "kinetic_energy_J": 19.520222283052167
+        },
+        {
+          "time_s": 0.0375,
+          "force_on_mass_N": -580.4906304278861,
+          "load_on_stop_N": 580.4906304278861,
+          "velocity_m_per_s": 1.3826834323650898,
+          "displacement_m": 0.06690799888412013,
+          "kinetic_energy_J": 19.118134741369058
+        },
+        {
+          "time_s": 0.038000000000000006,
+          "force_on_mass_N": -584.1957955094128,
+          "load_on_stop_N": 584.1957955094128,
+          "velocity_m_per_s": 1.368124552684678,
+          "displacement_m": 0.06759570473994542,
+          "kinetic_energy_J": 18.7176479165865
+        },
+        {
+          "time_s": 0.0385,
+          "force_on_mass_N": -587.7568190199069,
+          "load_on_stop_N": 587.7568190199069,
+          "velocity_m_per_s": 1.3534748437792574,
+          "displacement_m": 0.06827610829847613,
+          "kinetic_energy_J": 18.31894152743285
+        },
+        {
+          "time_s": 0.03900000000000001,
+          "force_on_mass_N": -591.172822330102,
+          "load_on_stop_N": 591.172822330102,
+          "velocity_m_per_s": 1.3387379202452911,
+          "displacement_m": 0.0689491650478337,
+          "kinetic_energy_J": 17.922192191026877
+        },
+        {
+          "time_s": 0.0395,
+          "force_on_mass_N": -594.4429625922959,
+          "load_on_stop_N": 594.4429625922959,
+          "velocity_m_per_s": 1.3239174181981497,
+          "displacement_m": 0.06961483228885468,
+          "kinetic_energy_J": 17.52757330208454
+        },
+        {
+          "time_s": 0.04,
+          "force_on_mass_N": -597.5664329483111,
+          "load_on_stop_N": 597.5664329483111,
+          "velocity_m_per_s": 1.3090169943749475,
+          "displacement_m": 0.07027306914562628,
+          "kinetic_energy_J": 17.135254915624213
+        },
+        {
+          "time_s": 0.0405,
+          "force_on_mass_N": -600.5424627285748,
+          "load_on_stop_N": 600.5424627285748,
+          "velocity_m_per_s": 1.294040325232304,
+          "displacement_m": 0.07092383657557186,
+          "kinetic_energy_J": 16.745403633273273
+        },
+        {
+          "time_s": 0.04100000000000001,
+          "force_on_mass_N": -603.37031764227,
+          "load_on_stop_N": 603.37031764227,
+          "velocity_m_per_s": 1.278991106039229,
+          "displacement_m": 0.07156709737908407,
+          "kinetic_energy_J": 16.3581824932745
+        },
+        {
+          "time_s": 0.0415,
+          "force_on_mass_N": -606.0492999585108,
+          "load_on_stop_N": 606.0492999585108,
+          "velocity_m_per_s": 1.263873049965373,
+          "displacement_m": 0.07220281620870327,
+          "kinetic_energy_J": 15.97375086428774
+        },
+        {
+          "time_s": 0.042,
+          "force_on_mass_N": -608.5787486784972,
+          "load_on_stop_N": 608.5787486784972,
+          "velocity_m_per_s": 1.2486898871648546,
+          "displacement_m": 0.07283095957783908,
+          "kinetic_energy_J": 15.592264343077773
+        },
+        {
+          "time_s": 0.0425,
+          "force_on_mass_N": -610.9580396986065,
+          "load_on_stop_N": 610.9580396986065,
+          "velocity_m_per_s": 1.2334453638559053,
+          "displacement_m": 0.0734514958690326,
+          "kinetic_energy_J": 15.213874656176268
+        },
+        {
+          "time_s": 0.043,
+          "force_on_mass_N": -613.1865859643815,
+          "load_on_stop_N": 613.1865859643815,
+          "velocity_m_per_s": 1.218143241396543,
+          "displacement_m": 0.07406439534175761,
+          "kinetic_energy_J": 14.838729565600763
+        },
+        {
+          "time_s": 0.043500000000000004,
+          "force_on_mass_N": -615.2638376153776,
+          "load_on_stop_N": 615.2638376153776,
+          "velocity_m_per_s": 1.2027872953565124,
+          "displacement_m": 0.0746696301397586,
+          "kinetic_energy_J": 14.466972778710343
+        },
+        {
+          "time_s": 0.044000000000000004,
+          "force_on_mass_N": -617.1892821208326,
+          "load_on_stop_N": 617.1892821208326,
+          "velocity_m_per_s": 1.1873813145857248,
+          "displacement_m": 0.07526717429792376,
+          "kinetic_energy_J": 14.09874386227324
+        },
+        {
+          "time_s": 0.044500000000000005,
+          "force_on_mass_N": -618.9624444061258,
+          "load_on_stop_N": 618.9624444061258,
+          "velocity_m_per_s": 1.1719291002794094,
+          "displacement_m": 0.07585700374869168,
+          "kinetic_energy_J": 13.734178160817061
+        },
+        {
+          "time_s": 0.045,
+          "force_on_mass_N": -620.5828869699956,
+          "load_on_stop_N": 620.5828869699956,
+          "velocity_m_per_s": 1.156434465040231,
+          "displacement_m": 0.07643909632798954,
+          "kinetic_energy_J": 13.373406719328852
+        },
+        {
+          "time_s": 0.0455,
+          "force_on_mass_N": -622.0502099924865,
+          "load_on_stop_N": 622.0502099924865,
+          "velocity_m_per_s": 1.1409012319375829,
+          "displacement_m": 0.07701343178070175,
+          "kinetic_energy_J": 13.016556210366943
+        },
+        {
+          "time_s": 0.046000000000000006,
+          "force_on_mass_N": -623.364051433599,
+          "load_on_stop_N": 623.364051433599,
+          "velocity_m_per_s": 1.125333233564304,
+          "displacement_m": 0.0775799917656677,
+          "kinetic_energy_J": 12.663748865642926
+        },
+        {
+          "time_s": 0.04650000000000001,
+          "force_on_mass_N": -624.5240871226167,
+          "load_on_stop_N": 624.5240871226167,
+          "velocity_m_per_s": 1.1097343110910451,
+          "displacement_m": 0.07813875986020702,
+          "kinetic_energy_J": 12.315102412127166
+        },
+        {
+          "time_s": 0.047,
+          "force_on_mass_N": -625.5300308380914,
+          "load_on_stop_N": 625.5300308380914,
+          "velocity_m_per_s": 1.0941083133185145,
+          "displacement_m": 0.07868972156417174,
+          "kinetic_energy_J": 11.970730012726849
+        },
+        {
+          "time_s": 0.0475,
+          "force_on_mass_N": -626.3816343784637,
+          "load_on_stop_N": 626.3816343784637,
+          "velocity_m_per_s": 1.0784590957278453,
+          "displacement_m": 0.079232864303524,
+          "kinetic_energy_J": 11.630740211581216
+        },
+        {
+          "time_s": 0.04800000000000001,
+          "force_on_mass_N": -627.0786876233026,
+          "load_on_stop_N": 627.0786876233026,
+          "velocity_m_per_s": 1.0627905195293132,
+          "displacement_m": 0.07976817743343842,
+          "kinetic_energy_J": 11.295236884013875
+        },
+        {
+          "time_s": 0.04850000000000001,
+          "force_on_mass_N": -627.6210185851503,
+          "load_on_stop_N": 627.6210185851503,
+          "velocity_m_per_s": 1.0471064507096426,
+          "displacement_m": 0.08029565224092856,
+          "kinetic_energy_J": 10.964319191177452
+        },
+        {
+          "time_s": 0.049,
+          "force_on_mass_N": -628.0084934519571,
+          "load_on_stop_N": 628.0084934519571,
+          "velocity_m_per_s": 1.0314107590781283,
+          "displacement_m": 0.08081528194699682,
+          "kinetic_energy_J": 10.638081539421208
+        },
+        {
+          "time_s": 0.0495,
+          "force_on_mass_N": -628.2410166200972,
+          "load_on_stop_N": 628.2410166200972,
+          "velocity_m_per_s": 1.0157073173118207,
+          "displacement_m": 0.08132706170830693,
+          "kinetic_energy_J": 10.316613544407758
+        },
+        {
+          "time_s": 0.05,
+          "force_on_mass_N": -628.3185307179585,
+          "load_on_stop_N": 628.3185307179585,
+          "velocity_m_per_s": 1.0,
+          "displacement_m": 0.08183098861837906,
+          "kinetic_energy_J": 10.0
+        },
+        {
+          "time_s": 0.05050000000000001,
+          "force_on_mass_N": -628.2410166200972,
+          "load_on_stop_N": 628.2410166200972,
+          "velocity_m_per_s": 0.984292682688179,
+          "displacement_m": 0.08232706170830695,
+          "kinetic_energy_J": 9.688320851934924
+        },
+        {
+          "time_s": 0.051000000000000004,
+          "force_on_mass_N": -628.0084934519571,
+          "load_on_stop_N": 628.0084934519571,
+          "velocity_m_per_s": 0.9685892409218719,
+          "displacement_m": 0.08281528194699682,
+          "kinetic_energy_J": 9.381651176296081
+        },
+        {
+          "time_s": 0.051500000000000004,
+          "force_on_mass_N": -627.6210185851503,
+          "load_on_stop_N": 627.6210185851503,
+          "velocity_m_per_s": 0.9528935492903574,
+          "displacement_m": 0.08329565224092855,
+          "kinetic_energy_J": 9.080061162791749
+        },
+        {
+          "time_s": 0.052000000000000005,
+          "force_on_mass_N": -627.0786876233026,
+          "load_on_stop_N": 627.0786876233026,
+          "velocity_m_per_s": 0.9372094804706866,
+          "displacement_m": 0.08376817743343842,
+          "kinetic_energy_J": 8.783616102841345
+        },
+        {
+          "time_s": 0.0525,
+          "force_on_mass_N": -626.3816343784637,
+          "load_on_stop_N": 626.3816343784637,
+          "velocity_m_per_s": 0.9215409042721553,
+          "displacement_m": 0.084232864303524,
+          "kinetic_energy_J": 8.492376382467416
+        },
+        {
+          "time_s": 0.053000000000000005,
+          "force_on_mass_N": -625.5300308380914,
+          "load_on_stop_N": 625.5300308380914,
+          "velocity_m_per_s": 0.9058916866814857,
+          "displacement_m": 0.08468972156417175,
+          "kinetic_energy_J": 8.20639747998627
+        },
+        {
+          "time_s": 0.053500000000000006,
+          "force_on_mass_N": -624.5240871226167,
+          "load_on_stop_N": 624.5240871226167,
+          "velocity_m_per_s": 0.8902656889089547,
+          "displacement_m": 0.08513875986020703,
+          "kinetic_energy_J": 7.925729968485358
+        },
+        {
+          "time_s": 0.054000000000000006,
+          "force_on_mass_N": -623.364051433599,
+          "load_on_stop_N": 623.364051433599,
+          "velocity_m_per_s": 0.8746667664356956,
+          "displacement_m": 0.08557999176566769,
+          "kinetic_energy_J": 7.650419523070758
+        },
+        {
+          "time_s": 0.0545,
+          "force_on_mass_N": -622.0502099924865,
+          "load_on_stop_N": 622.0502099924865,
+          "velocity_m_per_s": 0.8590987680624174,
+          "displacement_m": 0.08601343178070175,
+          "kinetic_energy_J": 7.380506932863632
+        },
+        {
+          "time_s": 0.055,
+          "force_on_mass_N": -620.5828869699956,
+          "load_on_stop_N": 620.5828869699956,
+          "velocity_m_per_s": 0.8435655349597694,
+          "displacement_m": 0.08643909632798955,
+          "kinetic_energy_J": 7.116028117719619
+        },
+        {
+          "time_s": 0.05550000000000001,
+          "force_on_mass_N": -618.9624444061258,
+          "load_on_stop_N": 618.9624444061258,
+          "velocity_m_per_s": 0.8280708997205901,
+          "displacement_m": 0.08685700374869168,
+          "kinetic_energy_J": 6.857014149640675
+        },
+        {
+          "time_s": 0.05600000000000001,
+          "force_on_mass_N": -617.1892821208327,
+          "load_on_stop_N": 617.1892821208327,
+          "velocity_m_per_s": 0.8126186854142754,
+          "displacement_m": 0.08726717429792377,
+          "kinetic_energy_J": 6.603491278844251
+        },
+        {
+          "time_s": 0.0565,
+          "force_on_mass_N": -615.2638376153776,
+          "load_on_stop_N": 615.2638376153776,
+          "velocity_m_per_s": 0.7972127046434876,
+          "displacement_m": 0.08766963013975859,
+          "kinetic_energy_J": 6.355480964449845
+        },
+        {
+          "time_s": 0.057,
+          "force_on_mass_N": -613.1865859643815,
+          "load_on_stop_N": 613.1865859643815,
+          "velocity_m_per_s": 0.7818567586034575,
+          "displacement_m": 0.08806439534175763,
+          "kinetic_energy_J": 6.112999909739052
+        },
+        {
+          "time_s": 0.0575,
+          "force_on_mass_N": -610.9580396986065,
+          "load_on_stop_N": 610.9580396986065,
+          "velocity_m_per_s": 0.7665546361440947,
+          "displacement_m": 0.08845149586903261,
+          "kinetic_energy_J": 5.876060101940054
+        },
+        {
+          "time_s": 0.05800000000000001,
+          "force_on_mass_N": -608.5787486784972,
+          "load_on_stop_N": 608.5787486784972,
+          "velocity_m_per_s": 0.7513101128351451,
+          "displacement_m": 0.08883095957783908,
+          "kinetic_energy_J": 5.644668856483586
+        },
+        {
+          "time_s": 0.0585,
+          "force_on_mass_N": -606.0492999585108,
+          "load_on_stop_N": 606.0492999585108,
+          "velocity_m_per_s": 0.7361269500346271,
+          "displacement_m": 0.08920281620870327,
+          "kinetic_energy_J": 5.4188288656728245
+        },
+        {
+          "time_s": 0.059000000000000004,
+          "force_on_mass_N": -603.3703176422699,
+          "load_on_stop_N": 603.3703176422699,
+          "velocity_m_per_s": 0.7210088939607706,
+          "displacement_m": 0.08956709737908407,
+          "kinetic_energy_J": 5.1985382517053385
+        },
+        {
+          "time_s": 0.059500000000000004,
+          "force_on_mass_N": -600.5424627285748,
+          "load_on_stop_N": 600.5424627285748,
+          "velocity_m_per_s": 0.7059596747676962,
+          "displacement_m": 0.08992383657557187,
+          "kinetic_energy_J": 4.983790623981114
+        },
+        {
+          "time_s": 0.06,
+          "force_on_mass_N": -597.5664329483111,
+          "load_on_stop_N": 597.5664329483111,
+          "velocity_m_per_s": 0.6909830056250529,
+          "displacement_m": 0.09027306914562627,
+          "kinetic_energy_J": 4.774575140626319
+        },
+        {
+          "time_s": 0.060500000000000005,
+          "force_on_mass_N": -594.4429625922959,
+          "load_on_stop_N": 594.4429625922959,
+          "velocity_m_per_s": 0.6760825818018505,
+          "displacement_m": 0.09061483228885467,
+          "kinetic_energy_J": 4.570876574158559
+        },
+        {
+          "time_s": 0.061000000000000006,
+          "force_on_mass_N": -591.172822330102,
+          "load_on_stop_N": 591.172822330102,
+          "velocity_m_per_s": 0.6612620797547086,
+          "displacement_m": 0.09094916504783371,
+          "kinetic_energy_J": 4.372675381215227
+        },
+        {
+          "time_s": 0.061500000000000006,
+          "force_on_mass_N": -587.7568190199069,
+          "load_on_stop_N": 587.7568190199069,
+          "velocity_m_per_s": 0.6465251562207428,
+          "displacement_m": 0.09127610829847616,
+          "kinetic_energy_J": 4.1799477762625585
+        },
+        {
+          "time_s": 0.062,
+          "force_on_mass_N": -584.1957955094128,
+          "load_on_stop_N": 584.1957955094128,
+          "velocity_m_per_s": 0.6318754473153223,
+          "displacement_m": 0.09159570473994541,
+          "kinetic_energy_J": 3.9926658091993867
+        },
+        {
+          "time_s": 0.0625,
+          "force_on_mass_N": -580.4906304278861,
+          "load_on_stop_N": 580.4906304278861,
+          "velocity_m_per_s": 0.6173165676349103,
+          "displacement_m": 0.09190799888412014,
+          "kinetic_energy_J": 3.8107974467654677
+        },
+        {
+          "time_s": 0.063,
+          "force_on_mass_N": -576.642237969369,
+          "load_on_stop_N": 576.642237969369,
+          "velocity_m_per_s": 0.6028521093652193,
+          "displacement_m": 0.09221303704461155,
+          "kinetic_energy_J": 3.634306657660943
+        },
+        {
+          "time_s": 0.0635,
+          "force_on_mass_N": -572.6515676671162,
+          "load_on_stop_N": 572.6515676671162,
+          "velocity_m_per_s": 0.5884856413948915,
+          "displacement_m": 0.09251086732533625,
+          "kinetic_energy_J": 3.463153501279568
+        },
+        {
+          "time_s": 0.064,
+          "force_on_mass_N": -568.5196041593106,
+          "load_on_stop_N": 568.5196041593106,
+          "velocity_m_per_s": 0.5742207084349273,
+          "displacement_m": 0.09280153960864734,
+          "kinetic_energy_J": 3.297294219955098
+        },
+        {
+          "time_s": 0.0645,
+          "force_on_mass_N": -564.2473669461203,
+          "load_on_stop_N": 564.2473669461203,
+          "velocity_m_per_s": 0.5600608301440853,
+          "displacement_m": 0.09308510554302671,
+          "kinetic_energy_J": 3.1366813346168194
+        },
+        {
+          "time_s": 0.065,
+          "force_on_mass_N": -559.8359101381506,
+          "load_on_stop_N": 559.8359101381506,
+          "velocity_m_per_s": 0.5460095002604533,
+          "displacement_m": 0.09336161853034143,
+          "kinetic_energy_J": 2.9812637437466987
+        },
+        {
+          "time_s": 0.0655,
+          "force_on_mass_N": -555.2863221963587,
+          "load_on_stop_N": 555.2863221963587,
+          "velocity_m_per_s": 0.5320701857394268,
+          "displacement_m": 0.0936311337126678,
+          "kinetic_energy_J": 2.830986825527881
+        },
+        {
+          "time_s": 0.066,
+          "force_on_mass_N": -550.5997256634927,
+          "load_on_stop_N": 550.5997256634927,
+          "velocity_m_per_s": 0.518246325898285,
+          "displacement_m": 0.09389370795868578,
+          "kinetic_energy_J": 2.685792543070714
+        },
+        {
+          "time_s": 0.0665,
+          "force_on_mass_N": -545.7772768871195,
+          "load_on_stop_N": 545.7772768871195,
+          "velocity_m_per_s": 0.5045413315675924,
+          "displacement_m": 0.09414939984964744,
+          "kinetic_energy_J": 2.545619552599992
+        },
+        {
+          "time_s": 0.067,
+          "force_on_mass_N": -540.8201657343153,
+          "load_on_stop_N": 540.8201657343153,
+          "velocity_m_per_s": 0.4909585842496287,
+          "displacement_m": 0.09439826966492307,
+          "kinetic_energy_J": 2.4104033144839976
+        },
+        {
+          "time_s": 0.0675,
+          "force_on_mass_N": -535.729615298082,
+          "load_on_stop_N": 535.729615298082,
+          "velocity_m_per_s": 0.4775014352840512,
+          "displacement_m": 0.09464037936712798,
+          "kinetic_energy_J": 2.2800762069832894
+        },
+        {
+          "time_s": 0.068,
+          "force_on_mass_N": -530.5068815955682,
+          "load_on_stop_N": 530.5068815955682,
+          "velocity_m_per_s": 0.46417320502100357,
+          "displacement_m": 0.09487579258683426,
+          "kinetic_energy_J": 2.154567642594706
+        },
+        {
+          "time_s": 0.0685,
+          "force_on_mass_N": -525.1532532581654,
+          "load_on_stop_N": 525.1532532581654,
+          "velocity_m_per_s": 0.4509771820018681,
+          "displacement_m": 0.09510457460687086,
+          "kinetic_energy_J": 2.0338041868634607
+        },
+        {
+          "time_s": 0.069,
+          "force_on_mass_N": -519.6700512135582,
+          "load_on_stop_N": 519.6700512135582,
+          "velocity_m_per_s": 0.43791662214786964,
+          "displacement_m": 0.09532679234621602,
+          "kinetic_energy_J": 1.9177096795340005
+        },
+        {
+          "time_s": 0.0695,
+          "force_on_mass_N": -514.0586283598037,
+          "load_on_stop_N": 514.0586283598037,
+          "velocity_m_per_s": 0.42499474795672143,
+          "displacement_m": 0.09554251434348598,
+          "kinetic_energy_J": 1.8062053579079718
+        },
+        {
+          "time_s": 0.07,
+          "force_on_mass_N": -508.3203692315259,
+          "load_on_stop_N": 508.3203692315259,
+          "velocity_m_per_s": 0.412214747707527,
+          "displacement_m": 0.0957518107400242,
+          "kinetic_energy_J": 1.6992099822758011
+        },
+        {
+          "time_s": 0.07050000000000001,
+          "force_on_mass_N": -502.45668965830123,
+          "load_on_stop_N": 502.45668965830123,
+          "velocity_m_per_s": 0.3995797746741161,
+          "displacement_m": 0.09595475326259494,
+          "kinetic_energy_J": 1.5966399632861739
+        },
+        {
+          "time_s": 0.07100000000000001,
+          "force_on_mass_N": -496.46903641532407,
+          "load_on_stop_N": 496.46903641532407,
+          "velocity_m_per_s": 0.3870929463470234,
+          "displacement_m": 0.09615141520568578,
+          "kinetic_energy_J": 1.4984094911161954
+        },
+        {
+          "time_s": 0.07150000000000001,
+          "force_on_mass_N": -490.3588868664372,
+          "load_on_stop_N": 490.3588868664372,
+          "velocity_m_per_s": 0.3747573436642947,
+          "displacement_m": 0.09634187141342332,
+          "kinetic_energy_J": 1.4044306663031827
+        },
+        {
+          "time_s": 0.07200000000000001,
+          "force_on_mass_N": -484.1277485996136,
+          "load_on_stop_N": 484.1277485996136,
+          "velocity_m_per_s": 0.36257601025131025,
+          "displacement_m": 0.0965261982611065,
+          "kinetic_energy_J": 1.3146136320975823
+        },
+        {
+          "time_s": 0.0725,
+          "force_on_mass_N": -477.7771590549822,
+          "load_on_stop_N": 477.7771590549822,
+          "velocity_m_per_s": 0.3505519516698168,
+          "displacement_m": 0.09670447363636214,
+          "kinetic_energy_J": 1.2288667081951756
+        },
+        {
+          "time_s": 0.07300000000000001,
+          "force_on_mass_N": -471.30868514548655,
+          "load_on_stop_N": 471.30868514548655,
+          "velocity_m_per_s": 0.33868813467634795,
+          "displacement_m": 0.09687677691992731,
+          "kinetic_energy_J": 1.1470965257054402
+        },
+        {
+          "time_s": 0.07350000000000001,
+          "force_on_mass_N": -464.7239228702748,
+          "load_on_stop_N": 464.7239228702748,
+          "velocity_m_per_s": 0.32698748649022646,
+          "displacement_m": 0.09704318896606337,
+          "kinetic_energy_J": 1.0692081632119603
+        },
+        {
+          "time_s": 0.07400000000000001,
+          "force_on_mass_N": -458.0244969209082,
+          "load_on_stop_N": 458.0244969209082,
+          "velocity_m_per_s": 0.3154528940713113,
+          "displacement_m": 0.09720379208260638,
+          "kinetic_energy_J": 0.9951052837796593
+        },
+        {
+          "time_s": 0.0745,
+          "force_on_mass_N": -451.2120602804942,
+          "load_on_stop_N": 451.2120602804942,
+          "velocity_m_per_s": 0.304087203407686,
+          "displacement_m": 0.09735867001065876,
+          "kinetic_energy_J": 0.9246902727630741
+        },
+        {
+          "time_s": 0.075,
+          "force_on_mass_N": -444.2882938158366,
+          "load_on_stop_N": 444.2882938158366,
+          "velocity_m_per_s": 0.29289321881345254,
+          "displacement_m": 0.09750790790392765,
+          "kinetic_energy_J": 0.8578643762690499
+        },
+        {
+          "time_s": 0.07550000000000001,
+          "force_on_mass_N": -437.2549058627084,
+          "load_on_stop_N": 437.2549058627084,
+          "velocity_m_per_s": 0.2818737022368111,
+          "displacement_m": 0.09765159230771431,
+          "kinetic_energy_J": 0.7945278401268643
+        },
+        {
+          "time_s": 0.07600000000000001,
+          "force_on_mass_N": -430.11363180434427,
+          "load_on_stop_N": 430.11363180434427,
+          "velocity_m_per_s": 0.27103137257858834,
+          "displacement_m": 0.09778981113756043,
+          "kinetic_energy_J": 0.7345800492183356
+        },
+        {
+          "time_s": 0.0765,
+          "force_on_mass_N": -422.8662336432612,
+          "load_on_stop_N": 422.8662336432612,
+          "velocity_m_per_s": 0.26036890502139054,
+          "displacement_m": 0.09792265365755629,
+          "kinetic_energy_J": 0.6779196670203789
+        },
+        {
+          "time_s": 0.077,
+          "force_on_mass_N": -415.51449956650964,
+          "load_on_stop_N": 415.51449956650964,
+          "velocity_m_per_s": 0.24988893036954074,
+          "displacement_m": 0.0980502104583162,
+          "kinetic_energy_J": 0.6244447752123318
+        },
+        {
+          "time_s": 0.0775,
+          "force_on_mass_N": -408.06024350446677,
+          "load_on_stop_N": 408.06024350446677,
+          "velocity_m_per_s": 0.23959403439996918,
+          "displacement_m": 0.09817257343462657,
+          "kinetic_energy_J": 0.5740530132005361
+        },
+        {
+          "time_s": 0.07800000000000001,
+          "force_on_mass_N": -400.50530468327565,
+          "load_on_stop_N": 400.50530468327565,
+          "velocity_m_per_s": 0.22948675722421064,
+          "displacement_m": 0.09828983576277232,
+          "kinetic_energy_J": 0.5266417174128379
+        },
+        {
+          "time_s": 0.0785,
+          "force_on_mass_N": -392.85154717104393,
+          "load_on_stop_N": 392.85154717104393,
+          "velocity_m_per_s": 0.21956959266167042,
+          "displacement_m": 0.09840209187754693,
+          "kinetic_energy_J": 0.48210806021611874
+        },
+        {
+          "time_s": 0.079,
+          "force_on_mass_N": -385.10085941791135,
+          "load_on_stop_N": 385.10085941791135,
+          "velocity_m_per_s": 0.2098449876243098,
+          "displacement_m": 0.09850943744895216,
+          "kinetic_energy_J": 0.4403491883104674
+        },
+        {
+          "time_s": 0.0795,
+          "force_on_mass_N": -377.25515379010506,
+          "load_on_stop_N": 377.25515379010506,
+          "velocity_m_per_s": 0.20031534151290942,
+          "displacement_m": 0.09861196935859282,
+          "kinetic_energy_J": 0.4012623604543353
+        },
+        {
+          "time_s": 0.08,
+          "force_on_mass_N": -369.31636609809135,
+          "load_on_stop_N": 369.31636609809135,
+          "velocity_m_per_s": 0.19098300562505266,
+          "displacement_m": 0.0987097856757728,
+          "kinetic_energy_J": 0.3647450843757889
+        },
+        {
+          "time_s": 0.0805,
+          "force_on_mass_N": -361.28645511894257,
+          "load_on_stop_N": 361.28645511894257,
+          "velocity_m_per_s": 0.18185028257497693,
+          "displacement_m": 0.09880298563329781,
+          "kinetic_energy_J": 0.3306952527259896
+        },
+        {
+          "time_s": 0.081,
+          "force_on_mass_N": -353.16740211303795,
+          "load_on_stop_N": 353.16740211303795,
+          "velocity_m_per_s": 0.17291942572543828,
+          "displacement_m": 0.09889166960299124,
+          "kinetic_energy_J": 0.29901127793215365
+        },
+        {
+          "time_s": 0.0815,
+          "force_on_mass_N": -344.96121033521945,
+          "load_on_stop_N": 344.96121033521945,
+          "velocity_m_per_s": 0.16419263863172995,
+          "displacement_m": 0.09897593907092894,
+          "kinetic_energy_J": 0.2695922258084986
+        },
+        {
+          "time_s": 0.08200000000000002,
+          "force_on_mass_N": -336.6699045405157,
+          "load_on_stop_N": 336.6699045405157,
+          "velocity_m_per_s": 0.1556720744979847,
+          "displacement_m": 0.09905589661239898,
+          "kinetic_energy_J": 0.242337947785061
+        },
+        {
+          "time_s": 0.0825,
+          "force_on_mass_N": -328.29553048456717,
+          "load_on_stop_N": 328.29553048456717,
+          "velocity_m_per_s": 0.14735983564590782,
+          "displacement_m": 0.09913164586659277,
+          "kinetic_energy_J": 0.21714921161588965
+        },
+        {
+          "time_s": 0.083,
+          "force_on_mass_N": -319.8401544188629,
+          "load_on_stop_N": 319.8401544188629,
+          "velocity_m_per_s": 0.13925797299605647,
+          "displacement_m": 0.09920329151103364,
+          "kinetic_energy_J": 0.1939278304297039
+        },
+        {
+          "time_s": 0.08349999999999999,
+          "force_on_mass_N": -311.3058625809269,
+          "load_on_stop_N": 311.3058625809269,
+          "velocity_m_per_s": 0.13136848556180913,
+          "displacement_m": 0.09927093923574923,
+          "kinetic_energy_J": 0.17257678998803255
+        },
+        {
+          "time_s": 0.084,
+          "force_on_mass_N": -302.69476067956793,
+          "load_on_stop_N": 302.69476067956793,
+          "velocity_m_per_s": 0.12369331995613642,
+          "displacement_m": 0.099334695717194,
+          "kinetic_energy_J": 0.15300037401771135
+        },
+        {
+          "time_s": 0.0845,
+          "force_on_mass_N": -294.0089733753307,
+          "load_on_stop_N": 294.0089733753307,
+          "velocity_m_per_s": 0.11623436991130653,
+          "displacement_m": 0.09939466859192855,
+          "kinetic_energy_J": 0.1351042874867844
+        },
+        {
+          "time_s": 0.085,
+          "force_on_mass_N": -285.25064375626357,
+          "load_on_stop_N": 285.25064375626357,
+          "velocity_m_per_s": 0.10899347581163199,
+          "displacement_m": 0.09945096643006174,
+          "kinetic_energy_J": 0.11879577769500807
+        },
+        {
+          "time_s": 0.0855,
+          "force_on_mass_N": -276.4219328091471,
+          "load_on_stop_N": 276.4219328091471,
+          "velocity_m_per_s": 0.10197242423938446,
+          "displacement_m": 0.09950369870846278,
+          "kinetic_energy_J": 0.10398375305257003
+        },
+        {
+          "time_s": 0.086,
+          "force_on_mass_N": -267.52501888630013,
+          "load_on_stop_N": 267.52501888630013,
+          "velocity_m_per_s": 0.09517294753398076,
+          "displacement_m": 0.09955297578374935,
+          "kinetic_energy_J": 0.09057889942305855
+        },
+        {
+          "time_s": 0.08650000000000001,
+          "force_on_mass_N": -258.562097168105,
+          "load_on_stop_N": 258.562097168105,
+          "velocity_m_per_s": 0.08859672336455471,
+          "displacement_m": 0.09959890886505879,
+          "kinetic_energy_J": 0.07849379390935433
+        },
+        {
+          "time_s": 0.08700000000000001,
+          "force_on_mass_N": -249.53537912138185,
+          "load_on_stop_N": 249.53537912138185,
+          "velocity_m_per_s": 0.08224537431601886,
+          "displacement_m": 0.09964160998660897,
+          "kinetic_energy_J": 0.06764301596382054
+        },
+        {
+          "time_s": 0.0875,
+          "force_on_mass_N": -240.44709195373855,
+          "load_on_stop_N": 240.44709195373855,
+          "velocity_m_per_s": 0.07612046748871326,
+          "displacement_m": 0.0996811919800554,
+          "kinetic_energy_J": 0.05794325570700253
+        },
+        {
+          "time_s": 0.08800000000000001,
+          "force_on_mass_N": -231.2994780640427,
+          "load_on_stop_N": 231.2994780640427,
+          "velocity_m_per_s": 0.07022351411174865,
+          "displacement_m": 0.09971776844665188,
+          "kinetic_energy_J": 0.049313419342029624
+        },
+        {
+          "time_s": 0.0885,
+          "force_on_mass_N": -222.0947944891432,
+          "load_on_stop_N": 222.0947944891432,
+          "velocity_m_per_s": 0.06455596917013295,
+          "displacement_m": 0.09975145372922087,
+          "kinetic_energy_J": 0.04167473155495156
+        },
+        {
+          "time_s": 0.08900000000000001,
+          "force_on_mass_N": -212.83531234697847,
+          "load_on_stop_N": 212.83531234697847,
+          "velocity_m_per_s": 0.059119231045774545,
+          "displacement_m": 0.09978236288394127,
+          "kinetic_energy_J": 0.034950834794436725
+        },
+        {
+          "time_s": 0.08950000000000001,
+          "force_on_mass_N": -203.52331627621552,
+          "load_on_stop_N": 203.52331627621552,
+          "velocity_m_per_s": 0.05391464117245459,
+          "displacement_m": 0.09981061165196002,
+          "kinetic_energy_J": 0.029067885327545357
+        },
+        {
+          "time_s": 0.09,
+          "force_on_mass_N": -194.16110387254668,
+          "load_on_stop_N": 194.16110387254668,
+          "velocity_m_per_s": 0.04894348370484647,
+          "displacement_m": 0.09983631643083465,
+          "kinetic_energy_J": 0.023954645971665717
+        },
+        {
+          "time_s": 0.09050000000000001,
+          "force_on_mass_N": -184.750985121792,
+          "load_on_stop_N": 184.750985121792,
+          "velocity_m_per_s": 0.04420698520166988,
+          "displacement_m": 0.09985959424581396,
+          "kinetic_energy_J": 0.0195425754062066
+        },
+        {
+          "time_s": 0.091,
+          "force_on_mass_N": -175.29528182994687,
+          "load_on_stop_N": 175.29528182994687,
+          "velocity_m_per_s": 0.039706314323057046,
+          "displacement_m": 0.0998805627209637,
+          "kinetic_energy_J": 0.01576591397121405
+        },
+        {
+          "time_s": 0.0915,
+          "force_on_mass_N": -165.79632705030977,
+          "load_on_stop_N": 165.79632705030977,
+          "velocity_m_per_s": 0.035442581542202034,
+          "displacement_m": 0.09989934005014477,
+          "kinetic_energy_J": 0.012561765863756402
+        },
+        {
+          "time_s": 0.09200000000000001,
+          "force_on_mass_N": -156.2564645078362,
+          "load_on_stop_N": 156.2564645078362,
+          "velocity_m_per_s": 0.03141683887136881,
+          "displacement_m": 0.09991604496785046,
+          "kinetic_energy_J": 0.009870177646695505
+        },
+        {
+          "time_s": 0.0925,
+          "force_on_mass_N": -146.67804802086178,
+          "load_on_stop_N": 146.67804802086178,
+          "velocity_m_per_s": 0.027630079602323443,
+          "displacement_m": 0.09993079671991069,
+          "kinetic_energy_J": 0.0076342129883073
+        },
+        {
+          "time_s": 0.09300000000000001,
+          "force_on_mass_N": -137.06344092032842,
+          "load_on_stop_N": 137.06344092032842,
+          "velocity_m_per_s": 0.024083238061252565,
+          "displacement_m": 0.09994371503406967,
+          "kinetic_energy_J": 0.005800023555149642
+        },
+        {
+          "time_s": 0.0935,
+          "force_on_mass_N": -127.4150154666728,
+          "load_on_stop_N": 127.4150154666728,
+          "velocity_m_per_s": 0.02077718937823425,
+          "displacement_m": 0.09995492009044503,
+          "kinetic_energy_J": 0.0043169159845901015
+        },
+        {
+          "time_s": 0.094,
+          "force_on_mass_N": -117.73515226450232,
+          "load_on_stop_N": 117.73515226450232,
+          "velocity_m_per_s": 0.01771274927131139,
+          "displacement_m": 0.09996453249187512,
+          "kinetic_energy_J": 0.0031374148674834217
+        },
+        {
+          "time_s": 0.09450000000000001,
+          "force_on_mass_N": -108.02623967521919,
+          "load_on_stop_N": 108.02623967521919,
+          "velocity_m_per_s": 0.014890673845226132,
+          "displacement_m": 0.09997267323416205,
+          "kinetic_energy_J": 0.0022173216756490163
+        },
+        {
+          "time_s": 0.095,
+          "force_on_mass_N": -98.29067322772806,
+          "load_on_stop_N": 98.29067322772806,
+          "velocity_m_per_s": 0.01231165940486234,
+          "displacement_m": 0.09997946367621782,
+          "kinetic_energy_J": 0.001515769573013353
+        },
+        {
+          "time_s": 0.0955,
+          "force_on_mass_N": -88.53085502737235,
+          "load_on_stop_N": 88.53085502737235,
+          "velocity_m_per_s": 0.009976342283442463,
+          "displacement_m": 0.09998502551012078,
+          "kinetic_energy_J": 0.0009952740535640197
+        },
+        {
+          "time_s": 0.09600000000000002,
+          "force_on_mass_N": -78.74919316325428,
+          "load_on_stop_N": 78.74919316325428,
+          "velocity_m_per_s": 0.007885298685522124,
+          "displacement_m": 0.09998948073109003,
+          "kinetic_energy_J": 0.0006217793535989694
+        },
+        {
+          "time_s": 0.0965,
+          "force_on_mass_N": -68.94810111407291,
+          "load_on_stop_N": 68.94810111407291,
+          "velocity_m_per_s": 0.006039044544820293,
+          "displacement_m": 0.09999295160738474,
+          "kinetic_energy_J": 0.0003647005901432374
+        },
+        {
+          "time_s": 0.09700000000000002,
+          "force_on_mass_N": -59.129997152634225,
+          "load_on_stop_N": 59.129997152634225,
+          "velocity_m_per_s": 0.004438035396920004,
+          "displacement_m": 0.0999955606501365,
+          "kinetic_energy_J": 0.00019696158184314897
+        },
+        {
+          "time_s": 0.0975,
+          "force_on_mass_N": -49.29730374917955,
+          "load_on_stop_N": 49.29730374917955,
+          "velocity_m_per_s": 0.003082666266872036,
+          "displacement_m": 0.09999743058312137,
+          "kinetic_energy_J": 9.502831312910775e-05
+        },
+        {
+          "time_s": 0.098,
+          "force_on_mass_N": -39.45244697367559,
+          "load_on_stop_N": 39.45244697367559,
+          "velocity_m_per_s": 0.001973271571728441,
+          "displacement_m": 0.0999986843124797,
+          "kinetic_energy_J": 3.8938006957916325e-05
+        },
+        {
+          "time_s": 0.09850000000000002,
+          "force_on_mass_N": -29.59785589722024,
+          "load_on_stop_N": 29.59785589722024,
+          "velocity_m_per_s": 0.0011101250380299854,
+          "displacement_m": 0.09999944489639087,
+          "kinetic_energy_J": 1.2323776000610765e-05
+        },
+        {
+          "time_s": 0.099,
+          "force_on_mass_N": -19.73596199270531,
+          "load_on_stop_N": 19.73596199270531,
+          "velocity_m_per_s": 0.0004934396342684,
+          "displacement_m": 0.09999983551471055,
+          "kinetic_energy_J": 2.434826726669323e-06
+        },
+        {
+          "time_s": 0.0995,
+          "force_on_mass_N": -9.869198534883942,
+          "load_on_stop_N": 9.869198534883942,
+          "velocity_m_per_s": 0.00012336751833941229,
+          "displacement_m": 0.09999997943857784,
+          "kinetic_energy_J": 1.5219544581225229e-07
+        },
+        {
+          "time_s": 0.1,
+          "force_on_mass_N": -7.694682774887159e-14,
+          "load_on_stop_N": 7.694682774887159e-14,
+          "velocity_m_per_s": 0.0,
+          "displacement_m": 0.1,
+          "kinetic_energy_J": 0.0
+        }
+      ],
+      "x": "time_s",
+      "ys": [
+        "load_on_stop_N"
+      ],
+      "xlabel": "Time (s)",
+      "ylabel": "Force on stop (N)",
+      "log": false
+    },
+    {
+      "name": "stop_velocity",
+      "rows": [
+        {
+          "time_s": 0.0,
+          "force_on_mass_N": -0.0,
+          "load_on_stop_N": 0.0,
+          "velocity_m_per_s": 2.0,
+          "displacement_m": 0.0,
+          "kinetic_energy_J": 40.0
+        },
+        {
+          "time_s": 0.0005,
+          "force_on_mass_N": -9.869198534883921,
+          "load_on_stop_N": 9.869198534883921,
+          "velocity_m_per_s": 1.9998766324816606,
+          "displacement_m": 0.0009999794385778323,
+          "kinetic_energy_J": 39.99506545146187
+        },
+        {
+          "time_s": 0.001,
+          "force_on_mass_N": -19.735961992705345,
+          "load_on_stop_N": 19.735961992705345,
+          "velocity_m_per_s": 1.9995065603657316,
+          "displacement_m": 0.0019998355147105486,
+          "kinetic_energy_J": 39.98026484945599
+        },
+        {
+          "time_s": 0.0015000000000000002,
+          "force_on_mass_N": -29.597855897220615,
+          "load_on_stop_N": 29.597855897220615,
+          "velocity_m_per_s": 1.9988898749619701,
+          "displacement_m": 0.002999444896390871,
+          "kinetic_energy_J": 39.95560732225481
+        },
+        {
+          "time_s": 0.002,
+          "force_on_mass_N": -39.452446973675464,
+          "load_on_stop_N": 39.452446973675464,
+          "velocity_m_per_s": 1.9980267284282716,
+          "displacement_m": 0.0039986843124796825,
+          "kinetic_energy_J": 39.921108075137816
+        },
+        {
+          "time_s": 0.0025,
+          "force_on_mass_N": -49.29730374917919,
+          "load_on_stop_N": 49.29730374917919,
+          "velocity_m_per_s": 1.996917333733128,
+          "displacement_m": 0.004997430583121346,
+          "kinetic_energy_J": 39.87678837763825
+        },
+        {
+          "time_s": 0.0030000000000000005,
+          "force_on_mass_N": -59.12999715263421,
+          "load_on_stop_N": 59.12999715263421,
+          "velocity_m_per_s": 1.99556196460308,
+          "displacement_m": 0.005995560650136482,
+          "kinetic_energy_J": 39.822675545705046
+        },
+        {
+          "time_s": 0.0035000000000000005,
+          "force_on_mass_N": -68.94810111407294,
+          "load_on_stop_N": 68.94810111407294,
+          "velocity_m_per_s": 1.9939609554551798,
+          "displacement_m": 0.00699295160738473,
+          "kinetic_energy_J": 39.758802918797336
+        },
+        {
+          "time_s": 0.004,
+          "force_on_mass_N": -78.74919316325438,
+          "load_on_stop_N": 78.74919316325438,
+          "velocity_m_per_s": 1.992114701314478,
+          "displacement_m": 0.007989480731090015,
+          "kinetic_energy_J": 39.68520983193272
+        },
+        {
+          "time_s": 0.0045000000000000005,
+          "force_on_mass_N": -88.53085502737224,
+          "load_on_stop_N": 88.53085502737224,
+          "velocity_m_per_s": 1.9900236577165575,
+          "displacement_m": 0.008985025510120783,
+          "kinetic_energy_J": 39.60194158271587
+        },
+        {
+          "time_s": 0.005,
+          "force_on_mass_N": -98.29067322772771,
+          "load_on_stop_N": 98.29067322772771,
+          "velocity_m_per_s": 1.9876883405951378,
+          "displacement_m": 0.009979463676217808,
+          "kinetic_energy_J": 39.509049393378525
+        },
+        {
+          "time_s": 0.0055000000000000005,
+          "force_on_mass_N": -108.02623967521914,
+          "load_on_stop_N": 108.02623967521914,
+          "velocity_m_per_s": 1.9851093261547739,
+          "displacement_m": 0.01097267323416204,
+          "kinetic_energy_J": 39.406590367866606
+        },
+        {
+          "time_s": 0.006000000000000001,
+          "force_on_mass_N": -117.73515226450208,
+          "load_on_stop_N": 117.73515226450208,
+          "velocity_m_per_s": 1.9822872507286888,
+          "displacement_m": 0.01196453249187511,
+          "kinetic_energy_J": 39.294627444015035
+        },
+        {
+          "time_s": 0.006500000000000001,
+          "force_on_mass_N": -127.41501546667263,
+          "load_on_stop_N": 127.41501546667263,
+          "velocity_m_per_s": 1.9792228106217657,
+          "displacement_m": 0.012954920090445025,
+          "kinetic_energy_J": 39.173229340855215
+        },
+        {
+          "time_s": 0.007000000000000001,
+          "force_on_mass_N": -137.06344092032856,
+          "load_on_stop_N": 137.06344092032856,
+          "velocity_m_per_s": 1.9759167619387474,
+          "displacement_m": 0.013943715034069664,
+          "kinetic_energy_J": 39.04247050110505
+        },
+        {
+          "time_s": 0.0075,
+          "force_on_mass_N": -146.6780480208617,
+          "load_on_stop_N": 146.6780480208617,
+          "velocity_m_per_s": 1.9723699203976766,
+          "displacement_m": 0.014930796719910683,
+          "kinetic_energy_J": 38.902431028895364
+        },
+        {
+          "time_s": 0.008,
+          "force_on_mass_N": -156.25646450783645,
+          "load_on_stop_N": 156.25646450783645,
+          "velocity_m_per_s": 1.968583161128631,
+          "displacement_m": 0.015916044967850467,
+          "kinetic_energy_J": 38.75319662279194
+        },
+        {
+          "time_s": 0.0085,
+          "force_on_mass_N": -165.79632705030954,
+          "load_on_stop_N": 165.79632705030954,
+          "velocity_m_per_s": 1.964557418457798,
+          "displacement_m": 0.016899340050144755,
+          "kinetic_energy_J": 38.594858504175676
+        },
+        {
+          "time_s": 0.009000000000000001,
+          "force_on_mass_N": -175.2952818299467,
+          "load_on_stop_N": 175.2952818299467,
+          "velocity_m_per_s": 1.960293685676943,
+          "displacement_m": 0.017880562720963694,
+          "kinetic_energy_J": 38.427513341048936
+        },
+        {
+          "time_s": 0.009500000000000001,
+          "force_on_mass_N": -184.75098512179193,
+          "load_on_stop_N": 184.75098512179193,
+          "velocity_m_per_s": 1.95579301479833,
+          "displacement_m": 0.01885959424581395,
+          "kinetic_energy_J": 38.25126316733941
+        },
+        {
+          "time_s": 0.01,
+          "force_on_mass_N": -194.16110387254662,
+          "load_on_stop_N": 194.16110387254662,
+          "velocity_m_per_s": 1.9510565162951536,
+          "displacement_m": 0.01983631643083466,
+          "kinetic_energy_J": 38.06621529777781
+        },
+        {
+          "time_s": 0.0105,
+          "force_on_mass_N": -203.52331627621575,
+          "load_on_stop_N": 203.52331627621575,
+          "velocity_m_per_s": 1.9460853588275453,
+          "displacement_m": 0.020810611651960027,
+          "kinetic_energy_J": 37.872482238429356
+        },
+        {
+          "time_s": 0.011000000000000001,
+          "force_on_mass_N": -212.8353123469785,
+          "load_on_stop_N": 212.8353123469785,
+          "velocity_m_per_s": 1.9408807689542256,
+          "displacement_m": 0.021782362883941267,
+          "kinetic_energy_J": 37.67018159296346
+        },
+        {
+          "time_s": 0.011500000000000002,
+          "force_on_mass_N": -222.0947944891428,
+          "load_on_stop_N": 222.0947944891428,
+          "velocity_m_per_s": 1.9354440308298673,
+          "displacement_m": 0.022751453729220855,
+          "kinetic_energy_J": 37.459435964749645
+        },
+        {
+          "time_s": 0.012000000000000002,
+          "force_on_mass_N": -231.29947806404257,
+          "load_on_stop_N": 231.29947806404257,
+          "velocity_m_per_s": 1.9297764858882513,
+          "displacement_m": 0.023717768446651872,
+          "kinetic_energy_J": 37.24037285487208
+        },
+        {
+          "time_s": 0.0125,
+          "force_on_mass_N": -240.44709195373846,
+          "load_on_stop_N": 240.44709195373846,
+          "velocity_m_per_s": 1.9238795325112867,
+          "displacement_m": 0.02468119198005541,
+          "kinetic_energy_J": 37.01312455615847
+        },
+        {
+          "time_s": 0.013000000000000001,
+          "force_on_mass_N": -249.53537912138185,
+          "load_on_stop_N": 249.53537912138185,
+          "velocity_m_per_s": 1.917754625683981,
+          "displacement_m": 0.025641609986608957,
+          "kinetic_energy_J": 36.77782804332306
+        },
+        {
+          "time_s": 0.013500000000000002,
+          "force_on_mass_N": -258.5620971681051,
+          "load_on_stop_N": 258.5620971681051,
+          "velocity_m_per_s": 1.9114032766354452,
+          "displacement_m": 0.026598908865058783,
+          "kinetic_energy_J": 36.53462485932716
+        },
+        {
+          "time_s": 0.014000000000000002,
+          "force_on_mass_N": -267.52501888629973,
+          "load_on_stop_N": 267.52501888629973,
+          "velocity_m_per_s": 1.9048270524660196,
+          "displacement_m": 0.027552975783749333,
+          "kinetic_energy_J": 36.283660998063844
+        },
+        {
+          "time_s": 0.014500000000000002,
+          "force_on_mass_N": -276.421932809147,
+          "load_on_stop_N": 276.421932809147,
+          "velocity_m_per_s": 1.8980275757606155,
+          "displacement_m": 0.028503698708462772,
+          "kinetic_energy_J": 36.02508678347719
+        },
+        {
+          "time_s": 0.015,
+          "force_on_mass_N": -285.25064375626374,
+          "load_on_stop_N": 285.25064375626374,
+          "velocity_m_per_s": 1.8910065241883678,
+          "displacement_m": 0.029450966430061738,
+          "kinetic_energy_J": 35.75905674522972
+        },
+        {
+          "time_s": 0.0155,
+          "force_on_mass_N": -294.0089733753307,
+          "load_on_stop_N": 294.0089733753307,
+          "velocity_m_per_s": 1.8837656300886936,
+          "displacement_m": 0.03039466859192854,
+          "kinetic_energy_J": 35.485729491034526
+        },
+        {
+          "time_s": 0.016,
+          "force_on_mass_N": -302.694760679568,
+          "load_on_stop_N": 302.694760679568,
+          "velocity_m_per_s": 1.8763066800438635,
+          "displacement_m": 0.031334695717194,
+          "kinetic_energy_J": 35.205267575772254
+        },
+        {
+          "time_s": 0.0165,
+          "force_on_mass_N": -311.3058625809265,
+          "load_on_stop_N": 311.3058625809265,
+          "velocity_m_per_s": 1.8686315144381913,
+          "displacement_m": 0.03227093923574921,
+          "kinetic_energy_J": 34.91783736751569
+        },
+        {
+          "time_s": 0.017,
+          "force_on_mass_N": -319.84015441886277,
+          "load_on_stop_N": 319.84015441886277,
+          "velocity_m_per_s": 1.8607420270039436,
+          "displacement_m": 0.03320329151103364,
+          "kinetic_energy_J": 34.62360891058745
+        },
+        {
+          "time_s": 0.0175,
+          "force_on_mass_N": -328.2955304845671,
+          "load_on_stop_N": 328.2955304845671,
+          "velocity_m_per_s": 1.8526401643540922,
+          "displacement_m": 0.034131645866592765,
+          "kinetic_energy_J": 34.32275578577958
+        },
+        {
+          "time_s": 0.018000000000000002,
+          "force_on_mass_N": -336.669904540516,
+          "load_on_stop_N": 336.669904540516,
+          "velocity_m_per_s": 1.844327925502015,
+          "displacement_m": 0.03505589661239898,
+          "kinetic_energy_J": 34.015454967865665
+        },
+        {
+          "time_s": 0.018500000000000003,
+          "force_on_mass_N": -344.96121033521933,
+          "load_on_stop_N": 344.96121033521933,
+          "velocity_m_per_s": 1.8358073613682704,
+          "displacement_m": 0.03597593907092894,
+          "kinetic_energy_J": 33.70188668053932
+        },
+        {
+          "time_s": 0.019000000000000003,
+          "force_on_mass_N": -353.1674021130378,
+          "load_on_stop_N": 353.1674021130378,
+          "velocity_m_per_s": 1.8270805742745617,
+          "displacement_m": 0.03689166960299123,
+          "kinetic_energy_J": 33.38223424891462
+        },
+        {
+          "time_s": 0.019500000000000003,
+          "force_on_mass_N": -361.28645511894223,
+          "load_on_stop_N": 361.28645511894223,
+          "velocity_m_per_s": 1.8181497174250234,
+          "displacement_m": 0.037802985633297786,
+          "kinetic_energy_J": 33.056683949726924
+        },
+        {
+          "time_s": 0.02,
+          "force_on_mass_N": -369.3163660980913,
+          "load_on_stop_N": 369.3163660980913,
+          "velocity_m_per_s": 1.8090169943749475,
+          "displacement_m": 0.03870978567577278,
+          "kinetic_energy_J": 32.72542485937369
+        },
+        {
+          "time_s": 0.020500000000000004,
+          "force_on_mass_N": -377.2551537901051,
+          "load_on_stop_N": 377.2551537901051,
+          "velocity_m_per_s": 1.7996846584870905,
+          "displacement_m": 0.03961196935859282,
+          "kinetic_energy_J": 32.38864869993796
+        },
+        {
+          "time_s": 0.021,
+          "force_on_mass_N": -385.1008594179112,
+          "load_on_stop_N": 385.1008594179112,
+          "velocity_m_per_s": 1.7901550123756904,
+          "displacement_m": 0.04050943744895215,
+          "kinetic_energy_J": 32.046549683338085
+        },
+        {
+          "time_s": 0.0215,
+          "force_on_mass_N": -392.8515471710437,
+          "load_on_stop_N": 392.8515471710437,
+          "velocity_m_per_s": 1.78043040733833,
+          "displacement_m": 0.041402091877546926,
+          "kinetic_energy_J": 31.699324353749315
+        },
+        {
+          "time_s": 0.022000000000000002,
+          "force_on_mass_N": -400.5053046832757,
+          "load_on_stop_N": 400.5053046832757,
+          "velocity_m_per_s": 1.7705132427757893,
+          "displacement_m": 0.042289835762772315,
+          "kinetic_energy_J": 31.34717142844441
+        },
+        {
+          "time_s": 0.0225,
+          "force_on_mass_N": -408.0602435044667,
+          "load_on_stop_N": 408.0602435044667,
+          "velocity_m_per_s": 1.760405965600031,
+          "displacement_m": 0.04317257343462658,
+          "kinetic_energy_J": 30.99029163720178
+        },
+        {
+          "time_s": 0.023000000000000003,
+          "force_on_mass_N": -415.51449956650947,
+          "load_on_stop_N": 415.51449956650947,
+          "velocity_m_per_s": 1.7501110696304596,
+          "displacement_m": 0.0440502104583162,
+          "kinetic_energy_J": 30.628887560430712
+        },
+        {
+          "time_s": 0.0235,
+          "force_on_mass_N": -422.866233643261,
+          "load_on_stop_N": 422.866233643261,
+          "velocity_m_per_s": 1.7396310949786098,
+          "displacement_m": 0.04492265365755628,
+          "kinetic_energy_J": 30.26316346616477
+        },
+        {
+          "time_s": 0.024000000000000004,
+          "force_on_mass_N": -430.11363180434444,
+          "load_on_stop_N": 430.11363180434444,
+          "velocity_m_per_s": 1.7289686274214116,
+          "displacement_m": 0.04578981113756042,
+          "kinetic_energy_J": 29.893325146074798
+        },
+        {
+          "time_s": 0.0245,
+          "force_on_mass_N": -437.2549058627085,
+          "load_on_stop_N": 437.2549058627085,
+          "velocity_m_per_s": 1.718126297763189,
+          "displacement_m": 0.046651592307714304,
+          "kinetic_energy_J": 29.519579750654422
+        },
+        {
+          "time_s": 0.025,
+          "force_on_mass_N": -444.2882938158365,
+          "load_on_stop_N": 444.2882938158365,
+          "velocity_m_per_s": 1.7071067811865475,
+          "displacement_m": 0.04750790790392765,
+          "kinetic_energy_J": 29.14213562373095
+        },
+        {
+          "time_s": 0.025500000000000002,
+          "force_on_mass_N": -451.2120602804939,
+          "load_on_stop_N": 451.2120602804939,
+          "velocity_m_per_s": 1.6959127965923144,
+          "displacement_m": 0.04835867001065876,
+          "kinetic_energy_J": 28.76120213645565
+        },
+        {
+          "time_s": 0.026000000000000002,
+          "force_on_mass_N": -458.02449692090823,
+          "load_on_stop_N": 458.02449692090823,
+          "velocity_m_per_s": 1.6845471059286887,
+          "displacement_m": 0.04920379208260636,
+          "kinetic_energy_J": 28.376989520927207
+        },
+        {
+          "time_s": 0.026500000000000003,
+          "force_on_mass_N": -464.7239228702749,
+          "load_on_stop_N": 464.7239228702749,
+          "velocity_m_per_s": 1.6730125135097733,
+          "displacement_m": 0.05004318896606338,
+          "kinetic_energy_J": 27.989708703602894
+        },
+        {
+          "time_s": 0.027000000000000003,
+          "force_on_mass_N": -471.30868514548666,
+          "load_on_stop_N": 471.30868514548666,
+          "velocity_m_per_s": 1.6613118653236518,
+          "displacement_m": 0.05087677691992731,
+          "kinetic_energy_J": 27.599571138651516
+        },
+        {
+          "time_s": 0.0275,
+          "force_on_mass_N": -477.7771590549819,
+          "load_on_stop_N": 477.7771590549819,
+          "velocity_m_per_s": 1.6494480483301839,
+          "displacement_m": 0.05170447363636213,
+          "kinetic_energy_J": 27.206788641402525
+        },
+        {
+          "time_s": 0.028000000000000004,
+          "force_on_mass_N": -484.1277485996136,
+          "load_on_stop_N": 484.1277485996136,
+          "velocity_m_per_s": 1.6374239897486897,
+          "displacement_m": 0.0525261982611065,
+          "kinetic_energy_J": 26.81157322204517
+        },
+        {
+          "time_s": 0.0285,
+          "force_on_mass_N": -490.3588868664372,
+          "load_on_stop_N": 490.3588868664372,
+          "velocity_m_per_s": 1.6252426563357052,
+          "displacement_m": 0.05334187141342331,
+          "kinetic_energy_J": 26.41413691973139
+        },
+        {
+          "time_s": 0.029000000000000005,
+          "force_on_mass_N": -496.4690364153241,
+          "load_on_stop_N": 496.4690364153241,
+          "velocity_m_per_s": 1.6129070536529766,
+          "displacement_m": 0.05415141520568578,
+          "kinetic_energy_J": 26.01469163723526
+        },
+        {
+          "time_s": 0.029500000000000002,
+          "force_on_mass_N": -502.45668965830123,
+          "load_on_stop_N": 502.45668965830123,
+          "velocity_m_per_s": 1.600420225325884,
+          "displacement_m": 0.054954753262594934,
+          "kinetic_energy_J": 25.613448976321532
+        },
+        {
+          "time_s": 0.03,
+          "force_on_mass_N": -508.32036923152583,
+          "load_on_stop_N": 508.32036923152583,
+          "velocity_m_per_s": 1.5877852522924734,
+          "displacement_m": 0.055751810740024194,
+          "kinetic_energy_J": 25.210620073974734
+        },
+        {
+          "time_s": 0.030500000000000003,
+          "force_on_mass_N": -514.0586283598037,
+          "load_on_stop_N": 514.0586283598037,
+          "velocity_m_per_s": 1.5750052520432787,
+          "displacement_m": 0.05654251434348598,
+          "kinetic_energy_J": 24.80641543963912
+        },
+        {
+          "time_s": 0.031,
+          "force_on_mass_N": -519.6700512135579,
+          "load_on_stop_N": 519.6700512135579,
+          "velocity_m_per_s": 1.5620833778521308,
+          "displacement_m": 0.057326792346216,
+          "kinetic_energy_J": 24.401044793619228
+        },
+        {
+          "time_s": 0.0315,
+          "force_on_mass_N": -525.1532532581654,
+          "load_on_stop_N": 525.1532532581654,
+          "velocity_m_per_s": 1.5490228179981318,
+          "displacement_m": 0.05810457460687085,
+          "kinetic_energy_J": 23.99471690678873
+        },
+        {
+          "time_s": 0.032,
+          "force_on_mass_N": -530.5068815955681,
+          "load_on_stop_N": 530.5068815955681,
+          "velocity_m_per_s": 1.5358267949789965,
+          "displacement_m": 0.05887579258683425,
+          "kinetic_energy_J": 23.58763944175457
+        },
+        {
+          "time_s": 0.0325,
+          "force_on_mass_N": -535.7296152980819,
+          "load_on_stop_N": 535.7296152980819,
+          "velocity_m_per_s": 1.5224985647159488,
+          "displacement_m": 0.05964037936712797,
+          "kinetic_energy_J": 23.180018795621244
+        },
+        {
+          "time_s": 0.033,
+          "force_on_mass_N": -540.8201657343152,
+          "load_on_stop_N": 540.8201657343152,
+          "velocity_m_per_s": 1.5090414157503713,
+          "displacement_m": 0.06039826966492305,
+          "kinetic_energy_J": 22.77205994449885
+        },
+        {
+          "time_s": 0.0335,
+          "force_on_mass_N": -545.7772768871196,
+          "load_on_stop_N": 545.7772768871196,
+          "velocity_m_per_s": 1.4954586684324076,
+          "displacement_m": 0.06114939984964744,
+          "kinetic_energy_J": 22.363966289896297
+        },
+        {
+          "time_s": 0.034,
+          "force_on_mass_N": -550.5997256634926,
+          "load_on_stop_N": 550.5997256634926,
+          "velocity_m_per_s": 1.4817536741017152,
+          "displacement_m": 0.061893707958685776,
+          "kinetic_energy_J": 21.95593950713932
+        },
+        {
+          "time_s": 0.0345,
+          "force_on_mass_N": -555.2863221963587,
+          "load_on_stop_N": 555.2863221963587,
+          "velocity_m_per_s": 1.4679298142605735,
+          "displacement_m": 0.0626311337126678,
+          "kinetic_energy_J": 21.548179395950818
+        },
+        {
+          "time_s": 0.035,
+          "force_on_mass_N": -559.8359101381506,
+          "load_on_stop_N": 559.8359101381506,
+          "velocity_m_per_s": 1.4539904997395467,
+          "displacement_m": 0.06336161853034143,
+          "kinetic_energy_J": 21.140883733328568
+        },
+        {
+          "time_s": 0.035500000000000004,
+          "force_on_mass_N": -564.2473669461202,
+          "load_on_stop_N": 564.2473669461202,
+          "velocity_m_per_s": 1.439939169855915,
+          "displacement_m": 0.06408510554302671,
+          "kinetic_energy_J": 20.734248128853416
+        },
+        {
+          "time_s": 0.036000000000000004,
+          "force_on_mass_N": -568.5196041593106,
+          "load_on_stop_N": 568.5196041593106,
+          "velocity_m_per_s": 1.4257792915650727,
+          "displacement_m": 0.06480153960864735,
+          "kinetic_energy_J": 20.328465882558007
+        },
+        {
+          "time_s": 0.036500000000000005,
+          "force_on_mass_N": -572.6515676671161,
+          "load_on_stop_N": 572.6515676671161,
+          "velocity_m_per_s": 1.4115143586051087,
+          "displacement_m": 0.06551086732533626,
+          "kinetic_energy_J": 19.92372784548391
+        },
+        {
+          "time_s": 0.037000000000000005,
+          "force_on_mass_N": -576.642237969369,
+          "load_on_stop_N": 576.642237969369,
+          "velocity_m_per_s": 1.3971478906347805,
+          "displacement_m": 0.06621303704461155,
+          "kinetic_energy_J": 19.520222283052167
+        },
+        {
+          "time_s": 0.0375,
+          "force_on_mass_N": -580.4906304278861,
+          "load_on_stop_N": 580.4906304278861,
+          "velocity_m_per_s": 1.3826834323650898,
+          "displacement_m": 0.06690799888412013,
+          "kinetic_energy_J": 19.118134741369058
+        },
+        {
+          "time_s": 0.038000000000000006,
+          "force_on_mass_N": -584.1957955094128,
+          "load_on_stop_N": 584.1957955094128,
+          "velocity_m_per_s": 1.368124552684678,
+          "displacement_m": 0.06759570473994542,
+          "kinetic_energy_J": 18.7176479165865
+        },
+        {
+          "time_s": 0.0385,
+          "force_on_mass_N": -587.7568190199069,
+          "load_on_stop_N": 587.7568190199069,
+          "velocity_m_per_s": 1.3534748437792574,
+          "displacement_m": 0.06827610829847613,
+          "kinetic_energy_J": 18.31894152743285
+        },
+        {
+          "time_s": 0.03900000000000001,
+          "force_on_mass_N": -591.172822330102,
+          "load_on_stop_N": 591.172822330102,
+          "velocity_m_per_s": 1.3387379202452911,
+          "displacement_m": 0.0689491650478337,
+          "kinetic_energy_J": 17.922192191026877
+        },
+        {
+          "time_s": 0.0395,
+          "force_on_mass_N": -594.4429625922959,
+          "load_on_stop_N": 594.4429625922959,
+          "velocity_m_per_s": 1.3239174181981497,
+          "displacement_m": 0.06961483228885468,
+          "kinetic_energy_J": 17.52757330208454
+        },
+        {
+          "time_s": 0.04,
+          "force_on_mass_N": -597.5664329483111,
+          "load_on_stop_N": 597.5664329483111,
+          "velocity_m_per_s": 1.3090169943749475,
+          "displacement_m": 0.07027306914562628,
+          "kinetic_energy_J": 17.135254915624213
+        },
+        {
+          "time_s": 0.0405,
+          "force_on_mass_N": -600.5424627285748,
+          "load_on_stop_N": 600.5424627285748,
+          "velocity_m_per_s": 1.294040325232304,
+          "displacement_m": 0.07092383657557186,
+          "kinetic_energy_J": 16.745403633273273
+        },
+        {
+          "time_s": 0.04100000000000001,
+          "force_on_mass_N": -603.37031764227,
+          "load_on_stop_N": 603.37031764227,
+          "velocity_m_per_s": 1.278991106039229,
+          "displacement_m": 0.07156709737908407,
+          "kinetic_energy_J": 16.3581824932745
+        },
+        {
+          "time_s": 0.0415,
+          "force_on_mass_N": -606.0492999585108,
+          "load_on_stop_N": 606.0492999585108,
+          "velocity_m_per_s": 1.263873049965373,
+          "displacement_m": 0.07220281620870327,
+          "kinetic_energy_J": 15.97375086428774
+        },
+        {
+          "time_s": 0.042,
+          "force_on_mass_N": -608.5787486784972,
+          "load_on_stop_N": 608.5787486784972,
+          "velocity_m_per_s": 1.2486898871648546,
+          "displacement_m": 0.07283095957783908,
+          "kinetic_energy_J": 15.592264343077773
+        },
+        {
+          "time_s": 0.0425,
+          "force_on_mass_N": -610.9580396986065,
+          "load_on_stop_N": 610.9580396986065,
+          "velocity_m_per_s": 1.2334453638559053,
+          "displacement_m": 0.0734514958690326,
+          "kinetic_energy_J": 15.213874656176268
+        },
+        {
+          "time_s": 0.043,
+          "force_on_mass_N": -613.1865859643815,
+          "load_on_stop_N": 613.1865859643815,
+          "velocity_m_per_s": 1.218143241396543,
+          "displacement_m": 0.07406439534175761,
+          "kinetic_energy_J": 14.838729565600763
+        },
+        {
+          "time_s": 0.043500000000000004,
+          "force_on_mass_N": -615.2638376153776,
+          "load_on_stop_N": 615.2638376153776,
+          "velocity_m_per_s": 1.2027872953565124,
+          "displacement_m": 0.0746696301397586,
+          "kinetic_energy_J": 14.466972778710343
+        },
+        {
+          "time_s": 0.044000000000000004,
+          "force_on_mass_N": -617.1892821208326,
+          "load_on_stop_N": 617.1892821208326,
+          "velocity_m_per_s": 1.1873813145857248,
+          "displacement_m": 0.07526717429792376,
+          "kinetic_energy_J": 14.09874386227324
+        },
+        {
+          "time_s": 0.044500000000000005,
+          "force_on_mass_N": -618.9624444061258,
+          "load_on_stop_N": 618.9624444061258,
+          "velocity_m_per_s": 1.1719291002794094,
+          "displacement_m": 0.07585700374869168,
+          "kinetic_energy_J": 13.734178160817061
+        },
+        {
+          "time_s": 0.045,
+          "force_on_mass_N": -620.5828869699956,
+          "load_on_stop_N": 620.5828869699956,
+          "velocity_m_per_s": 1.156434465040231,
+          "displacement_m": 0.07643909632798954,
+          "kinetic_energy_J": 13.373406719328852
+        },
+        {
+          "time_s": 0.0455,
+          "force_on_mass_N": -622.0502099924865,
+          "load_on_stop_N": 622.0502099924865,
+          "velocity_m_per_s": 1.1409012319375829,
+          "displacement_m": 0.07701343178070175,
+          "kinetic_energy_J": 13.016556210366943
+        },
+        {
+          "time_s": 0.046000000000000006,
+          "force_on_mass_N": -623.364051433599,
+          "load_on_stop_N": 623.364051433599,
+          "velocity_m_per_s": 1.125333233564304,
+          "displacement_m": 0.0775799917656677,
+          "kinetic_energy_J": 12.663748865642926
+        },
+        {
+          "time_s": 0.04650000000000001,
+          "force_on_mass_N": -624.5240871226167,
+          "load_on_stop_N": 624.5240871226167,
+          "velocity_m_per_s": 1.1097343110910451,
+          "displacement_m": 0.07813875986020702,
+          "kinetic_energy_J": 12.315102412127166
+        },
+        {
+          "time_s": 0.047,
+          "force_on_mass_N": -625.5300308380914,
+          "load_on_stop_N": 625.5300308380914,
+          "velocity_m_per_s": 1.0941083133185145,
+          "displacement_m": 0.07868972156417174,
+          "kinetic_energy_J": 11.970730012726849
+        },
+        {
+          "time_s": 0.0475,
+          "force_on_mass_N": -626.3816343784637,
+          "load_on_stop_N": 626.3816343784637,
+          "velocity_m_per_s": 1.0784590957278453,
+          "displacement_m": 0.079232864303524,
+          "kinetic_energy_J": 11.630740211581216
+        },
+        {
+          "time_s": 0.04800000000000001,
+          "force_on_mass_N": -627.0786876233026,
+          "load_on_stop_N": 627.0786876233026,
+          "velocity_m_per_s": 1.0627905195293132,
+          "displacement_m": 0.07976817743343842,
+          "kinetic_energy_J": 11.295236884013875
+        },
+        {
+          "time_s": 0.04850000000000001,
+          "force_on_mass_N": -627.6210185851503,
+          "load_on_stop_N": 627.6210185851503,
+          "velocity_m_per_s": 1.0471064507096426,
+          "displacement_m": 0.08029565224092856,
+          "kinetic_energy_J": 10.964319191177452
+        },
+        {
+          "time_s": 0.049,
+          "force_on_mass_N": -628.0084934519571,
+          "load_on_stop_N": 628.0084934519571,
+          "velocity_m_per_s": 1.0314107590781283,
+          "displacement_m": 0.08081528194699682,
+          "kinetic_energy_J": 10.638081539421208
+        },
+        {
+          "time_s": 0.0495,
+          "force_on_mass_N": -628.2410166200972,
+          "load_on_stop_N": 628.2410166200972,
+          "velocity_m_per_s": 1.0157073173118207,
+          "displacement_m": 0.08132706170830693,
+          "kinetic_energy_J": 10.316613544407758
+        },
+        {
+          "time_s": 0.05,
+          "force_on_mass_N": -628.3185307179585,
+          "load_on_stop_N": 628.3185307179585,
+          "velocity_m_per_s": 1.0,
+          "displacement_m": 0.08183098861837906,
+          "kinetic_energy_J": 10.0
+        },
+        {
+          "time_s": 0.05050000000000001,
+          "force_on_mass_N": -628.2410166200972,
+          "load_on_stop_N": 628.2410166200972,
+          "velocity_m_per_s": 0.984292682688179,
+          "displacement_m": 0.08232706170830695,
+          "kinetic_energy_J": 9.688320851934924
+        },
+        {
+          "time_s": 0.051000000000000004,
+          "force_on_mass_N": -628.0084934519571,
+          "load_on_stop_N": 628.0084934519571,
+          "velocity_m_per_s": 0.9685892409218719,
+          "displacement_m": 0.08281528194699682,
+          "kinetic_energy_J": 9.381651176296081
+        },
+        {
+          "time_s": 0.051500000000000004,
+          "force_on_mass_N": -627.6210185851503,
+          "load_on_stop_N": 627.6210185851503,
+          "velocity_m_per_s": 0.9528935492903574,
+          "displacement_m": 0.08329565224092855,
+          "kinetic_energy_J": 9.080061162791749
+        },
+        {
+          "time_s": 0.052000000000000005,
+          "force_on_mass_N": -627.0786876233026,
+          "load_on_stop_N": 627.0786876233026,
+          "velocity_m_per_s": 0.9372094804706866,
+          "displacement_m": 0.08376817743343842,
+          "kinetic_energy_J": 8.783616102841345
+        },
+        {
+          "time_s": 0.0525,
+          "force_on_mass_N": -626.3816343784637,
+          "load_on_stop_N": 626.3816343784637,
+          "velocity_m_per_s": 0.9215409042721553,
+          "displacement_m": 0.084232864303524,
+          "kinetic_energy_J": 8.492376382467416
+        },
+        {
+          "time_s": 0.053000000000000005,
+          "force_on_mass_N": -625.5300308380914,
+          "load_on_stop_N": 625.5300308380914,
+          "velocity_m_per_s": 0.9058916866814857,
+          "displacement_m": 0.08468972156417175,
+          "kinetic_energy_J": 8.20639747998627
+        },
+        {
+          "time_s": 0.053500000000000006,
+          "force_on_mass_N": -624.5240871226167,
+          "load_on_stop_N": 624.5240871226167,
+          "velocity_m_per_s": 0.8902656889089547,
+          "displacement_m": 0.08513875986020703,
+          "kinetic_energy_J": 7.925729968485358
+        },
+        {
+          "time_s": 0.054000000000000006,
+          "force_on_mass_N": -623.364051433599,
+          "load_on_stop_N": 623.364051433599,
+          "velocity_m_per_s": 0.8746667664356956,
+          "displacement_m": 0.08557999176566769,
+          "kinetic_energy_J": 7.650419523070758
+        },
+        {
+          "time_s": 0.0545,
+          "force_on_mass_N": -622.0502099924865,
+          "load_on_stop_N": 622.0502099924865,
+          "velocity_m_per_s": 0.8590987680624174,
+          "displacement_m": 0.08601343178070175,
+          "kinetic_energy_J": 7.380506932863632
+        },
+        {
+          "time_s": 0.055,
+          "force_on_mass_N": -620.5828869699956,
+          "load_on_stop_N": 620.5828869699956,
+          "velocity_m_per_s": 0.8435655349597694,
+          "displacement_m": 0.08643909632798955,
+          "kinetic_energy_J": 7.116028117719619
+        },
+        {
+          "time_s": 0.05550000000000001,
+          "force_on_mass_N": -618.9624444061258,
+          "load_on_stop_N": 618.9624444061258,
+          "velocity_m_per_s": 0.8280708997205901,
+          "displacement_m": 0.08685700374869168,
+          "kinetic_energy_J": 6.857014149640675
+        },
+        {
+          "time_s": 0.05600000000000001,
+          "force_on_mass_N": -617.1892821208327,
+          "load_on_stop_N": 617.1892821208327,
+          "velocity_m_per_s": 0.8126186854142754,
+          "displacement_m": 0.08726717429792377,
+          "kinetic_energy_J": 6.603491278844251
+        },
+        {
+          "time_s": 0.0565,
+          "force_on_mass_N": -615.2638376153776,
+          "load_on_stop_N": 615.2638376153776,
+          "velocity_m_per_s": 0.7972127046434876,
+          "displacement_m": 0.08766963013975859,
+          "kinetic_energy_J": 6.355480964449845
+        },
+        {
+          "time_s": 0.057,
+          "force_on_mass_N": -613.1865859643815,
+          "load_on_stop_N": 613.1865859643815,
+          "velocity_m_per_s": 0.7818567586034575,
+          "displacement_m": 0.08806439534175763,
+          "kinetic_energy_J": 6.112999909739052
+        },
+        {
+          "time_s": 0.0575,
+          "force_on_mass_N": -610.9580396986065,
+          "load_on_stop_N": 610.9580396986065,
+          "velocity_m_per_s": 0.7665546361440947,
+          "displacement_m": 0.08845149586903261,
+          "kinetic_energy_J": 5.876060101940054
+        },
+        {
+          "time_s": 0.05800000000000001,
+          "force_on_mass_N": -608.5787486784972,
+          "load_on_stop_N": 608.5787486784972,
+          "velocity_m_per_s": 0.7513101128351451,
+          "displacement_m": 0.08883095957783908,
+          "kinetic_energy_J": 5.644668856483586
+        },
+        {
+          "time_s": 0.0585,
+          "force_on_mass_N": -606.0492999585108,
+          "load_on_stop_N": 606.0492999585108,
+          "velocity_m_per_s": 0.7361269500346271,
+          "displacement_m": 0.08920281620870327,
+          "kinetic_energy_J": 5.4188288656728245
+        },
+        {
+          "time_s": 0.059000000000000004,
+          "force_on_mass_N": -603.3703176422699,
+          "load_on_stop_N": 603.3703176422699,
+          "velocity_m_per_s": 0.7210088939607706,
+          "displacement_m": 0.08956709737908407,
+          "kinetic_energy_J": 5.1985382517053385
+        },
+        {
+          "time_s": 0.059500000000000004,
+          "force_on_mass_N": -600.5424627285748,
+          "load_on_stop_N": 600.5424627285748,
+          "velocity_m_per_s": 0.7059596747676962,
+          "displacement_m": 0.08992383657557187,
+          "kinetic_energy_J": 4.983790623981114
+        },
+        {
+          "time_s": 0.06,
+          "force_on_mass_N": -597.5664329483111,
+          "load_on_stop_N": 597.5664329483111,
+          "velocity_m_per_s": 0.6909830056250529,
+          "displacement_m": 0.09027306914562627,
+          "kinetic_energy_J": 4.774575140626319
+        },
+        {
+          "time_s": 0.060500000000000005,
+          "force_on_mass_N": -594.4429625922959,
+          "load_on_stop_N": 594.4429625922959,
+          "velocity_m_per_s": 0.6760825818018505,
+          "displacement_m": 0.09061483228885467,
+          "kinetic_energy_J": 4.570876574158559
+        },
+        {
+          "time_s": 0.061000000000000006,
+          "force_on_mass_N": -591.172822330102,
+          "load_on_stop_N": 591.172822330102,
+          "velocity_m_per_s": 0.6612620797547086,
+          "displacement_m": 0.09094916504783371,
+          "kinetic_energy_J": 4.372675381215227
+        },
+        {
+          "time_s": 0.061500000000000006,
+          "force_on_mass_N": -587.7568190199069,
+          "load_on_stop_N": 587.7568190199069,
+          "velocity_m_per_s": 0.6465251562207428,
+          "displacement_m": 0.09127610829847616,
+          "kinetic_energy_J": 4.1799477762625585
+        },
+        {
+          "time_s": 0.062,
+          "force_on_mass_N": -584.1957955094128,
+          "load_on_stop_N": 584.1957955094128,
+          "velocity_m_per_s": 0.6318754473153223,
+          "displacement_m": 0.09159570473994541,
+          "kinetic_energy_J": 3.9926658091993867
+        },
+        {
+          "time_s": 0.0625,
+          "force_on_mass_N": -580.4906304278861,
+          "load_on_stop_N": 580.4906304278861,
+          "velocity_m_per_s": 0.6173165676349103,
+          "displacement_m": 0.09190799888412014,
+          "kinetic_energy_J": 3.8107974467654677
+        },
+        {
+          "time_s": 0.063,
+          "force_on_mass_N": -576.642237969369,
+          "load_on_stop_N": 576.642237969369,
+          "velocity_m_per_s": 0.6028521093652193,
+          "displacement_m": 0.09221303704461155,
+          "kinetic_energy_J": 3.634306657660943
+        },
+        {
+          "time_s": 0.0635,
+          "force_on_mass_N": -572.6515676671162,
+          "load_on_stop_N": 572.6515676671162,
+          "velocity_m_per_s": 0.5884856413948915,
+          "displacement_m": 0.09251086732533625,
+          "kinetic_energy_J": 3.463153501279568
+        },
+        {
+          "time_s": 0.064,
+          "force_on_mass_N": -568.5196041593106,
+          "load_on_stop_N": 568.5196041593106,
+          "velocity_m_per_s": 0.5742207084349273,
+          "displacement_m": 0.09280153960864734,
+          "kinetic_energy_J": 3.297294219955098
+        },
+        {
+          "time_s": 0.0645,
+          "force_on_mass_N": -564.2473669461203,
+          "load_on_stop_N": 564.2473669461203,
+          "velocity_m_per_s": 0.5600608301440853,
+          "displacement_m": 0.09308510554302671,
+          "kinetic_energy_J": 3.1366813346168194
+        },
+        {
+          "time_s": 0.065,
+          "force_on_mass_N": -559.8359101381506,
+          "load_on_stop_N": 559.8359101381506,
+          "velocity_m_per_s": 0.5460095002604533,
+          "displacement_m": 0.09336161853034143,
+          "kinetic_energy_J": 2.9812637437466987
+        },
+        {
+          "time_s": 0.0655,
+          "force_on_mass_N": -555.2863221963587,
+          "load_on_stop_N": 555.2863221963587,
+          "velocity_m_per_s": 0.5320701857394268,
+          "displacement_m": 0.0936311337126678,
+          "kinetic_energy_J": 2.830986825527881
+        },
+        {
+          "time_s": 0.066,
+          "force_on_mass_N": -550.5997256634927,
+          "load_on_stop_N": 550.5997256634927,
+          "velocity_m_per_s": 0.518246325898285,
+          "displacement_m": 0.09389370795868578,
+          "kinetic_energy_J": 2.685792543070714
+        },
+        {
+          "time_s": 0.0665,
+          "force_on_mass_N": -545.7772768871195,
+          "load_on_stop_N": 545.7772768871195,
+          "velocity_m_per_s": 0.5045413315675924,
+          "displacement_m": 0.09414939984964744,
+          "kinetic_energy_J": 2.545619552599992
+        },
+        {
+          "time_s": 0.067,
+          "force_on_mass_N": -540.8201657343153,
+          "load_on_stop_N": 540.8201657343153,
+          "velocity_m_per_s": 0.4909585842496287,
+          "displacement_m": 0.09439826966492307,
+          "kinetic_energy_J": 2.4104033144839976
+        },
+        {
+          "time_s": 0.0675,
+          "force_on_mass_N": -535.729615298082,
+          "load_on_stop_N": 535.729615298082,
+          "velocity_m_per_s": 0.4775014352840512,
+          "displacement_m": 0.09464037936712798,
+          "kinetic_energy_J": 2.2800762069832894
+        },
+        {
+          "time_s": 0.068,
+          "force_on_mass_N": -530.5068815955682,
+          "load_on_stop_N": 530.5068815955682,
+          "velocity_m_per_s": 0.46417320502100357,
+          "displacement_m": 0.09487579258683426,
+          "kinetic_energy_J": 2.154567642594706
+        },
+        {
+          "time_s": 0.0685,
+          "force_on_mass_N": -525.1532532581654,
+          "load_on_stop_N": 525.1532532581654,
+          "velocity_m_per_s": 0.4509771820018681,
+          "displacement_m": 0.09510457460687086,
+          "kinetic_energy_J": 2.0338041868634607
+        },
+        {
+          "time_s": 0.069,
+          "force_on_mass_N": -519.6700512135582,
+          "load_on_stop_N": 519.6700512135582,
+          "velocity_m_per_s": 0.43791662214786964,
+          "displacement_m": 0.09532679234621602,
+          "kinetic_energy_J": 1.9177096795340005
+        },
+        {
+          "time_s": 0.0695,
+          "force_on_mass_N": -514.0586283598037,
+          "load_on_stop_N": 514.0586283598037,
+          "velocity_m_per_s": 0.42499474795672143,
+          "displacement_m": 0.09554251434348598,
+          "kinetic_energy_J": 1.8062053579079718
+        },
+        {
+          "time_s": 0.07,
+          "force_on_mass_N": -508.3203692315259,
+          "load_on_stop_N": 508.3203692315259,
+          "velocity_m_per_s": 0.412214747707527,
+          "displacement_m": 0.0957518107400242,
+          "kinetic_energy_J": 1.6992099822758011
+        },
+        {
+          "time_s": 0.07050000000000001,
+          "force_on_mass_N": -502.45668965830123,
+          "load_on_stop_N": 502.45668965830123,
+          "velocity_m_per_s": 0.3995797746741161,
+          "displacement_m": 0.09595475326259494,
+          "kinetic_energy_J": 1.5966399632861739
+        },
+        {
+          "time_s": 0.07100000000000001,
+          "force_on_mass_N": -496.46903641532407,
+          "load_on_stop_N": 496.46903641532407,
+          "velocity_m_per_s": 0.3870929463470234,
+          "displacement_m": 0.09615141520568578,
+          "kinetic_energy_J": 1.4984094911161954
+        },
+        {
+          "time_s": 0.07150000000000001,
+          "force_on_mass_N": -490.3588868664372,
+          "load_on_stop_N": 490.3588868664372,
+          "velocity_m_per_s": 0.3747573436642947,
+          "displacement_m": 0.09634187141342332,
+          "kinetic_energy_J": 1.4044306663031827
+        },
+        {
+          "time_s": 0.07200000000000001,
+          "force_on_mass_N": -484.1277485996136,
+          "load_on_stop_N": 484.1277485996136,
+          "velocity_m_per_s": 0.36257601025131025,
+          "displacement_m": 0.0965261982611065,
+          "kinetic_energy_J": 1.3146136320975823
+        },
+        {
+          "time_s": 0.0725,
+          "force_on_mass_N": -477.7771590549822,
+          "load_on_stop_N": 477.7771590549822,
+          "velocity_m_per_s": 0.3505519516698168,
+          "displacement_m": 0.09670447363636214,
+          "kinetic_energy_J": 1.2288667081951756
+        },
+        {
+          "time_s": 0.07300000000000001,
+          "force_on_mass_N": -471.30868514548655,
+          "load_on_stop_N": 471.30868514548655,
+          "velocity_m_per_s": 0.33868813467634795,
+          "displacement_m": 0.09687677691992731,
+          "kinetic_energy_J": 1.1470965257054402
+        },
+        {
+          "time_s": 0.07350000000000001,
+          "force_on_mass_N": -464.7239228702748,
+          "load_on_stop_N": 464.7239228702748,
+          "velocity_m_per_s": 0.32698748649022646,
+          "displacement_m": 0.09704318896606337,
+          "kinetic_energy_J": 1.0692081632119603
+        },
+        {
+          "time_s": 0.07400000000000001,
+          "force_on_mass_N": -458.0244969209082,
+          "load_on_stop_N": 458.0244969209082,
+          "velocity_m_per_s": 0.3154528940713113,
+          "displacement_m": 0.09720379208260638,
+          "kinetic_energy_J": 0.9951052837796593
+        },
+        {
+          "time_s": 0.0745,
+          "force_on_mass_N": -451.2120602804942,
+          "load_on_stop_N": 451.2120602804942,
+          "velocity_m_per_s": 0.304087203407686,
+          "displacement_m": 0.09735867001065876,
+          "kinetic_energy_J": 0.9246902727630741
+        },
+        {
+          "time_s": 0.075,
+          "force_on_mass_N": -444.2882938158366,
+          "load_on_stop_N": 444.2882938158366,
+          "velocity_m_per_s": 0.29289321881345254,
+          "displacement_m": 0.09750790790392765,
+          "kinetic_energy_J": 0.8578643762690499
+        },
+        {
+          "time_s": 0.07550000000000001,
+          "force_on_mass_N": -437.2549058627084,
+          "load_on_stop_N": 437.2549058627084,
+          "velocity_m_per_s": 0.2818737022368111,
+          "displacement_m": 0.09765159230771431,
+          "kinetic_energy_J": 0.7945278401268643
+        },
+        {
+          "time_s": 0.07600000000000001,
+          "force_on_mass_N": -430.11363180434427,
+          "load_on_stop_N": 430.11363180434427,
+          "velocity_m_per_s": 0.27103137257858834,
+          "displacement_m": 0.09778981113756043,
+          "kinetic_energy_J": 0.7345800492183356
+        },
+        {
+          "time_s": 0.0765,
+          "force_on_mass_N": -422.8662336432612,
+          "load_on_stop_N": 422.8662336432612,
+          "velocity_m_per_s": 0.26036890502139054,
+          "displacement_m": 0.09792265365755629,
+          "kinetic_energy_J": 0.6779196670203789
+        },
+        {
+          "time_s": 0.077,
+          "force_on_mass_N": -415.51449956650964,
+          "load_on_stop_N": 415.51449956650964,
+          "velocity_m_per_s": 0.24988893036954074,
+          "displacement_m": 0.0980502104583162,
+          "kinetic_energy_J": 0.6244447752123318
+        },
+        {
+          "time_s": 0.0775,
+          "force_on_mass_N": -408.06024350446677,
+          "load_on_stop_N": 408.06024350446677,
+          "velocity_m_per_s": 0.23959403439996918,
+          "displacement_m": 0.09817257343462657,
+          "kinetic_energy_J": 0.5740530132005361
+        },
+        {
+          "time_s": 0.07800000000000001,
+          "force_on_mass_N": -400.50530468327565,
+          "load_on_stop_N": 400.50530468327565,
+          "velocity_m_per_s": 0.22948675722421064,
+          "displacement_m": 0.09828983576277232,
+          "kinetic_energy_J": 0.5266417174128379
+        },
+        {
+          "time_s": 0.0785,
+          "force_on_mass_N": -392.85154717104393,
+          "load_on_stop_N": 392.85154717104393,
+          "velocity_m_per_s": 0.21956959266167042,
+          "displacement_m": 0.09840209187754693,
+          "kinetic_energy_J": 0.48210806021611874
+        },
+        {
+          "time_s": 0.079,
+          "force_on_mass_N": -385.10085941791135,
+          "load_on_stop_N": 385.10085941791135,
+          "velocity_m_per_s": 0.2098449876243098,
+          "displacement_m": 0.09850943744895216,
+          "kinetic_energy_J": 0.4403491883104674
+        },
+        {
+          "time_s": 0.0795,
+          "force_on_mass_N": -377.25515379010506,
+          "load_on_stop_N": 377.25515379010506,
+          "velocity_m_per_s": 0.20031534151290942,
+          "displacement_m": 0.09861196935859282,
+          "kinetic_energy_J": 0.4012623604543353
+        },
+        {
+          "time_s": 0.08,
+          "force_on_mass_N": -369.31636609809135,
+          "load_on_stop_N": 369.31636609809135,
+          "velocity_m_per_s": 0.19098300562505266,
+          "displacement_m": 0.0987097856757728,
+          "kinetic_energy_J": 0.3647450843757889
+        },
+        {
+          "time_s": 0.0805,
+          "force_on_mass_N": -361.28645511894257,
+          "load_on_stop_N": 361.28645511894257,
+          "velocity_m_per_s": 0.18185028257497693,
+          "displacement_m": 0.09880298563329781,
+          "kinetic_energy_J": 0.3306952527259896
+        },
+        {
+          "time_s": 0.081,
+          "force_on_mass_N": -353.16740211303795,
+          "load_on_stop_N": 353.16740211303795,
+          "velocity_m_per_s": 0.17291942572543828,
+          "displacement_m": 0.09889166960299124,
+          "kinetic_energy_J": 0.29901127793215365
+        },
+        {
+          "time_s": 0.0815,
+          "force_on_mass_N": -344.96121033521945,
+          "load_on_stop_N": 344.96121033521945,
+          "velocity_m_per_s": 0.16419263863172995,
+          "displacement_m": 0.09897593907092894,
+          "kinetic_energy_J": 0.2695922258084986
+        },
+        {
+          "time_s": 0.08200000000000002,
+          "force_on_mass_N": -336.6699045405157,
+          "load_on_stop_N": 336.6699045405157,
+          "velocity_m_per_s": 0.1556720744979847,
+          "displacement_m": 0.09905589661239898,
+          "kinetic_energy_J": 0.242337947785061
+        },
+        {
+          "time_s": 0.0825,
+          "force_on_mass_N": -328.29553048456717,
+          "load_on_stop_N": 328.29553048456717,
+          "velocity_m_per_s": 0.14735983564590782,
+          "displacement_m": 0.09913164586659277,
+          "kinetic_energy_J": 0.21714921161588965
+        },
+        {
+          "time_s": 0.083,
+          "force_on_mass_N": -319.8401544188629,
+          "load_on_stop_N": 319.8401544188629,
+          "velocity_m_per_s": 0.13925797299605647,
+          "displacement_m": 0.09920329151103364,
+          "kinetic_energy_J": 0.1939278304297039
+        },
+        {
+          "time_s": 0.08349999999999999,
+          "force_on_mass_N": -311.3058625809269,
+          "load_on_stop_N": 311.3058625809269,
+          "velocity_m_per_s": 0.13136848556180913,
+          "displacement_m": 0.09927093923574923,
+          "kinetic_energy_J": 0.17257678998803255
+        },
+        {
+          "time_s": 0.084,
+          "force_on_mass_N": -302.69476067956793,
+          "load_on_stop_N": 302.69476067956793,
+          "velocity_m_per_s": 0.12369331995613642,
+          "displacement_m": 0.099334695717194,
+          "kinetic_energy_J": 0.15300037401771135
+        },
+        {
+          "time_s": 0.0845,
+          "force_on_mass_N": -294.0089733753307,
+          "load_on_stop_N": 294.0089733753307,
+          "velocity_m_per_s": 0.11623436991130653,
+          "displacement_m": 0.09939466859192855,
+          "kinetic_energy_J": 0.1351042874867844
+        },
+        {
+          "time_s": 0.085,
+          "force_on_mass_N": -285.25064375626357,
+          "load_on_stop_N": 285.25064375626357,
+          "velocity_m_per_s": 0.10899347581163199,
+          "displacement_m": 0.09945096643006174,
+          "kinetic_energy_J": 0.11879577769500807
+        },
+        {
+          "time_s": 0.0855,
+          "force_on_mass_N": -276.4219328091471,
+          "load_on_stop_N": 276.4219328091471,
+          "velocity_m_per_s": 0.10197242423938446,
+          "displacement_m": 0.09950369870846278,
+          "kinetic_energy_J": 0.10398375305257003
+        },
+        {
+          "time_s": 0.086,
+          "force_on_mass_N": -267.52501888630013,
+          "load_on_stop_N": 267.52501888630013,
+          "velocity_m_per_s": 0.09517294753398076,
+          "displacement_m": 0.09955297578374935,
+          "kinetic_energy_J": 0.09057889942305855
+        },
+        {
+          "time_s": 0.08650000000000001,
+          "force_on_mass_N": -258.562097168105,
+          "load_on_stop_N": 258.562097168105,
+          "velocity_m_per_s": 0.08859672336455471,
+          "displacement_m": 0.09959890886505879,
+          "kinetic_energy_J": 0.07849379390935433
+        },
+        {
+          "time_s": 0.08700000000000001,
+          "force_on_mass_N": -249.53537912138185,
+          "load_on_stop_N": 249.53537912138185,
+          "velocity_m_per_s": 0.08224537431601886,
+          "displacement_m": 0.09964160998660897,
+          "kinetic_energy_J": 0.06764301596382054
+        },
+        {
+          "time_s": 0.0875,
+          "force_on_mass_N": -240.44709195373855,
+          "load_on_stop_N": 240.44709195373855,
+          "velocity_m_per_s": 0.07612046748871326,
+          "displacement_m": 0.0996811919800554,
+          "kinetic_energy_J": 0.05794325570700253
+        },
+        {
+          "time_s": 0.08800000000000001,
+          "force_on_mass_N": -231.2994780640427,
+          "load_on_stop_N": 231.2994780640427,
+          "velocity_m_per_s": 0.07022351411174865,
+          "displacement_m": 0.09971776844665188,
+          "kinetic_energy_J": 0.049313419342029624
+        },
+        {
+          "time_s": 0.0885,
+          "force_on_mass_N": -222.0947944891432,
+          "load_on_stop_N": 222.0947944891432,
+          "velocity_m_per_s": 0.06455596917013295,
+          "displacement_m": 0.09975145372922087,
+          "kinetic_energy_J": 0.04167473155495156
+        },
+        {
+          "time_s": 0.08900000000000001,
+          "force_on_mass_N": -212.83531234697847,
+          "load_on_stop_N": 212.83531234697847,
+          "velocity_m_per_s": 0.059119231045774545,
+          "displacement_m": 0.09978236288394127,
+          "kinetic_energy_J": 0.034950834794436725
+        },
+        {
+          "time_s": 0.08950000000000001,
+          "force_on_mass_N": -203.52331627621552,
+          "load_on_stop_N": 203.52331627621552,
+          "velocity_m_per_s": 0.05391464117245459,
+          "displacement_m": 0.09981061165196002,
+          "kinetic_energy_J": 0.029067885327545357
+        },
+        {
+          "time_s": 0.09,
+          "force_on_mass_N": -194.16110387254668,
+          "load_on_stop_N": 194.16110387254668,
+          "velocity_m_per_s": 0.04894348370484647,
+          "displacement_m": 0.09983631643083465,
+          "kinetic_energy_J": 0.023954645971665717
+        },
+        {
+          "time_s": 0.09050000000000001,
+          "force_on_mass_N": -184.750985121792,
+          "load_on_stop_N": 184.750985121792,
+          "velocity_m_per_s": 0.04420698520166988,
+          "displacement_m": 0.09985959424581396,
+          "kinetic_energy_J": 0.0195425754062066
+        },
+        {
+          "time_s": 0.091,
+          "force_on_mass_N": -175.29528182994687,
+          "load_on_stop_N": 175.29528182994687,
+          "velocity_m_per_s": 0.039706314323057046,
+          "displacement_m": 0.0998805627209637,
+          "kinetic_energy_J": 0.01576591397121405
+        },
+        {
+          "time_s": 0.0915,
+          "force_on_mass_N": -165.79632705030977,
+          "load_on_stop_N": 165.79632705030977,
+          "velocity_m_per_s": 0.035442581542202034,
+          "displacement_m": 0.09989934005014477,
+          "kinetic_energy_J": 0.012561765863756402
+        },
+        {
+          "time_s": 0.09200000000000001,
+          "force_on_mass_N": -156.2564645078362,
+          "load_on_stop_N": 156.2564645078362,
+          "velocity_m_per_s": 0.03141683887136881,
+          "displacement_m": 0.09991604496785046,
+          "kinetic_energy_J": 0.009870177646695505
+        },
+        {
+          "time_s": 0.0925,
+          "force_on_mass_N": -146.67804802086178,
+          "load_on_stop_N": 146.67804802086178,
+          "velocity_m_per_s": 0.027630079602323443,
+          "displacement_m": 0.09993079671991069,
+          "kinetic_energy_J": 0.0076342129883073
+        },
+        {
+          "time_s": 0.09300000000000001,
+          "force_on_mass_N": -137.06344092032842,
+          "load_on_stop_N": 137.06344092032842,
+          "velocity_m_per_s": 0.024083238061252565,
+          "displacement_m": 0.09994371503406967,
+          "kinetic_energy_J": 0.005800023555149642
+        },
+        {
+          "time_s": 0.0935,
+          "force_on_mass_N": -127.4150154666728,
+          "load_on_stop_N": 127.4150154666728,
+          "velocity_m_per_s": 0.02077718937823425,
+          "displacement_m": 0.09995492009044503,
+          "kinetic_energy_J": 0.0043169159845901015
+        },
+        {
+          "time_s": 0.094,
+          "force_on_mass_N": -117.73515226450232,
+          "load_on_stop_N": 117.73515226450232,
+          "velocity_m_per_s": 0.01771274927131139,
+          "displacement_m": 0.09996453249187512,
+          "kinetic_energy_J": 0.0031374148674834217
+        },
+        {
+          "time_s": 0.09450000000000001,
+          "force_on_mass_N": -108.02623967521919,
+          "load_on_stop_N": 108.02623967521919,
+          "velocity_m_per_s": 0.014890673845226132,
+          "displacement_m": 0.09997267323416205,
+          "kinetic_energy_J": 0.0022173216756490163
+        },
+        {
+          "time_s": 0.095,
+          "force_on_mass_N": -98.29067322772806,
+          "load_on_stop_N": 98.29067322772806,
+          "velocity_m_per_s": 0.01231165940486234,
+          "displacement_m": 0.09997946367621782,
+          "kinetic_energy_J": 0.001515769573013353
+        },
+        {
+          "time_s": 0.0955,
+          "force_on_mass_N": -88.53085502737235,
+          "load_on_stop_N": 88.53085502737235,
+          "velocity_m_per_s": 0.009976342283442463,
+          "displacement_m": 0.09998502551012078,
+          "kinetic_energy_J": 0.0009952740535640197
+        },
+        {
+          "time_s": 0.09600000000000002,
+          "force_on_mass_N": -78.74919316325428,
+          "load_on_stop_N": 78.74919316325428,
+          "velocity_m_per_s": 0.007885298685522124,
+          "displacement_m": 0.09998948073109003,
+          "kinetic_energy_J": 0.0006217793535989694
+        },
+        {
+          "time_s": 0.0965,
+          "force_on_mass_N": -68.94810111407291,
+          "load_on_stop_N": 68.94810111407291,
+          "velocity_m_per_s": 0.006039044544820293,
+          "displacement_m": 0.09999295160738474,
+          "kinetic_energy_J": 0.0003647005901432374
+        },
+        {
+          "time_s": 0.09700000000000002,
+          "force_on_mass_N": -59.129997152634225,
+          "load_on_stop_N": 59.129997152634225,
+          "velocity_m_per_s": 0.004438035396920004,
+          "displacement_m": 0.0999955606501365,
+          "kinetic_energy_J": 0.00019696158184314897
+        },
+        {
+          "time_s": 0.0975,
+          "force_on_mass_N": -49.29730374917955,
+          "load_on_stop_N": 49.29730374917955,
+          "velocity_m_per_s": 0.003082666266872036,
+          "displacement_m": 0.09999743058312137,
+          "kinetic_energy_J": 9.502831312910775e-05
+        },
+        {
+          "time_s": 0.098,
+          "force_on_mass_N": -39.45244697367559,
+          "load_on_stop_N": 39.45244697367559,
+          "velocity_m_per_s": 0.001973271571728441,
+          "displacement_m": 0.0999986843124797,
+          "kinetic_energy_J": 3.8938006957916325e-05
+        },
+        {
+          "time_s": 0.09850000000000002,
+          "force_on_mass_N": -29.59785589722024,
+          "load_on_stop_N": 29.59785589722024,
+          "velocity_m_per_s": 0.0011101250380299854,
+          "displacement_m": 0.09999944489639087,
+          "kinetic_energy_J": 1.2323776000610765e-05
+        },
+        {
+          "time_s": 0.099,
+          "force_on_mass_N": -19.73596199270531,
+          "load_on_stop_N": 19.73596199270531,
+          "velocity_m_per_s": 0.0004934396342684,
+          "displacement_m": 0.09999983551471055,
+          "kinetic_energy_J": 2.434826726669323e-06
+        },
+        {
+          "time_s": 0.0995,
+          "force_on_mass_N": -9.869198534883942,
+          "load_on_stop_N": 9.869198534883942,
+          "velocity_m_per_s": 0.00012336751833941229,
+          "displacement_m": 0.09999997943857784,
+          "kinetic_energy_J": 1.5219544581225229e-07
+        },
+        {
+          "time_s": 0.1,
+          "force_on_mass_N": -7.694682774887159e-14,
+          "load_on_stop_N": 7.694682774887159e-14,
+          "velocity_m_per_s": 0.0,
+          "displacement_m": 0.1,
+          "kinetic_energy_J": 0.0
+        }
+      ],
+      "x": "time_s",
+      "ys": [
+        "velocity_m_per_s"
+      ],
+      "xlabel": "Time (s)",
+      "ylabel": "Velocity (m/s)",
+      "log": false
+    }
+  ],
+  "notes": [
+    "The mass moves initially in +x. Stopping force is negative; the reaction load on the stop is positive.",
+    "Pulse shape and duration are prescribed; the model does not derive them from contact stiffness or simulate rebound.",
+    "Average and peak force differ. Initial kinetic energy is removed over the stopping distance."
+  ]
+}
